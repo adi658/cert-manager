@@ -35,7 +35,9 @@ import (
 )
 
 // LetsEncryptURL is the Directory endpoint of Let's Encrypt CA.
-const LetsEncryptURL = "https://acme-v02.api.letsencrypt.org/directory"
+
+//const LetsEncryptURL = "https://acme-v02.api.letsencrypt.org/directory"
+const LetsEncryptURL = "https://beta.acme.sectigo.com/v2/DV"	//changed to sectigo url
 
 const (
 	// max length of a certificate chain
@@ -355,7 +357,7 @@ func (c *Client) CreateAccount(ctx context.Context, a *Account) (*Account, error
 	if _, err := c.Discover(ctx); err != nil {
 		return nil, err
 	}
-	return c.doAccount(ctx, c.dir.NewAccountURL, false, a)
+	return c.doAccount1(ctx, c.dir.NewAccountURL, false, a)
 }
 
 // GetAccount retrieves the account that the client is configured with.
