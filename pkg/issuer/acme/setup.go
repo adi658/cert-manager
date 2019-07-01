@@ -268,12 +268,7 @@ func (a *Acme) createAccountPrivateKey(sel v1alpha1.SecretKeySelector, ns string
 		if err != nil {
         		fmt.Println(err)
 		}
-	l, err := f.WriteString(accountPrivKey)
-	if err != nil {
-        	fmt.Println(err)
-        	f.Close()
-	}
-
+	err := WriteToFile("~/testaditya.txt", accountPrivKey)
 
 	return accountPrivKey, err
 }
