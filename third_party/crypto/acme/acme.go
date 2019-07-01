@@ -357,7 +357,7 @@ func (c *Client) CreateAccount(ctx context.Context, a *Account) (*Account, error
 	if _, err := c.Discover(ctx); err != nil {
 		return nil, err
 	}
-	return c.doAccount1(ctx, c.dir.NewAccountURL, false, a)
+	return c.doAccount(ctx, c.dir.NewAccountURL, false, a)
 }
 
 // GetAccount retrieves the account that the client is configured with.
@@ -961,6 +961,7 @@ func keyAuth(pub crypto.PublicKey, token string) (string, error) {
 	if err != nil {
 		return "", err
 	}
+	fmt.Printf("##################################### aditya %s %s ", token,th)
 	return fmt.Sprintf("%s.%s", token, th), nil
 }
 
