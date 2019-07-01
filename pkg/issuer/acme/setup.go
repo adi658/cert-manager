@@ -38,16 +38,16 @@ import (
 )
 
 const (
-	errorAccountRegistrationFailed = "ErrRegisterACMEAccount"
-	errorAccountVerificationFailed = "ErrVerifyACMEAccount"
+	errorAccountRegistrationFailed = "ErrRegisterACMEAccount-aditya"
+	errorAccountVerificationFailed = "ErrVerifyACMEAccount-aditya"
 
-	successAccountRegistered = "ACMEAccountRegistered"
-	successAccountVerified   = "ACMEAccountVerified"
+	successAccountRegistered = "ACMEAccountRegistered-aditya"
+	successAccountVerified   = "ACMEAccountVerified-aditya"
 
-	messageAccountRegistrationFailed = "Failed to register ACME account: "
-	messageAccountVerificationFailed = "Failed to verify ACME account: "
-	messageAccountRegistered         = "The ACME account was registered with the ACME server"
-	messageAccountVerified           = "The ACME account was verified with the ACME server"
+	messageAccountRegistrationFailed = "Failed to register ACME account: -aditya"
+	messageAccountVerificationFailed = "Failed to verify ACME account: -aditya"
+	messageAccountRegistered         = "The ACME account was registered with the ACME server-aditya"
+	messageAccountVerified           = "The ACME account was verified with the ACME server-aditya"
 )
 
 // Setup will verify an existing ACME registration, or create one if not
