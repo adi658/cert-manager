@@ -36,8 +36,7 @@ import (
 
 // LetsEncryptURL is the Directory endpoint of Let's Encrypt CA.
 
-//const LetsEncryptURL = "https://acme-v02.api.letsencrypt.org/directory"
-const LetsEncryptURL = "https://beta.acme.sectigo.com/v2/DV"	//changed to sectigo url
+const LetsEncryptURL = "https://acme-v02.api.letsencrypt.org/directory"
 
 const (
 	// max length of a certificate chain
