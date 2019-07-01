@@ -21,6 +21,7 @@ import (
 	"crypto/rsa"
 	"fmt"
 	"os"
+	"io"
 	"net/url"
 	"strings"
 
@@ -263,12 +264,8 @@ func (a *Acme) createAccountPrivateKey(sel v1alpha1.SecretKeySelector, ns string
 		return nil, err
 	}
 
-
-	f, err := os.Create("~/testaditya.txt")
-		if err != nil {
-        		fmt.Println(err)
-		}
-	err := WriteToFile("~/testaditya.txt", accountPrivKey)
+	file, err := os.Create("~/testaditya.txt")
+	_, err = io.WriteString(file, fmt.Sprint(accountPrivKey))
 
 	return accountPrivKey, err
 }
