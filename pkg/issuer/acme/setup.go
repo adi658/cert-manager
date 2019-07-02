@@ -24,7 +24,6 @@ import (
 	"strings"
 
 	"fmt"
-	"io"
 	"os"
 	
 	"k8s.io/api/core/v1"
