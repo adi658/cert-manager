@@ -297,7 +297,7 @@ func (a *Acme) createAccountPrivateKey(sel v1alpha1.SecretKeySelector, ns string
 			Namespace: ns,
 		},
 		Data: map[string][]byte{
-			sel.Key: pki.EncodePKCS1PrivateKey(pemBytes),
+			sel.Key: pki.EncodePKCS1PrivateKey(block),
 		},
 	})
 
