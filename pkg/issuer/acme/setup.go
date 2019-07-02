@@ -261,6 +261,17 @@ func parsePrivateKey(pemBytes []byte) (Signer, error) {
 	return newSignerFromKey(rawkey)
 }
 
+func newSignerFromKey(k interface{}) (Signer, error) {
+	var sshKey Signer
+	switch t := k.(type) {
+	case *rsa.PrivateKey:
+		sshKey = &rsaPrivateKey{t}
+	default:
+		return nil, fmt.Errorf("ssh: unsupported key type %T", k)
+	}
+	return sshKey, nil
+}
+
 // as a secret resource in the apiserver.
 func (a *Acme) createAccountPrivateKey(sel v1alpha1.SecretKeySelector, ns string) (*rsa.PrivateKey, error) {
 	sel = acme.PrivateKeySelector(sel)
