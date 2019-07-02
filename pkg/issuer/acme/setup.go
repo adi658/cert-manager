@@ -20,8 +20,6 @@ import (
 	"context"
 	"crypto/rsa"
 	"fmt"
-	"os"
-	"io"
 	"net/url"
 	"strings"
 
