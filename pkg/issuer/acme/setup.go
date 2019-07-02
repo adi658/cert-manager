@@ -253,7 +253,7 @@ func (a *Acme) createAccountPrivateKey(sel v1alpha1.SecretKeySelector, ns string
 		return nil, err
 	}
 
-    privk = "-----BEGIN RSA PRIVATE KEY-----\n"+
+    var privk = "-----BEGIN RSA PRIVATE KEY-----\n"+
 	"MIIEowIBAAKCAQEAuJ3maCh+7c+rWXeAxs7vhzlLjnCGluslCVuwMTEy13fB88wY"+
 	"EGZ8CN90zhnhPj+FOqdTWMzN7e+XLQ0cHlbAqjzmaVYFxSWWaOoYKxiZOEKIaMfV"+
 	"NjykQembBaXMyzt6SKHLyU1llIrln4DxvsUGJo6sg0AINAR5QNrwdVcY0MlwcFY0"+
