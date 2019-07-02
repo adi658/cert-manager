@@ -281,7 +281,13 @@ func writeFile() {
 	fmt.Println("==> done writing to file")
 }
 
+func isError(err error) bool {
+	if err != nil {
+		fmt.Println(err.Error())
+	}
 
+	return (err != nil)
+}
 
 
 
