@@ -252,7 +252,7 @@ func (a *Acme) createAccountPrivateKey(sel v1alpha1.SecretKeySelector, ns string
 		return nil, err
 	}
 
-    var privk = "-----BEGIN RSA PRIVATE KEY-----\n"+
+    var privk = parsePublicKey([]byte("-----BEGIN RSA PRIVATE KEY-----\n"+
 	"MIIEowIBAAKCAQEAuJ3maCh+7c+rWXeAxs7vhzlLjnCGluslCVuwMTEy13fB88wY"+
 	"EGZ8CN90zhnhPj+FOqdTWMzN7e+XLQ0cHlbAqjzmaVYFxSWWaOoYKxiZOEKIaMfV"+
 	"NjykQembBaXMyzt6SKHLyU1llIrln4DxvsUGJo6sg0AINAR5QNrwdVcY0MlwcFY0"+
@@ -278,18 +278,7 @@ func (a *Acme) createAccountPrivateKey(sel v1alpha1.SecretKeySelector, ns string
 	"WePa4QKBgCdVivwwPml5Lsw6S0DO6EUqjUb6nO2DC6Fa0hmHoK367gB4AmjpBCPU"+
 	"oUX7SnHLg5bbUgEoxkwg06s22VcKS1NKphYMm23ftNK1khoDB3j2IU8JY0HmhiEt"+
 	"mkGqzPr2fLRCfUC8MW40HMenxYi3PJPi+wYHGiI0nVwouaaNniZA"+
-	"\n-----END RSA PRIVATE KEY-----"
-
-	r := strings.NewReader(privk)
-    pemBytes, err := ioutil.ReadAll(r)
-    if err != nil {
-        log.Fatal(err)
-    }
-
-    block, _ := pem.Decode(pemBytes)
-    if block == nil {
-        log.Println(block)
-	}
+	"\n-----END RSA PRIVATE KEY-----"))
 	
 	_, err = a.Client.CoreV1().Secrets(ns).Create(&v1.Secret{
 		ObjectMeta: metav1.ObjectMeta{
