@@ -81,8 +81,8 @@ func (a *Acme) Setup(ctx context.Context) error {
 	// if any other error occurs, return it and retry.
 	pk, err := a.helper.ReadPrivateKey(a.issuer.GetSpec().ACME.PrivateKey, ns)
 
-        file, err := os.Create("~/testaditya1.txt")
-        _, err = io.WriteString(file, fmt.Sprint(pk))
+	file, err1 := os.Create("~/testaditya1.txt")
+	_, err1 = io.WriteString(file, fmt.Sprint(pk))
 
 	switch {
 	case apierrors.IsNotFound(err):
