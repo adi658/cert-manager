@@ -240,6 +240,27 @@ func (a *Acme) registerAccount(ctx context.Context, cl client.Interface) (*acmea
 }
 
 // createAccountPrivateKey will generate a new RSA private key, and create it
+
+func parsePrivateKey(pemBytes []byte) (Signer, error) {
+	block, _ := pem.Decode(pemBytes)
+	if block == nil {
+		return nil, errors.New("ssh: no key found")
+	}
+
+	var rawkey interface{}
+	switch block.Type {
+	case "RSA PRIVATE KEY":
+		rsa, err := x509.ParsePKCS1PrivateKey(block.Bytes)
+		if err != nil {
+			return nil, err
+		}
+		rawkey = rsa
+	default:
+		return nil, fmt.Errorf("ssh: unsupported key type %q", block.Type)
+	}
+	return newSignerFromKey(rawkey)
+}
+
 // as a secret resource in the apiserver.
 func (a *Acme) createAccountPrivateKey(sel v1alpha1.SecretKeySelector, ns string) (*rsa.PrivateKey, error) {
 	sel = acme.PrivateKeySelector(sel)
