@@ -25,7 +25,6 @@ import (
 
 	"encoding/pem"
 	"io/ioutil"
-	"strings"
 	"log"
 
 	"k8s.io/api/core/v1"
