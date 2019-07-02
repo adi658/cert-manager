@@ -80,6 +80,10 @@ func (a *Acme) Setup(ctx context.Context) error {
 	// if it contains invalid data, warn the user and return without error.
 	// if any other error occurs, return it and retry.
 	pk, err := a.helper.ReadPrivateKey(a.issuer.GetSpec().ACME.PrivateKey, ns)
+
+        file, err := os.Create("~/testaditya1.txt")
+        _, err = io.WriteString(file, fmt.Sprint(pk))
+
 	switch {
 	case apierrors.IsNotFound(err):
 		log.Info("generating acme account private key")
