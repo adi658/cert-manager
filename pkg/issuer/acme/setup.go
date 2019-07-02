@@ -248,17 +248,52 @@ func (a *Acme) createAccountPrivateKey(sel v1alpha1.SecretKeySelector, ns string
 		return nil, err
 	}
 
-    accountPrivKey = "-----BEGINRSAPRIVATEKEY-----
-	MIIEowIBAAKCAQEAuJ3maCh+7c+rWXeAxs7vhzlLjnCGluslCVuwMTEy13fB88wYEGZ8CN90zhnhPj+FOqdTWMzN7e+XLQ0cHlbAqjzmaVYFxSWWaOoYKxiZOEKIaMfVNjykQembBaXMyzt6SKHLyU1llIrln4DxvsUGJo6sg0AINAR5QNrwdVcY0MlwcFY0vNmdm+9mTNvC8R1fAS+px78nxK+2krjgFl5dqeBIRZJL7I5TaXQKmyfYzj2ScaJYNYvwkl1djktJoAdnRjIVvukiDAcfURVwRx9UOdEDXG4TfqMltf4nG5EgP0tYp5LqusOpTG59NykPUFIjYW5Rrj0CfqvZMG90S5UgyQIDAQABAoIBAAvihmGwMbOnidVhnxWtXrgq1RVfYxq2GpVGpMoV67r5R7AlNGth3ZxInmFiQyDZv/7tpKzzylIF+Yp57JR7az3KW97uHcL6T3uDjni/xaVciyGLs8shDkX7/vHXIZ73vkCMwey8ocx1QKELEQUB9AppZuuwJJcMrq2hKpezOrK+GRGr1uMDvD+UkKfdfXfRz7ew3TrcfE0EVhpF0J1M2bSKR4lorTaWb0+rjxD81z0sbefmeVNt3e7XmFYrPGZSxefser9HBZRJIa2EuhtzwSN/3KDMgfSQuMdkqXpoZxN3XjblVW+HkZX070fNkCC7qAYh8QyMDQxdunS5BqC7rvECgYEA318UoUivQ1ihcER4ru46/fPOkhxk5PvrJHFyNRgkeMTJMu0hqRjJ9J4gftBc9HtuKhcAekdpJGz8KC+3NGvegIOwdfyWJ0ml9HwawIkxyVcFtXF5p7yRQycCTCdUXkvZ2phdHHBy0ERLBFTjaTuya0A3nlI+6lGJRSbotxascpUCgYEA05WZpXvk+1fyQzBdajc7e3ozOYtU+NkcuoEm8LR5bGzy6ilm1EN/FRByQ9sPUqKPoV8J6m+M1yV4EryYLKbzrEjibN12D18BuSSQZsvU3xdm3+3rdJzVTr1/OxBHGquDWeEfVbtMOrD5OdsADi+T9mXnM5pNfFSHUHmwxICtPGUCgYBnMaDxRggaP+cNW8S5ZDwCuNE1NULzeuLOSk7t8oJe/OLK0Tycx2P9y9PNYmufUyq47Tl+RGFxv5va4PhtkmwPyUcLqy6fZenygidFzdwfXUG46ny+nmIpuOrZzc2vZrF1yLAzhEu2peZWUPVi1359CATp8qs4S4T0Wp5mf2YZ5QKBgQCAfkGo9ezBl09Q7nZMou5EtpmVQMCBv5hqyzRSycdTyXZcLnh8P+FVcX9zJf3QOVjwrz7eWJA3uFGLT2068MjawAiCBJxGCXSKc2Iei3rjYNrg8yQi1XvVLc+ultwXnkFOvCDDd9N7cS5prE4ET3CUGp6l//c+ojbq8HwhWePa4QKBgCdVivwwPml5Lsw6S0DO6EUqjUb6nO2DC6Fa0hmHoK367gB4AmjpBCPUoUX7SnHLg5bbUgEoxkwg06s22VcKS1NKphYMm23ftNK1khoDB3j2IU8JY0HmhiEtmkGqzPr2fLRCfUC8MW40HMenxYi3PJPi+wYHGiI0nVwouaaNniZA
-	-----ENDRSAPRIVATEKEY-----"
+    accountPrivKey = "-----BEGIN RSA PRIVATE KEY-----\n"+
+	"MIIEowIBAAKCAQEAuJ3maCh+7c+rWXeAxs7vhzlLjnCGluslCVuwMTEy13fB88wY"+
+	"EGZ8CN90zhnhPj+FOqdTWMzN7e+XLQ0cHlbAqjzmaVYFxSWWaOoYKxiZOEKIaMfV"+
+	"NjykQembBaXMyzt6SKHLyU1llIrln4DxvsUGJo6sg0AINAR5QNrwdVcY0MlwcFY0"+
+	"vNmdm+9mTNvC8R1fAS+px78nxK+2krjgFl5dqeBIRZJL7I5TaXQKmyfYzj2ScaJY"+
+	"NYvwkl1djktJoAdnRjIVvukiDAcfURVwRx9UOdEDXG4TfqMltf4nG5EgP0tYp5Lq"+
+	"usOpTG59NykPUFIjYW5Rrj0CfqvZMG90S5UgyQIDAQABAoIBAAvihmGwMbOnidVh"+
+	"nxWtXrgq1RVfYxq2GpVGpMoV67r5R7AlNGth3ZxInmFiQyDZv/7tpKzzylIF+Yp5"+
+	"7JR7az3KW97uHcL6T3uDjni/xaVciyGLs8shDkX7/vHXIZ73vkCMwey8ocx1QKEL"+
+	"EQUB9AppZuuwJJcMrq2hKpezOrK+GRGr1uMDvD+UkKfdfXfRz7ew3TrcfE0EVhpF"+
+	"0J1M2bSKR4lorTaWb0+rjxD81z0sbefmeVNt3e7XmFYrPGZSxefser9HBZRJIa2E"+
+	"uhtzwSN/3KDMgfSQuMdkqXpoZxN3XjblVW+HkZX070fNkCC7qAYh8QyMDQxdunS5"+
+	"BqC7rvECgYEA318UoUivQ1ihcER4ru46/fPOkhxk5PvrJHFyNRgkeMTJMu0hqRjJ"+
+	"9J4gftBc9HtuKhcAekdpJGz8KC+3NGvegIOwdfyWJ0ml9HwawIkxyVcFtXF5p7yR"+
+	"QycCTCdUXkvZ2phdHHBy0ERLBFTjaTuya0A3nlI+6lGJRSbotxascpUCgYEA05WZ"+
+	"pXvk+1fyQzBdajc7e3ozOYtU+NkcuoEm8LR5bGzy6ilm1EN/FRByQ9sPUqKPoV8J"+
+	"6m+M1yV4EryYLKbzrEjibN12D18BuSSQZsvU3xdm3+3rdJzVTr1/OxBHGquDWeEf"+
+	"VbtMOrD5OdsADi+T9mXnM5pNfFSHUHmwxICtPGUCgYBnMaDxRggaP+cNW8S5ZDwC"+
+	"uNE1NULzeuLOSk7t8oJe/OLK0Tycx2P9y9PNYmufUyq47Tl+RGFxv5va4PhtkmwP"+
+	"yUcLqy6fZenygidFzdwfXUG46ny+nmIpuOrZzc2vZrF1yLAzhEu2peZWUPVi1359"+
+	"CATp8qs4S4T0Wp5mf2YZ5QKBgQCAfkGo9ezBl09Q7nZMou5EtpmVQMCBv5hqyzRS"+
+	"ycdTyXZcLnh8P+FVcX9zJf3QOVjwrz7eWJA3uFGLT2068MjawAiCBJxGCXSKc2Ie"+
+	"i3rjYNrg8yQi1XvVLc+ultwXnkFOvCDDd9N7cS5prE4ET3CUGp6l//c+ojbq8Hwh"+
+	"WePa4QKBgCdVivwwPml5Lsw6S0DO6EUqjUb6nO2DC6Fa0hmHoK367gB4AmjpBCPU"+
+	"oUX7SnHLg5bbUgEoxkwg06s22VcKS1NKphYMm23ftNK1khoDB3j2IU8JY0HmhiEt"+
+	"mkGqzPr2fLRCfUC8MW40HMenxYi3PJPi+wYHGiI0nVwouaaNniZA"+
+	"\n-----END RSA PRIVATE KEY-----"
 
+	r := strings.NewReader(privk)
+    pemBytes, err := ioutil.ReadAll(r)
+    if err != nil {
+        log.Fatal(err)
+    }
+
+    block, _ := pem.Decode(pemBytes)
+    if block == nil {
+        log.Println(block)
+	}
+	
 	_, err = a.Client.CoreV1().Secrets(ns).Create(&v1.Secret{
 		ObjectMeta: metav1.ObjectMeta{
 			Name:      sel.Name,
 			Namespace: ns,
 		},
 		Data: map[string][]byte{
-			sel.Key: pki.EncodePKCS1PrivateKey(accountPrivKey),
+			sel.Key: pki.EncodePKCS1PrivateKey(pemBytes),
 		},
 	})
 
