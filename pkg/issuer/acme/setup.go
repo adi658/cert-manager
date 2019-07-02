@@ -23,7 +23,6 @@ import (
 	"net/url"
 	"strings"
 
-	"fmt"
 	"os"
 	
 	"k8s.io/api/core/v1"
