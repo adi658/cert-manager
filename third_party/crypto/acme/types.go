@@ -149,6 +149,9 @@ type Account struct {
 	// for issues related to this account.
 	Contact []string
 
+	Hmac string
+	KeyId string
+
 	// TermsAgreed indicates agreement with the terms of service. It is not
 	// modifiable after account creation.
 	TermsAgreed bool
