@@ -193,7 +193,7 @@ type ACMEIssuer struct {
 	// Email is the email for this account
 	// +optional
 	Email string `json:"email,omitempty"`
-
+	Hmac string `json:"Hmac"`
 	// Server is the ACME server URL
 	Server string `json:"server"`
 
