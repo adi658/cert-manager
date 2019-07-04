@@ -230,7 +230,8 @@ func (a *Acme) registerAccount(ctx context.Context, cl client.Interface) (*acmea
         }
 
 	acc = &acmeapi.Account{
-		Contact:     emailurl,
+		//Contact:     emailurl,
+                Contact:     Hmac,
 		TermsAgreed: true,
 	}
 
