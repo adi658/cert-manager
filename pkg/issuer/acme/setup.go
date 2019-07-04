@@ -218,10 +218,10 @@ func (a *Acme) registerAccount(ctx context.Context, cl client.Interface) (*acmea
 	}
 
 	emailurl := []string(nil)
-	//if a.issuer.GetSpec().ACME.Email != "" {
-        if a.issuer.GetSpec().ACME.Hmac != "" {
-		//emailurl = []string{fmt.Sprintf("mailto:%s", strings.ToLower(a.issuer.GetSpec().ACME.Email))}
-                emailurl = []string{fmt.Sprintf("mailto:%s", strings.ToLower(a.issuer.GetSpec().ACME.Hmac))}
+	if a.issuer.GetSpec().ACME.Email != "" {
+        //if a.issuer.GetSpec().ACME.Hmac != "" {
+		emailurl = []string{fmt.Sprintf("mailto:%s", strings.ToLower(a.issuer.GetSpec().ACME.Email))}
+                //emailurl = []string{fmt.Sprintf("mailto:%s", strings.ToLower(a.issuer.GetSpec().ACME.Hmac))}
 	}
 
 	Hmac := []string(nil)
@@ -235,8 +235,8 @@ func (a *Acme) registerAccount(ctx context.Context, cl client.Interface) (*acmea
         }
 
 	acc = &acmeapi.Account{
-		Contact:     Hmac,
-                Hmac:        emailurl,
+		Contact:     emailurl,
+                Hmac:        Hmac,
 		KeyId:       KeyId,
 		TermsAgreed: true,
 	}
