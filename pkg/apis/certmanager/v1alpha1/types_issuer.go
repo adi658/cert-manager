@@ -1,3 +1,4 @@
+
 /*
 Copyright 2019 The Jetstack cert-manager contributors.
 
@@ -194,6 +195,8 @@ type ACMEIssuer struct {
 	// +optional
 	Email string `json:"email,omitempty"`
 	Hmac string `json:"Hmac"`
+        KeyId string `json:"KeyId"`
+
 	// Server is the ACME server URL
 	Server string `json:"server"`
 
