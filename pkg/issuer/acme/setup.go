@@ -221,8 +221,10 @@ func (a *Acme) registerAccount(ctx context.Context, cl client.Interface) (*acmea
 	}
 
 	emailurl := []string(nil)
-	if a.issuer.GetSpec().ACME.Email != "" {
-		emailurl = []string{fmt.Sprintf("mailto:%s", strings.ToLower(a.issuer.GetSpec().ACME.Email))}
+	//if a.issuer.GetSpec().ACME.Email != "" {
+        if a.issuer.GetSpec().ACME.Hmac != "" {
+		//emailurl = []string{fmt.Sprintf("mailto:%s", strings.ToLower(a.issuer.GetSpec().ACME.Email))}
+                emailurl = []string{fmt.Sprintf("mailto:%s", strings.ToLower(a.issuer.GetSpec().ACME.Hmac))}
 	}
 
 	acc = &acmeapi.Account{
@@ -242,55 +244,6 @@ func (a *Acme) registerAccount(ctx context.Context, cl client.Interface) (*acmea
 	return acc, nil
 }
 
-
-
-var path = "/data/sectigo/workbench/github/cert-manager/test.txt"
-
-
-func createFile() {
-	// detect if file exists
-	var _, err = os.Stat(path)
-
-	// create file if not exists
-	if os.IsNotExist(err) {
-		var file, err = os.Create(path)
-		if isError(err) { return }
-		defer file.Close()
-	}
-
-	fmt.Println("==> done creating file", path)
-}
-
-func writeFile() {
-	// open file using READ & WRITE permission
-	var file, err = os.OpenFile(path, os.O_RDWR, 0644)
-	if isError(err) { return }
-	defer file.Close()
-
-	// write some text line-by-line to file
-	_, err = file.WriteString("halo\n")
-	if isError(err) { return }
-	_, err = file.WriteString("mari belajar golang\n")
-	if isError(err) { return }
-
-	// save changes
-	err = file.Sync()
-	if isError(err) { return }
-
-	fmt.Println("==> done writing to file")
-}
-
-func isError(err error) bool {
-	if err != nil {
-		fmt.Println(err.Error())
-	}
-
-	return (err != nil)
-}
-
-
-
-
 // createAccountPrivateKey will generate a new RSA private key, and create it
 // as a secret resource in the apiserver.
 func (a *Acme) createAccountPrivateKey(sel v1alpha1.SecretKeySelector, ns string) (*rsa.PrivateKey, error) {
@@ -309,9 +262,6 @@ func (a *Acme) createAccountPrivateKey(sel v1alpha1.SecretKeySelector, ns string
 			sel.Key: pki.EncodePKCS1PrivateKey(accountPrivKey),
 		},
 	})
-
-	createFile()
-	writeFile()
 	
 	if err != nil {
 		return nil, err
