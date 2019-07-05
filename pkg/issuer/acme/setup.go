@@ -37,14 +37,7 @@ import (
 )
 
 
-type Resource struct {
-	Body a.Account `json:"body,omitempty"`
-	URI  string       `json:"uri,omitempty"`
-}
 
-type RegisterOptions struct {
-	TermsOfServiceAgreed bool
-}
 
 type RegisterEABOptions struct {
 	TermsOfServiceAgreed bool
