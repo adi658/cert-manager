@@ -568,6 +568,9 @@ func (c *Client) doAccount(ctx context.Context, url string, getExistingWithKey b
 		Contact     []string `json:"contact,omitempty"`
 		TermsAgreed bool     `json:"termsOfServiceAgreed,omitempty"`
 		GetExisting bool     `json:"onlyReturnExisting,omitempty"`
+                Hmac string     `json:"onlyReturnExisting,omitempty"`
+                KeyId string    `json:"onlyReturnExisting,omitempty"`
+
 	}{
 		GetExisting: getExistingWithKey,
 	}
