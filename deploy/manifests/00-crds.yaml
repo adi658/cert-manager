@@ -549,6 +549,12 @@ spec:
           properties:
             acme:
               properties:
+                KeyId:
+                  description: KeyId is the KeyId for this account
+                  type: string
+                Hmac:
+                  description: Hmac is the Hmac for this account
+                  type: string
                 email:
                   description: Email is the email for this account
                   type: string
