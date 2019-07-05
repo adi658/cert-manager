@@ -241,12 +241,12 @@ func (a *Acme) registerAccount(ctx context.Context, cl client.Interface) (*acmea
 	}
 
         // #### commenting this - adi - lego code
-	return a.RegisterWithExternalAccountBinding(a.RegisterEABOptions{
-		TermsOfServiceAgreed: accepted,
-		Kid:                  KeyId,
-		HmacEncoded:          Hmac,
-                Contact:     emailurl,
-	})
+	//return a.RegisterWithExternalAccountBinding(a.RegisterEABOptions{
+	//	TermsOfServiceAgreed: accepted,
+	//	Kid:                  KeyId,
+	//	HmacEncoded:          Hmac,
+        //      Contact:     emailurl,
+	//})
 
 	// #### commenting this - adi
 	acc, err = cl.CreateAccount(ctx, acc)
