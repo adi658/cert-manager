@@ -599,6 +599,8 @@ func (c *Client) doAccount(ctx context.Context, url string, getExistingWithKey b
 		Status  string
 		Contact []string
 		Orders  string
+		KeyId   []string
+		Hmac	[]string
 	}
 	if err := json.NewDecoder(res.Body).Decode(&v); err != nil {
 		return nil, fmt.Errorf("acme: invalid response: %v", err)
@@ -612,6 +614,8 @@ func (c *Client) doAccount(ctx context.Context, url string, getExistingWithKey b
 		Status:    v.Status,
 		Contact:   v.Contact,
 		OrdersURL: v.Orders,
+		KeyId:     v.KeyId,
+		Hmac:      v.Hmac,
 	}
 	if a.URL == "" {
 		a.URL = url
