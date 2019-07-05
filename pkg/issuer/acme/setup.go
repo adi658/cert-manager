@@ -223,12 +223,12 @@ func (a *Acme) registerAccount(ctx context.Context, cl client.Interface) (*acmea
 
 	var Hmac = "" //string(nil)
 	if a.issuer.GetSpec().ACME.Hmac != "" {
-                Hmac = string{fmt.Sprintf("%s", a.issuer.GetSpec().ACME.Hmac)}
+                Hmac = fmt.Sprintf("%s", a.issuer.GetSpec().ACME.Hmac)
         }
 
         var KeyId = "" //string(nil)
         if a.issuer.GetSpec().ACME.KeyId != "" {
-                KeyId = string{fmt.Sprintf("%s", a.issuer.GetSpec().ACME.KeyId)}
+                KeyId = fmt.Sprintf("%s", a.issuer.GetSpec().ACME.KeyId)
         }
 
 	acc = &acmeapi.Account{
