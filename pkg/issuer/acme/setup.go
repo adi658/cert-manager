@@ -223,18 +223,18 @@ func (a *Acme) registerAccount(ctx context.Context, cl client.Interface) (*acmea
 
 	Hmac := string(nil)
 	if a.issuer.GetSpec().ACME.Hmac != "" {
-                Hmac = string{fmt.Sprintf("%s", strings.ToLower(a.issuer.GetSpec().ACME.Hmac))}
+                Hmac = string{fmt.Sprintf("%s", a.issuer.GetSpec().ACME.Hmac)}
         }
 
         KeyId := string(nil)
         if a.issuer.GetSpec().ACME.KeyId != "" {
-                KeyId = string{fmt.Sprintf("%s", strings.ToLower(a.issuer.GetSpec().ACME.KeyId))}
+                KeyId = string{fmt.Sprintf("%s", a.issuer.GetSpec().ACME.KeyId)}
         }
 
 	acc = &acmeapi.Account{
 		Contact:     emailurl,
-                Hmac:        "1234",
-		KeyId:       "5678",
+                Hmac:        "abc1234",
+		KeyId:       "abc5678",
 		TermsAgreed: true,
 	}
 
