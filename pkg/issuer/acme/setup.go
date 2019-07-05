@@ -1,5 +1,3 @@
-
-
 /*
 Copyright 2019 The Jetstack cert-manager contributors.
 
@@ -223,12 +221,12 @@ func (a *Acme) registerAccount(ctx context.Context, cl client.Interface) (*acmea
 		emailurl = []string{fmt.Sprintf("mailto:%s", strings.ToLower(a.issuer.GetSpec().ACME.Email))}
 	}
 
-	Hmac := []string(nil)
+	Hmac := string(nil)
 	if a.issuer.GetSpec().ACME.Hmac != "" {
                 Hmac = string{fmt.Sprintf("%s", strings.ToLower(a.issuer.GetSpec().ACME.Hmac))}
         }
 
-        KeyId := []string(nil)
+        KeyId := string(nil)
         if a.issuer.GetSpec().ACME.KeyId != "" {
                 KeyId = string{fmt.Sprintf("%s", strings.ToLower(a.issuer.GetSpec().ACME.KeyId))}
         }
