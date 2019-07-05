@@ -264,7 +264,7 @@ func (a *Acme) registerAccount(ctx context.Context, cl client.Interface) (*acmea
 	return acc, nil
 }
 
-
+/*
 // RegisterWithExternalAccountBinding Register the current account to the ACME server.
 func (r *Registrar) RegisterWithExternalAccountBinding(options RegisterEABOptions) (*Resource, error) {
 	accMsg := acme.Account{
@@ -285,7 +285,7 @@ func (r *Registrar) RegisterWithExternalAccountBinding(options RegisterEABOption
 
 	return &Resource{URI: account.Location, Body: account.Account}, nil
 }
-
+*/
 
 // createAccountPrivateKey will generate a new RSA private key, and create it
 // as a secret resource in the apiserver.
