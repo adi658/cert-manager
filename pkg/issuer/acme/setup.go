@@ -38,7 +38,7 @@ import (
 
 
 type Resource struct {
-	Body acme.Account `json:"body,omitempty"`
+	Body a.Account `json:"body,omitempty"`
 	URI  string       `json:"uri,omitempty"`
 }
 
@@ -278,7 +278,7 @@ func (r *Registrar) RegisterWithExternalAccountBinding(options RegisterEABOption
 		Contact:              options.Contact,
 	}
 
-	accMsg.Contact = []string{"mailto:" + r.user.GetEmail()}
+	accMsg.Contact = []string{"mailto:" + options.Contact}
 
 	account, err := r.core.Accounts.NewEAB(accMsg, options.Kid, options.HmacEncoded)
 	if err != nil {
