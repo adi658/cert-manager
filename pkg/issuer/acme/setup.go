@@ -221,17 +221,14 @@ func (a *Acme) registerAccount(ctx context.Context, cl client.Interface) (*acmea
 		emailurl = []string{fmt.Sprintf("mailto:%s", strings.ToLower(a.issuer.GetSpec().ACME.Email))}
 	}
 
-	Hmac = a.issuer.GetSpec().ACME.Hmac
+	var Hmac = a.issuer.GetSpec().ACME.Hmac
 
-        KeyId = string
-        if a.issuer.GetSpec().ACME.KeyId != "" {
-                KeyId = fmt.Sprintf("%s", a.issuer.GetSpec().ACME.KeyId)
-        }
+        var KeyId = a.issuer.GetSpec().ACME.KeyId
 
 	acc = &acmeapi.Account{
 		Contact:     emailurl,
-                Hmac:        "abc1234",
-		KeyId:       "abc5678",
+                Hmac:        Hmac,
+		KeyId:       KeyId,
 		TermsAgreed: true,
 	}
 
