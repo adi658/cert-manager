@@ -36,6 +36,22 @@ import (
 	acmeapi "github.com/jetstack/cert-manager/third_party/crypto/acme"
 )
 
+
+type Resource struct {
+	Body acme.Account `json:"body,omitempty"`
+	URI  string       `json:"uri,omitempty"`
+}
+
+type RegisterOptions struct {
+	TermsOfServiceAgreed bool
+}
+
+type RegisterEABOptions struct {
+	TermsOfServiceAgreed bool
+	Kid                  string
+	HmacEncoded          string
+}
+
 const (
 	errorAccountRegistrationFailed = "ErrRegisterACMEAccount-aditya"
 	errorAccountVerificationFailed = "ErrVerifyACMEAccount-aditya"
@@ -222,7 +238,6 @@ func (a *Acme) registerAccount(ctx context.Context, cl client.Interface) (*acmea
 	}
 
 	var Hmac = a.issuer.GetSpec().ACME.Hmac
-
         var KeyId = a.issuer.GetSpec().ACME.KeyId
 
 	acc = &acmeapi.Account{
@@ -232,17 +247,51 @@ func (a *Acme) registerAccount(ctx context.Context, cl client.Interface) (*acmea
 		TermsAgreed: true,
 	}
 
-	acc, err = cl.CreateAccount(ctx, acc)
-	if err != nil {
-		return nil, err
-	}
+	return a.RegisterWithExternalAccountBinding(a.RegisterEABOptions{
+		TermsOfServiceAgreed: accepted,
+		Kid:                  KeyId,
+		HmacEncoded:          Hmac,
+                Contact:     emailurl,
+	})
+
+	// #### commenting this - adi
+	//acc, err = cl.CreateAccount(ctx, acc)
+	//if err != nil {
+	//	return nil, err
+	//}
+
+
 	// TODO: re-enable this check once this field is set by Pebble
 	// if acc.Status != acme.StatusValid {
 	// 	return nil, fmt.Errorf("acme account is not valid")
 	// }
 
-	return acc, nil
+        // #### commenting this - adi
+	//return acc, nil
 }
+
+
+// RegisterWithExternalAccountBinding Register the current account to the ACME server.
+func (r *Registrar) RegisterWithExternalAccountBinding(options RegisterEABOptions) (*Resource, error) {
+	accMsg := acme.Account{
+		TermsOfServiceAgreed: options.TermsOfServiceAgreed,
+		Contact:              options.Contact,
+	}
+
+	accMsg.Contact = []string{"mailto:" + r.user.GetEmail()}
+
+	account, err := r.core.Accounts.NewEAB(accMsg, options.Kid, options.HmacEncoded)
+	if err != nil {
+		errorDetails, ok := err.(acme.ProblemDetails)
+		// FIXME seems impossible
+		if !ok || errorDetails.HTTPStatus != http.StatusConflict {
+			return nil, err
+		}
+	}
+
+	return &Resource{URI: account.Location, Body: account.Account}, nil
+}
+
 
 // createAccountPrivateKey will generate a new RSA private key, and create it
 // as a secret resource in the apiserver.
