@@ -240,6 +240,7 @@ func (a *Acme) registerAccount(ctx context.Context, cl client.Interface) (*acmea
 		TermsAgreed: true,
 	}
 
+        // #### commenting this - adi - lego code
 	return a.RegisterWithExternalAccountBinding(a.RegisterEABOptions{
 		TermsOfServiceAgreed: accepted,
 		Kid:                  KeyId,
@@ -248,10 +249,10 @@ func (a *Acme) registerAccount(ctx context.Context, cl client.Interface) (*acmea
 	})
 
 	// #### commenting this - adi
-	//acc, err = cl.CreateAccount(ctx, acc)
-	//if err != nil {
-	//	return nil, err
-	//}
+	acc, err = cl.CreateAccount(ctx, acc)
+	if err != nil {
+		return nil, err
+	}
 
 
 	// TODO: re-enable this check once this field is set by Pebble
@@ -260,7 +261,7 @@ func (a *Acme) registerAccount(ctx context.Context, cl client.Interface) (*acmea
 	// }
 
         // #### commenting this - adi
-	//return acc, nil
+	return acc, nil
 }
 
 
