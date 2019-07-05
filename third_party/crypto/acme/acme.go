@@ -1,3 +1,4 @@
+
 // Copyright 2015 The Go Authors. All rights reserved.
 // Use of this source code is governed by a BSD-style
 // license that can be found in the LICENSE file.
@@ -599,8 +600,8 @@ func (c *Client) doAccount(ctx context.Context, url string, getExistingWithKey b
 		Status  string
 		Contact []string
 		Orders  string
-		KeyId   []string
-		Hmac	[]string
+		KeyId   string
+		Hmac	string
 	}
 	if err := json.NewDecoder(res.Body).Decode(&v); err != nil {
 		return nil, fmt.Errorf("acme: invalid response: %v", err)
