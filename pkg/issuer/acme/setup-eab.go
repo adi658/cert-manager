@@ -7,7 +7,7 @@ import (
 	jose "gopkg.in/square/go-jose.v2"
 )
 
-//import "github.com/go-acme/lego/acme/api/internal/nonces"
+import "github.com/go-acme/lego/acme/api/internal/nonces"
 
 
 type JWS struct {
