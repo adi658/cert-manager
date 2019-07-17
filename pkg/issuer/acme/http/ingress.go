@@ -28,10 +28,10 @@ import (
 	utilerrors "k8s.io/apimachinery/pkg/util/errors"
 	"k8s.io/apimachinery/pkg/util/intstr"
 
-	"github.com/jetstack/cert-manager/pkg/apis/certmanager/v1alpha1"
-	"github.com/jetstack/cert-manager/pkg/issuer/acme/http/solver"
-	logf "github.com/jetstack/cert-manager/pkg/logs"
-	"github.com/jetstack/cert-manager/pkg/util"
+	"github.com/adi658/cert-manager/pkg/apis/certmanager/v1alpha1"
+	"github.com/adi658/cert-manager/pkg/issuer/acme/http/solver"
+	logf "github.com/adi658/cert-manager/pkg/logs"
+	"github.com/adi658/cert-manager/pkg/util"
 )
 
 // getIngressesForChallenge returns a list of Ingresses that were created to solve

@@ -30,8 +30,8 @@ import (
 
 	"k8s.io/klog"
 
-	"github.com/jetstack/cert-manager/pkg/issuer/acme/dns/util"
-	pkgutil "github.com/jetstack/cert-manager/pkg/util"
+	"github.com/adi658/cert-manager/pkg/issuer/acme/dns/util"
+	pkgutil "github.com/adi658/cert-manager/pkg/util"
 	"github.com/pkg/errors"
 )
 

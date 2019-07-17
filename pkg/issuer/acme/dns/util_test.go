@@ -20,18 +20,18 @@ import (
 	"errors"
 	"testing"
 
-	"github.com/jetstack/cert-manager/pkg/issuer/acme/dns/digitalocean"
+	"github.com/adi658/cert-manager/pkg/issuer/acme/dns/digitalocean"
 
-	"github.com/jetstack/cert-manager/test/util/generate"
+	"github.com/adi658/cert-manager/test/util/generate"
 
-	"github.com/jetstack/cert-manager/pkg/apis/certmanager/v1alpha1"
-	"github.com/jetstack/cert-manager/pkg/controller/test"
-	"github.com/jetstack/cert-manager/pkg/issuer/acme/dns/acmedns"
-	"github.com/jetstack/cert-manager/pkg/issuer/acme/dns/azuredns"
-	"github.com/jetstack/cert-manager/pkg/issuer/acme/dns/clouddns"
-	"github.com/jetstack/cert-manager/pkg/issuer/acme/dns/cloudflare"
-	"github.com/jetstack/cert-manager/pkg/issuer/acme/dns/route53"
-	"github.com/jetstack/cert-manager/pkg/issuer/acme/dns/util"
+	"github.com/adi658/cert-manager/pkg/apis/certmanager/v1alpha1"
+	"github.com/adi658/cert-manager/pkg/controller/test"
+	"github.com/adi658/cert-manager/pkg/issuer/acme/dns/acmedns"
+	"github.com/adi658/cert-manager/pkg/issuer/acme/dns/azuredns"
+	"github.com/adi658/cert-manager/pkg/issuer/acme/dns/clouddns"
+	"github.com/adi658/cert-manager/pkg/issuer/acme/dns/cloudflare"
+	"github.com/adi658/cert-manager/pkg/issuer/acme/dns/route53"
+	"github.com/adi658/cert-manager/pkg/issuer/acme/dns/util"
 )
 
 const (

@@ -27,8 +27,8 @@ import (
 	utilerrors "k8s.io/apimachinery/pkg/util/errors"
 	"k8s.io/apimachinery/pkg/util/intstr"
 
-	"github.com/jetstack/cert-manager/pkg/apis/certmanager/v1alpha1"
-	logf "github.com/jetstack/cert-manager/pkg/logs"
+	"github.com/adi658/cert-manager/pkg/apis/certmanager/v1alpha1"
+	logf "github.com/adi658/cert-manager/pkg/logs"
 )
 
 func (s *Solver) ensureService(ctx context.Context, issuer v1alpha1.GenericIssuer, ch *v1alpha1.Challenge) (*corev1.Service, error) {

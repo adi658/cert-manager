@@ -19,10 +19,10 @@ package rfc2136
 import (
 	"testing"
 
-	cmapi "github.com/jetstack/cert-manager/pkg/apis/certmanager/v1alpha1"
-	logf "github.com/jetstack/cert-manager/pkg/logs"
-	"github.com/jetstack/cert-manager/test/acme/dns"
-	testserver "github.com/jetstack/cert-manager/test/acme/dns/server"
+	cmapi "github.com/adi658/cert-manager/pkg/apis/certmanager/v1alpha1"
+	logf "github.com/adi658/cert-manager/pkg/logs"
+	"github.com/adi658/cert-manager/test/acme/dns"
+	testserver "github.com/adi658/cert-manager/test/acme/dns/server"
 )
 
 func TestRunSuiteWithTSIG(t *testing.T) {

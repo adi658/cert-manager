@@ -26,14 +26,14 @@ import (
 	apierrors "k8s.io/apimachinery/pkg/api/errors"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 
-	"github.com/jetstack/cert-manager/pkg/acme"
-	"github.com/jetstack/cert-manager/pkg/acme/client"
-	apiutil "github.com/jetstack/cert-manager/pkg/api/util"
-	"github.com/jetstack/cert-manager/pkg/apis/certmanager/v1alpha1"
-	logf "github.com/jetstack/cert-manager/pkg/logs"
-	"github.com/jetstack/cert-manager/pkg/util/errors"
-	"github.com/jetstack/cert-manager/pkg/util/pki"
-	acmeapi "github.com/jetstack/cert-manager/third_party/crypto/acme"
+	"github.com/adi658/cert-manager/pkg/acme"
+	"github.com/adi658/cert-manager/pkg/acme/client"
+	apiutil "github.com/adi658/cert-manager/pkg/api/util"
+	"github.com/adi658/cert-manager/pkg/apis/certmanager/v1alpha1"
+	logf "github.com/adi658/cert-manager/pkg/logs"
+	"github.com/adi658/cert-manager/pkg/util/errors"
+	"github.com/adi658/cert-manager/pkg/util/pki"
+	acmeapi "github.com/adi658/cert-manager/third_party/crypto/acme"
 )
 
 
