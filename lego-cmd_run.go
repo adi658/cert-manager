@@ -9,11 +9,11 @@ import (
 	"github.com/go-acme/lego/acme"
 	jose "gopkg.in/square/go-jose.v2"
 	//"github.com/go-acme/lego/acme/api/internal/nonces"
-	"github.com/adi658/cert-manager/pkg/issuer/acme/nonces"
+	"github.com/adi658/cert-manager/internal/nonces"
 
 	//"github.com/cenkalti/backoff"
-	"github.com/adi658/cert-manager/pkg/issuer/acme/internal/secure"
-	"github.com/adi658/cert-manager/pkg/issuer/acme/internal/sender"
+	"github.com/adi658/cert-manager/internal/secure"
+	"github.com/adi658/cert-manager/internal/sender"
 	//"github.com/go-acme/lego/log"
 )
 
