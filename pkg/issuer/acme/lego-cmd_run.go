@@ -8,6 +8,7 @@ import (
 	"github.com/go-acme/lego/acme"
 	jose "gopkg.in/square/go-jose.v2"
 	//"github.com/go-acme/lego/acme/api/internal/nonces"
+	"github.com/adi658/cert-manager/pkg/issuer/acme/nonces"
 )
 
 type Resource struct {

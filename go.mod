@@ -30,6 +30,7 @@ require (
 	github.com/emicklei/go-restful v2.9.3+incompatible // indirect
 	github.com/fatih/structs v1.1.0 // indirect
 	github.com/ghodss/yaml v1.0.0 // indirect
+	github.com/go-acme/lego v2.6.0+incompatible // indirect
 	github.com/go-ini/ini v1.42.0 // indirect
 	github.com/go-logr/logr v0.1.0
 	github.com/go-logr/zapr v0.1.1 // indirect
@@ -91,6 +92,7 @@ require (
 	github.com/spf13/pflag v1.0.1
 	github.com/stretchr/testify v1.3.0
 	github.com/tent/http-link-go v0.0.0-20130702225549-ac974c61c2f9 // indirect
+	github.com/urfave/cli v1.20.0 // indirect
 	go.uber.org/zap v1.9.1 // indirect
 	golang.org/x/crypto v0.0.0-20190426145343-a29dc8fdc734
 	golang.org/x/net v0.0.0-20190502183928-7f726cade0ab
