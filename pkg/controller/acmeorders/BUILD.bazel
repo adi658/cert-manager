@@ -7,7 +7,7 @@ go_library(
         "controller.go",
         "sync.go",
     ],
-    importpath = "github.com/jetstack/cert-manager/pkg/controller/acmeorders",
+    importpath = "github.com/adi658/cert-manager/pkg/controller/acmeorders",
     visibility = ["//visibility:public"],
     deps = [
         "//pkg/acme:go_default_library",

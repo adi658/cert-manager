@@ -6,7 +6,7 @@ go_library(
         "doc.go",
         "leader_election.go",
     ],
-    importmap = "github.com/jetstack/cert-manager/vendor/sigs.k8s.io/controller-runtime/pkg/leaderelection",
+    importmap = "github.com/adi658/cert-manager/vendor/sigs.k8s.io/controller-runtime/pkg/leaderelection",
     importpath = "sigs.k8s.io/controller-runtime/pkg/leaderelection",
     tags = ["manual"],
     visibility = ["//visibility:public"],

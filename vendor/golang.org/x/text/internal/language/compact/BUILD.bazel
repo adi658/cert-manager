@@ -9,7 +9,7 @@ go_library(
         "tables.go",
         "tags.go",
     ],
-    importmap = "github.com/jetstack/cert-manager/vendor/golang.org/x/text/internal/language/compact",
+    importmap = "github.com/adi658/cert-manager/vendor/golang.org/x/text/internal/language/compact",
     importpath = "golang.org/x/text/internal/language/compact",
     tags = ["manual"],
     visibility = ["//vendor/golang.org/x/text:__subpackages__"],

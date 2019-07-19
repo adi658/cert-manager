@@ -9,7 +9,7 @@ go_library(
         "etcd.go",
         "process.go",
     ],
-    importmap = "github.com/jetstack/cert-manager/vendor/sigs.k8s.io/testing_frameworks/integration/internal",
+    importmap = "github.com/adi658/cert-manager/vendor/sigs.k8s.io/testing_frameworks/integration/internal",
     importpath = "sigs.k8s.io/testing_frameworks/integration/internal",
     tags = ["manual"],
     visibility = ["//visibility:public"],

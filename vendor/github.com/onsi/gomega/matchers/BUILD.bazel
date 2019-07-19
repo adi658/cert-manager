@@ -45,7 +45,7 @@ go_library(
         "type_support.go",
         "with_transform.go",
     ],
-    importmap = "github.com/jetstack/cert-manager/vendor/github.com/onsi/gomega/matchers",
+    importmap = "github.com/adi658/cert-manager/vendor/github.com/onsi/gomega/matchers",
     importpath = "github.com/onsi/gomega/matchers",
     tags = ["manual"],
     visibility = ["//visibility:public"],

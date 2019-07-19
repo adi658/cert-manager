@@ -6,7 +6,7 @@ go_library(
         "gzip.go",
         "gzip_go18.go",
     ],
-    importmap = "github.com/jetstack/cert-manager/vendor/github.com/NYTimes/gziphandler",
+    importmap = "github.com/adi658/cert-manager/vendor/github.com/NYTimes/gziphandler",
     importpath = "github.com/NYTimes/gziphandler",
     tags = ["manual"],
     visibility = ["//visibility:public"],

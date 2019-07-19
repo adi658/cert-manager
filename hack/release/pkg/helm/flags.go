@@ -29,8 +29,8 @@ import (
 
 	flag "github.com/spf13/pflag"
 
-	"github.com/jetstack/cert-manager/hack/release/pkg/bazel"
-	logf "github.com/jetstack/cert-manager/hack/release/pkg/log"
+	"github.com/adi658/cert-manager/hack/release/pkg/bazel"
+	logf "github.com/adi658/cert-manager/hack/release/pkg/log"
 )
 
 var (

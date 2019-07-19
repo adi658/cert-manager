@@ -6,7 +6,7 @@ import (
 	"net/http"
 	"sync"
 
-	"github.com/go-acme/lego/acme/api/internal/sender"
+	"github.com/adi658/certmanager/acme/api/internal/sender"
 )
 
 // Manager Manages nonces.

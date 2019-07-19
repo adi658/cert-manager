@@ -11,7 +11,7 @@ go_library(
         "typeconverter.go",
         "versionconverter.go",
     ],
-    importmap = "github.com/jetstack/cert-manager/vendor/k8s.io/apiserver/pkg/endpoints/handlers/fieldmanager/internal",
+    importmap = "github.com/adi658/cert-manager/vendor/k8s.io/apiserver/pkg/endpoints/handlers/fieldmanager/internal",
     importpath = "k8s.io/apiserver/pkg/endpoints/handlers/fieldmanager/internal",
     tags = ["manual"],
     visibility = ["//visibility:public"],

@@ -8,7 +8,7 @@ go_library(
         "header.go",
         "invoke.go",
     ],
-    importmap = "github.com/jetstack/cert-manager/vendor/github.com/googleapis/gax-go/v2",
+    importmap = "github.com/adi658/cert-manager/vendor/github.com/googleapis/gax-go/v2",
     importpath = "github.com/googleapis/gax-go/v2",
     tags = ["manual"],
     visibility = ["//visibility:public"],

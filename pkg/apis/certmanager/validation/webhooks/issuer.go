@@ -25,8 +25,8 @@ import (
 	"k8s.io/apimachinery/pkg/runtime/schema"
 	restclient "k8s.io/client-go/rest"
 
-	"github.com/jetstack/cert-manager/pkg/apis/certmanager/v1alpha1"
-	"github.com/jetstack/cert-manager/pkg/apis/certmanager/validation"
+	"github.com/adi658/cert-manager/pkg/apis/certmanager/v1alpha1"
+	"github.com/adi658/cert-manager/pkg/apis/certmanager/validation"
 )
 
 type IssuerAdmissionHook struct {

@@ -11,7 +11,7 @@ go_library(
         "issuer.go",
         "order.go",
     ],
-    importpath = "github.com/jetstack/cert-manager/pkg/client/informers/externalversions/certmanager/v1alpha1",
+    importpath = "github.com/adi658/cert-manager/pkg/client/informers/externalversions/certmanager/v1alpha1",
     visibility = ["//visibility:public"],
     deps = [
         "//pkg/apis/certmanager/v1alpha1:go_default_library",

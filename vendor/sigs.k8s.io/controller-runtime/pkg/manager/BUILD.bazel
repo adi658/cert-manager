@@ -8,7 +8,7 @@ go_library(
         "manager.go",
         "testutil.go",
     ],
-    importmap = "github.com/jetstack/cert-manager/vendor/sigs.k8s.io/controller-runtime/pkg/manager",
+    importmap = "github.com/adi658/cert-manager/vendor/sigs.k8s.io/controller-runtime/pkg/manager",
     importpath = "sigs.k8s.io/controller-runtime/pkg/manager",
     tags = ["manual"],
     visibility = ["//visibility:public"],

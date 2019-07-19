@@ -11,7 +11,7 @@ multiarch_image(
 go_library(
     name = "go_default_library",
     srcs = ["main.go"],
-    importpath = "github.com/jetstack/cert-manager/cmd/acmesolver",
+    importpath = "github.com/adi658/cert-manager/cmd/acmesolver",
     visibility = ["//visibility:private"],
     deps = [
         "//pkg/issuer/acme/http/solver:go_default_library",

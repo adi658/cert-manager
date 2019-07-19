@@ -35,7 +35,7 @@ go_library(
         "wrappers.go",
         "wrappers_gogo.go",
     ],
-    importmap = "github.com/jetstack/cert-manager/vendor/github.com/gogo/protobuf/proto",
+    importmap = "github.com/adi658/cert-manager/vendor/github.com/gogo/protobuf/proto",
     importpath = "github.com/gogo/protobuf/proto",
     tags = ["manual"],
     visibility = ["//visibility:public"],

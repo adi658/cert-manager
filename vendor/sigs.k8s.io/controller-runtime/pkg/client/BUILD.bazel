@@ -12,7 +12,7 @@ go_library(
         "typed_client.go",
         "unstructured_client.go",
     ],
-    importmap = "github.com/jetstack/cert-manager/vendor/sigs.k8s.io/controller-runtime/pkg/client",
+    importmap = "github.com/adi658/cert-manager/vendor/sigs.k8s.io/controller-runtime/pkg/client",
     importpath = "sigs.k8s.io/controller-runtime/pkg/client",
     tags = ["manual"],
     visibility = ["//visibility:public"],

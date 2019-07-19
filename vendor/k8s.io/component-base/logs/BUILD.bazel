@@ -3,7 +3,7 @@ load("@io_bazel_rules_go//go:def.bzl", "go_library")
 go_library(
     name = "go_default_library",
     srcs = ["logs.go"],
-    importmap = "github.com/jetstack/cert-manager/vendor/k8s.io/component-base/logs",
+    importmap = "github.com/adi658/cert-manager/vendor/k8s.io/component-base/logs",
     importpath = "k8s.io/component-base/logs",
     tags = ["manual"],
     visibility = ["//visibility:public"],

@@ -7,7 +7,7 @@ go_library(
         "doc.go",
         "server.go",
     ],
-    importmap = "github.com/jetstack/cert-manager/vendor/sigs.k8s.io/controller-runtime/pkg/webhook",
+    importmap = "github.com/adi658/cert-manager/vendor/sigs.k8s.io/controller-runtime/pkg/webhook",
     importpath = "sigs.k8s.io/controller-runtime/pkg/webhook",
     tags = ["manual"],
     visibility = ["//visibility:public"],

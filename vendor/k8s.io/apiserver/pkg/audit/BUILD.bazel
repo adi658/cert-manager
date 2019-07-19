@@ -10,7 +10,7 @@ go_library(
         "types.go",
         "union.go",
     ],
-    importmap = "github.com/jetstack/cert-manager/vendor/k8s.io/apiserver/pkg/audit",
+    importmap = "github.com/adi658/cert-manager/vendor/k8s.io/apiserver/pkg/audit",
     importpath = "k8s.io/apiserver/pkg/audit",
     tags = ["manual"],
     visibility = ["//visibility:public"],

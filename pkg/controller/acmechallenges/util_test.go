@@ -22,9 +22,9 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/jetstack/cert-manager/pkg/acme/client"
-	"github.com/jetstack/cert-manager/pkg/apis/certmanager/v1alpha1"
-	"github.com/jetstack/cert-manager/pkg/controller/test"
+	"github.com/adi658/cert-manager/pkg/acme/client"
+	"github.com/adi658/cert-manager/pkg/apis/certmanager/v1alpha1"
+	"github.com/adi658/cert-manager/pkg/controller/test"
 )
 
 type controllerFixture struct {

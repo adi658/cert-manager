@@ -24,7 +24,7 @@ import (
 
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 
-	"github.com/jetstack/cert-manager/pkg/apis/certmanager/v1alpha1"
+	"github.com/adi658/cert-manager/pkg/apis/certmanager/v1alpha1"
 )
 
 func TestCalculateDurationUntilRenew(t *testing.T) {

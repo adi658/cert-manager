@@ -51,7 +51,7 @@ const (
 
 	// User-Agent, bump the version each time a change is made to the
 	// handling of API requests.
-	userAgent = "go-acme/2"
+	userAgent = "adi658/2"
 )
 
 // Client is an ACME client.

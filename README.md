@@ -1,10 +1,10 @@
 <p align="center"><img src="./logo/logo.png" width="250x" /></p>
-<p align="center"><a href="https://prow.build-infra.jetstack.net/?job=ci-cert-manager-bazel">
+<p align="center"><a href="https://prow.build-infra.adi658.net/?job=ci-cert-manager-bazel">
 <!-- prow build badge, godoc, and go report card-->
-<img alt="Build Status" src="https://prow.build-infra.jetstack.net/badge.svg?jobs=ci-cert-manager-bazel">
+<img alt="Build Status" src="https://prow.build-infra.adi658.net/badge.svg?jobs=ci-cert-manager-bazel">
 </a>
-<a href="https://godoc.org/github.com/jetstack/cert-manager"><img src="https://godoc.org/github.com/jetstack/cert-manager?status.svg"></a>
-<a href="https://goreportcard.com/report/github.com/jetstack/cert-manager"><img alt="Go Report Card" src="https://goreportcard.com/badge/github.com/jetstack/cert-manager" /></a></p>
+<a href="https://godoc.org/github.com/adi658/cert-manager"><img src="https://godoc.org/github.com/adi658/cert-manager?status.svg"></a>
+<a href="https://goreportcard.com/report/github.com/adi658/cert-manager"><img alt="Go Report Card" src="https://goreportcard.com/badge/github.com/adi658/cert-manager" /></a></p>
 
 # cert-manager
 
@@ -14,7 +14,7 @@ TLS certificates from various issuing sources.
 It will ensure certificates are valid and up to date periodically, and attempt
 to renew certificates at an appropriate time before expiry.
 
-It is loosely based upon the work of [kube-lego](https://github.com/jetstack/kube-lego)
+It is loosely based upon the work of [kube-certmanager](https://github.com/adi658/kube-certmanager)
 and has borrowed some wisdom from other similar projects e.g.
 [kube-cert-manager](https://github.com/PalmStoneGames/kube-cert-manager).
 
@@ -37,7 +37,7 @@ Please make sure to select the correct version of the documentation to view on
 the bottom left of the page.
 
 For the common use-case of automatically issuing TLS certificates to
-Ingress resources, aka a [kube-lego](https://github.com/jetstack/kube-lego)
+Ingress resources, aka a [kube-certmanager](https://github.com/adi658/kube-certmanager)
 replacement, see the [cert-manager nginx ingress quick start
 guide](docs/tutorials/acme/quick-start/index.rst).
 
@@ -55,7 +55,7 @@ on the [Kubernetes Slack](http://slack.kubernetes.io/).
 There are a lot of community members in this channel, and you can often get an answer
 to your question straight away!
 
-You can also try [searching for an existing issue](https://github.com/jetstack/cert-manager/issues).
+You can also try [searching for an existing issue](https://github.com/adi658/cert-manager/issues).
 Properly searching for an existing issue will help reduce the number of duplicates,
 and help you find the answer you are looking for quicker.
 
@@ -64,7 +64,7 @@ before opening an issue. You can also search the documentation using the search 
 top left of the page.
 
 If you believe you have encountered a bug, and cannot find an existing issue similar to your
-own, you may [open a new issue](https://github.com/jetstack/cert-manager/issues).
+own, you may [open a new issue](https://github.com/adi658/cert-manager/issues).
 Please be sure to include as much information as possible about your environment.
 
 ## Community
@@ -86,7 +86,7 @@ We welcome pull requests with open arms! There's a lot of work to do here, and
 we're especially concerned with ensuring the longevity and reliability of the
 project.
 
-Please take a look at our [issue tracker](https://github.com/jetstack/cert-manager/issues)
+Please take a look at our [issue tracker](https://github.com/adi658/cert-manager/issues)
 if you are unsure where to start with getting involved!
 
 We also use the #cert-manager channel on kubernetes.slack.com for chat relating to
@@ -96,7 +96,7 @@ Developer documentation is available in the [official documentation](https://doc
 
 ## Changelog
 
-The [list of releases](https://github.com/jetstack/cert-manager/releases)
+The [list of releases](https://github.com/adi658/cert-manager/releases)
 is the best place to look for information on changes between releases.
 
 <sub><sup>Logo design by [Zoe Paterson](https://zoepatersonmedia.com)</sup></sub>

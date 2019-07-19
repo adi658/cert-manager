@@ -6,7 +6,7 @@ go_library(
         "sdnotify.go",
         "watchdog.go",
     ],
-    importmap = "github.com/jetstack/cert-manager/vendor/github.com/coreos/go-systemd/daemon",
+    importmap = "github.com/adi658/cert-manager/vendor/github.com/coreos/go-systemd/daemon",
     importpath = "github.com/coreos/go-systemd/daemon",
     tags = ["manual"],
     visibility = ["//visibility:public"],

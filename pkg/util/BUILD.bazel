@@ -9,7 +9,7 @@ go_library(
         "util.go",
         "version.go",
     ],
-    importpath = "github.com/jetstack/cert-manager/pkg/util",
+    importpath = "github.com/adi658/cert-manager/pkg/util",
     visibility = ["//visibility:public"],
     x_defs = {
         "AppVersion": "{STABLE_APP_VERSION}",

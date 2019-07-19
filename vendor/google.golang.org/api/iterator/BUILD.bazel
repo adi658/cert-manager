@@ -3,7 +3,7 @@ load("@io_bazel_rules_go//go:def.bzl", "go_library")
 go_library(
     name = "go_default_library",
     srcs = ["iterator.go"],
-    importmap = "github.com/jetstack/cert-manager/vendor/google.golang.org/api/iterator",
+    importmap = "github.com/adi658/cert-manager/vendor/google.golang.org/api/iterator",
     importpath = "google.golang.org/api/iterator",
     tags = ["manual"],
     visibility = ["//visibility:public"],

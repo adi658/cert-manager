@@ -28,7 +28,7 @@ import (
 	"net"
 	"time"
 
-	"github.com/jetstack/cert-manager/pkg/apis/certmanager/v1alpha1"
+	"github.com/adi658/cert-manager/pkg/apis/certmanager/v1alpha1"
 )
 
 // CommonNameForCertificate returns the common name that should be used for the

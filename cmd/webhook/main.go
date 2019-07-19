@@ -24,7 +24,7 @@ import (
 	"github.com/openshift/generic-admission-server/pkg/cmd"
 	"k8s.io/klog"
 
-	"github.com/jetstack/cert-manager/pkg/apis/certmanager/validation/webhooks"
+	"github.com/adi658/cert-manager/pkg/apis/certmanager/validation/webhooks"
 )
 
 var certHook cmd.ValidatingAdmissionHook = &webhooks.CertificateAdmissionHook{}

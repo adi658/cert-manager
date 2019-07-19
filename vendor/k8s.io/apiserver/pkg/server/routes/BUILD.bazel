@@ -11,7 +11,7 @@ go_library(
         "profiling.go",
         "version.go",
     ],
-    importmap = "github.com/jetstack/cert-manager/vendor/k8s.io/apiserver/pkg/server/routes",
+    importmap = "github.com/adi658/cert-manager/vendor/k8s.io/apiserver/pkg/server/routes",
     importpath = "k8s.io/apiserver/pkg/server/routes",
     tags = ["manual"],
     visibility = ["//visibility:public"],

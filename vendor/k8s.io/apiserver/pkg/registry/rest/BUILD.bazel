@@ -13,7 +13,7 @@ go_library(
         "table.go",
         "update.go",
     ],
-    importmap = "github.com/jetstack/cert-manager/vendor/k8s.io/apiserver/pkg/registry/rest",
+    importmap = "github.com/adi658/cert-manager/vendor/k8s.io/apiserver/pkg/registry/rest",
     importpath = "k8s.io/apiserver/pkg/registry/rest",
     tags = ["manual"],
     visibility = ["//visibility:public"],

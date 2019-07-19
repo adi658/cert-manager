@@ -15,7 +15,7 @@ go_library(
         "transform.go",
         "trie.go",
     ],
-    importmap = "github.com/jetstack/cert-manager/vendor/golang.org/x/text/unicode/norm",
+    importmap = "github.com/adi658/cert-manager/vendor/golang.org/x/text/unicode/norm",
     importpath = "golang.org/x/text/unicode/norm",
     tags = ["manual"],
     visibility = ["//visibility:public"],

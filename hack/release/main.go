@@ -26,13 +26,13 @@ import (
 	flag "github.com/spf13/pflag"
 	utilerrors "k8s.io/apimachinery/pkg/util/errors"
 
-	"github.com/jetstack/cert-manager/hack/release/pkg/bazel"
-	"github.com/jetstack/cert-manager/hack/release/pkg/build/chart"
-	"github.com/jetstack/cert-manager/hack/release/pkg/build/images"
-	"github.com/jetstack/cert-manager/hack/release/pkg/build/manifests"
-	"github.com/jetstack/cert-manager/hack/release/pkg/flags"
-	"github.com/jetstack/cert-manager/hack/release/pkg/helm"
-	logf "github.com/jetstack/cert-manager/hack/release/pkg/log"
+	"github.com/adi658/cert-manager/hack/release/pkg/bazel"
+	"github.com/adi658/cert-manager/hack/release/pkg/build/chart"
+	"github.com/adi658/cert-manager/hack/release/pkg/build/images"
+	"github.com/adi658/cert-manager/hack/release/pkg/build/manifests"
+	"github.com/adi658/cert-manager/hack/release/pkg/flags"
+	"github.com/adi658/cert-manager/hack/release/pkg/helm"
+	logf "github.com/adi658/cert-manager/hack/release/pkg/log"
 )
 
 var (

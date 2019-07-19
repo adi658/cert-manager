@@ -30,7 +30,7 @@ import (
 	"k8s.io/klog"
 	"k8s.io/klog/klogr"
 
-	"github.com/jetstack/cert-manager/pkg/api"
+	"github.com/adi658/cert-manager/pkg/api"
 )
 
 var (

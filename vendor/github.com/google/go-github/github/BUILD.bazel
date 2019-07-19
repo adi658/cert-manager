@@ -88,7 +88,7 @@ go_library(
         "users_keys.go",
         "without_appengine.go",
     ],
-    importmap = "github.com/jetstack/cert-manager/vendor/github.com/google/go-github/github",
+    importmap = "github.com/adi658/cert-manager/vendor/github.com/google/go-github/github",
     importpath = "github.com/google/go-github/github",
     tags = ["manual"],
     visibility = ["//visibility:public"],

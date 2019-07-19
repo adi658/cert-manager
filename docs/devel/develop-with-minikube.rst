@@ -62,7 +62,7 @@ Build a dev version of cert-manager
 
    # Build cert-manager binaries and docker images. Full output omitted for brevity
    $ make build
-   Successfully tagged quay.io/jetstack/cert-manager-controller:canary
+   Successfully tagged quay.io/adi658/cert-manager-controller:canary
 
 
 Deploy that version with helm

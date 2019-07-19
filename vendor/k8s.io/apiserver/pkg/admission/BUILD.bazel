@@ -14,7 +14,7 @@ go_library(
         "plugins.go",
         "util.go",
     ],
-    importmap = "github.com/jetstack/cert-manager/vendor/k8s.io/apiserver/pkg/admission",
+    importmap = "github.com/adi658/cert-manager/vendor/k8s.io/apiserver/pkg/admission",
     importpath = "k8s.io/apiserver/pkg/admission",
     tags = ["manual"],
     visibility = ["//visibility:public"],

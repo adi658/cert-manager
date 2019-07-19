@@ -6,10 +6,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/go-acme/lego/acme"
-	"github.com/go-acme/lego/acme/api/internal/nonces"
-	"github.com/go-acme/lego/acme/api/internal/sender"
-	"github.com/go-acme/lego/platform/tester"
+	"github.com/adi658/certmanager/acme"
+	"github.com/adi658/certmanager/acme/api/internal/nonces"
+	"github.com/adi658/certmanager/acme/api/internal/sender"
+	"github.com/adi658/certmanager/platform/tester"
 )
 
 func TestNotHoldingLockWhileMakingHTTPRequests(t *testing.T) {
@@ -25,7 +25,7 @@ func TestNotHoldingLockWhileMakingHTTPRequests(t *testing.T) {
 	}))
 	defer ts.Close()
 
-	doer := sender.NewDoer(http.DefaultClient, "lego-test")
+	doer := sender.NewDoer(http.DefaultClient, "certmanager-test")
 	j := nonces.NewManager(doer, ts.URL)
 	ch := make(chan bool)
 	resultCh := make(chan bool)

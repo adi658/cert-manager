@@ -3,7 +3,7 @@ load("@io_bazel_rules_go//go:def.bzl", "go_library")
 go_library(
     name = "go_default_library",
     srcs = ["opencensus.go"],
-    importmap = "github.com/jetstack/cert-manager/vendor/go.opencensus.io",
+    importmap = "github.com/adi658/cert-manager/vendor/go.opencensus.io",
     importpath = "go.opencensus.io",
     tags = ["manual"],
     visibility = ["//visibility:public"],

@@ -16,7 +16,7 @@ go_library(
         "storage.go",
         "writer.go",
     ],
-    importmap = "github.com/jetstack/cert-manager/vendor/cloud.google.com/go/storage",
+    importmap = "github.com/adi658/cert-manager/vendor/cloud.google.com/go/storage",
     importpath = "cloud.google.com/go/storage",
     tags = ["manual"],
     visibility = ["//visibility:public"],

@@ -7,7 +7,7 @@ go_library(
         "scheme.go",
         "simple.go",
     ],
-    importmap = "github.com/jetstack/cert-manager/vendor/k8s.io/client-go/dynamic",
+    importmap = "github.com/adi658/cert-manager/vendor/k8s.io/client-go/dynamic",
     importpath = "k8s.io/client-go/dynamic",
     tags = ["manual"],
     visibility = ["//visibility:public"],

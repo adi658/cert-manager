@@ -44,7 +44,7 @@ go_library(
         "zmsg.go",
         "ztypes.go",
     ],
-    importmap = "github.com/jetstack/cert-manager/vendor/github.com/miekg/dns",
+    importmap = "github.com/adi658/cert-manager/vendor/github.com/miekg/dns",
     importpath = "github.com/miekg/dns",
     tags = ["manual"],
     visibility = ["//visibility:public"],

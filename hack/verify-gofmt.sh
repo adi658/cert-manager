@@ -31,7 +31,7 @@ trap "cleanup" EXIT SIGINT
 
 # Create a fake GOPATH
 export GOPATH="${_tmp}"
-TMP_DIFFROOT="${GOPATH}/src/github.com/jetstack/cert-manager"
+TMP_DIFFROOT="${GOPATH}/src/github.com/adi658/cert-manager"
 mkdir -p "$(dirname ${TMP_DIFFROOT})"
 ln -s "$(pwd)" "${TMP_DIFFROOT}"
 cd "${TMP_DIFFROOT}"

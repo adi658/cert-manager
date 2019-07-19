@@ -25,7 +25,7 @@ import (
 
 	"github.com/miekg/dns"
 
-	logf "github.com/jetstack/cert-manager/pkg/logs"
+	logf "github.com/adi658/cert-manager/pkg/logs"
 )
 
 const (

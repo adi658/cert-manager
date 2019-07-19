@@ -7,7 +7,7 @@ go_library(
         "deleg_map.go",
         "informers_map.go",
     ],
-    importmap = "github.com/jetstack/cert-manager/vendor/sigs.k8s.io/controller-runtime/pkg/cache/internal",
+    importmap = "github.com/adi658/cert-manager/vendor/sigs.k8s.io/controller-runtime/pkg/cache/internal",
     importpath = "sigs.k8s.io/controller-runtime/pkg/cache/internal",
     tags = ["manual"],
     visibility = ["//visibility:public"],

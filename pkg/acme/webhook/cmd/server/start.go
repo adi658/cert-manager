@@ -18,7 +18,7 @@ package server
 
 import (
 	"fmt"
-	"github.com/jetstack/cert-manager/pkg/acme/webhook"
+	"github.com/adi658/cert-manager/pkg/acme/webhook"
 	"io"
 	"net"
 
@@ -27,8 +27,8 @@ import (
 	genericapiserver "k8s.io/apiserver/pkg/server"
 	genericoptions "k8s.io/apiserver/pkg/server/options"
 
-	whapi "github.com/jetstack/cert-manager/pkg/acme/webhook/apis/acme/v1alpha1"
-	"github.com/jetstack/cert-manager/pkg/acme/webhook/apiserver"
+	whapi "github.com/adi658/cert-manager/pkg/acme/webhook/apis/acme/v1alpha1"
+	"github.com/adi658/cert-manager/pkg/acme/webhook/apiserver"
 )
 
 const defaultEtcdPathPrefix = "/registry/acme.cert-manager.io"

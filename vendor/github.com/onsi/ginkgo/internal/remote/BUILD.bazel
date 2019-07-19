@@ -13,7 +13,7 @@ go_library(
         "syscall_dup_solaris.go",
         "syscall_dup_unix.go",
     ],
-    importmap = "github.com/jetstack/cert-manager/vendor/github.com/onsi/ginkgo/internal/remote",
+    importmap = "github.com/adi658/cert-manager/vendor/github.com/onsi/ginkgo/internal/remote",
     importpath = "github.com/onsi/ginkgo/internal/remote",
     tags = ["manual"],
     visibility = ["//vendor/github.com/onsi/ginkgo:__subpackages__"],

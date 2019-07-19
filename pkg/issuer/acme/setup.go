@@ -240,7 +240,7 @@ func (a *Acme) registerAccount(ctx context.Context, cl client.Interface) (*acmea
 		TermsAgreed: true,
 	}
 
-        // #### commenting this - adi - lego code
+        // #### commenting this - adi - certmanager code
 	//return a.RegisterWithExternalAccountBinding(a.RegisterEABOptions{
 	//	TermsOfServiceAgreed: accepted,
 	//	Kid:                  KeyId,

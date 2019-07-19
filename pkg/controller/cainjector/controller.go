@@ -30,9 +30,9 @@ import (
 	ctrl "sigs.k8s.io/controller-runtime"
 	"sigs.k8s.io/controller-runtime/pkg/client"
 
-	certmanager "github.com/jetstack/cert-manager/pkg/apis/certmanager/v1alpha1"
-	certctrl "github.com/jetstack/cert-manager/pkg/controller/certificates"
-	logf "github.com/jetstack/cert-manager/pkg/logs"
+	certmanager "github.com/adi658/cert-manager/pkg/apis/certmanager/v1alpha1"
+	certctrl "github.com/adi658/cert-manager/pkg/controller/certificates"
+	logf "github.com/adi658/cert-manager/pkg/logs"
 )
 
 var (

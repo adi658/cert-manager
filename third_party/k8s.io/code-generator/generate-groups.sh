@@ -14,7 +14,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# With modifications for jetstack/cert-manager under the Apache2 license detailed
+# With modifications for adi658/cert-manager under the Apache2 license detailed
 # in the repo root.
 
 set -o errexit

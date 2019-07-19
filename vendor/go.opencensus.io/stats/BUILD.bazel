@@ -10,7 +10,7 @@ go_library(
         "record.go",
         "units.go",
     ],
-    importmap = "github.com/jetstack/cert-manager/vendor/go.opencensus.io/stats",
+    importmap = "github.com/adi658/cert-manager/vendor/go.opencensus.io/stats",
     importpath = "go.opencensus.io/stats",
     tags = ["manual"],
     visibility = ["//visibility:public"],

@@ -21,7 +21,7 @@ import (
 	"k8s.io/klog"
 	"k8s.io/utils/clock"
 
-	cmapi "github.com/jetstack/cert-manager/pkg/apis/certmanager/v1alpha1"
+	cmapi "github.com/adi658/cert-manager/pkg/apis/certmanager/v1alpha1"
 )
 
 // Clock is defined as a package var so it can be stubbed out during tests.

@@ -21,8 +21,8 @@ import (
 
 	"k8s.io/klog"
 
-	"github.com/jetstack/cert-manager/pkg/acme/client"
-	"github.com/jetstack/cert-manager/third_party/crypto/acme"
+	"github.com/adi658/cert-manager/pkg/acme/client"
+	"github.com/adi658/cert-manager/third_party/crypto/acme"
 )
 
 func NewLogger(baseCl client.Interface) client.Interface {

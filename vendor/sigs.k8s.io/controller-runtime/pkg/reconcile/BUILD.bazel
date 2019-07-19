@@ -6,7 +6,7 @@ go_library(
         "doc.go",
         "reconcile.go",
     ],
-    importmap = "github.com/jetstack/cert-manager/vendor/sigs.k8s.io/controller-runtime/pkg/reconcile",
+    importmap = "github.com/adi658/cert-manager/vendor/sigs.k8s.io/controller-runtime/pkg/reconcile",
     importpath = "sigs.k8s.io/controller-runtime/pkg/reconcile",
     tags = ["manual"],
     visibility = ["//visibility:public"],

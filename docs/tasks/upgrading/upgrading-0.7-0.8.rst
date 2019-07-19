@@ -280,4 +280,4 @@ new solver entry per Ingress resource they want to use to solve challenges, or
 otherwise continue to use the **old format** until a suitable alternative
 appears in v0.9.
 
-.. _known issue: https://github.com/jetstack/cert-manager/issues/1666
+.. _known issue: https://github.com/adi658/cert-manager/issues/1666

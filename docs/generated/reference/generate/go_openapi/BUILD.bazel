@@ -7,7 +7,7 @@ load("//docs/generated/reference/generate/go_openapi:def.bzl", "openapi_library"
 openapi_library(
     name = "go_default_library",
     srcs = ["doc.go"],
-    go_prefix = "github.com/jetstack/cert-manager/",
+    go_prefix = "github.com/adi658/cert-manager/",
     openapi_targets = [
         "pkg/apis/certmanager/v1alpha1",
     ],

@@ -6,7 +6,7 @@ go_library(
         "handlers.go",
         "param_validator.go",
     ],
-    importmap = "github.com/jetstack/cert-manager/vendor/github.com/aws/aws-sdk-go/aws/corehandlers",
+    importmap = "github.com/adi658/cert-manager/vendor/github.com/aws/aws-sdk-go/aws/corehandlers",
     importpath = "github.com/aws/aws-sdk-go/aws/corehandlers",
     tags = ["manual"],
     visibility = ["//visibility:public"],

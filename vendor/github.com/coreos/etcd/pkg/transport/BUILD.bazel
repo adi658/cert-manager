@@ -16,7 +16,7 @@ go_library(
         "transport.go",
         "unix_listener.go",
     ],
-    importmap = "github.com/jetstack/cert-manager/vendor/github.com/coreos/etcd/pkg/transport",
+    importmap = "github.com/adi658/cert-manager/vendor/github.com/coreos/etcd/pkg/transport",
     importpath = "github.com/coreos/etcd/pkg/transport",
     tags = ["manual"],
     visibility = ["//visibility:public"],

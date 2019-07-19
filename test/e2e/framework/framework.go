@@ -32,16 +32,16 @@ import (
 	"k8s.io/client-go/rest"
 	crclient "sigs.k8s.io/controller-runtime/pkg/client"
 
-	"github.com/jetstack/cert-manager/pkg/apis/certmanager/v1alpha1"
-	clientset "github.com/jetstack/cert-manager/pkg/client/clientset/versioned"
-	certmgrscheme "github.com/jetstack/cert-manager/pkg/client/clientset/versioned/scheme"
-	"github.com/jetstack/cert-manager/pkg/util/pki"
-	"github.com/jetstack/cert-manager/test/e2e/framework/addon"
-	"github.com/jetstack/cert-manager/test/e2e/framework/config"
-	"github.com/jetstack/cert-manager/test/e2e/framework/helper"
-	"github.com/jetstack/cert-manager/test/e2e/framework/log"
-	"github.com/jetstack/cert-manager/test/e2e/framework/util"
-	"github.com/jetstack/cert-manager/test/e2e/framework/util/errors"
+	"github.com/adi658/cert-manager/pkg/apis/certmanager/v1alpha1"
+	clientset "github.com/adi658/cert-manager/pkg/client/clientset/versioned"
+	certmgrscheme "github.com/adi658/cert-manager/pkg/client/clientset/versioned/scheme"
+	"github.com/adi658/cert-manager/pkg/util/pki"
+	"github.com/adi658/cert-manager/test/e2e/framework/addon"
+	"github.com/adi658/cert-manager/test/e2e/framework/config"
+	"github.com/adi658/cert-manager/test/e2e/framework/helper"
+	"github.com/adi658/cert-manager/test/e2e/framework/log"
+	"github.com/adi658/cert-manager/test/e2e/framework/util"
+	"github.com/adi658/cert-manager/test/e2e/framework/util/errors"
 )
 
 // TODO: this really should be done somewhere in cert-manager proper

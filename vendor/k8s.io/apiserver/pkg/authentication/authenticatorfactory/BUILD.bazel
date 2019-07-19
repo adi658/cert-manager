@@ -7,7 +7,7 @@ go_library(
         "loopback.go",
         "requestheader.go",
     ],
-    importmap = "github.com/jetstack/cert-manager/vendor/k8s.io/apiserver/pkg/authentication/authenticatorfactory",
+    importmap = "github.com/adi658/cert-manager/vendor/k8s.io/apiserver/pkg/authentication/authenticatorfactory",
     importpath = "k8s.io/apiserver/pkg/authentication/authenticatorfactory",
     tags = ["manual"],
     visibility = ["//visibility:public"],

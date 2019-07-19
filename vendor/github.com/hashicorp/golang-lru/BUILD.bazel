@@ -8,7 +8,7 @@ go_library(
         "doc.go",
         "lru.go",
     ],
-    importmap = "github.com/jetstack/cert-manager/vendor/github.com/hashicorp/golang-lru",
+    importmap = "github.com/adi658/cert-manager/vendor/github.com/hashicorp/golang-lru",
     importpath = "github.com/hashicorp/golang-lru",
     tags = ["manual"],
     visibility = ["//visibility:public"],

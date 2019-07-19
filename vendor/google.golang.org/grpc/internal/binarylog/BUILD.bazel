@@ -10,7 +10,7 @@ go_library(
         "sink.go",
         "util.go",
     ],
-    importmap = "github.com/jetstack/cert-manager/vendor/google.golang.org/grpc/internal/binarylog",
+    importmap = "github.com/adi658/cert-manager/vendor/google.golang.org/grpc/internal/binarylog",
     importpath = "google.golang.org/grpc/internal/binarylog",
     tags = ["manual"],
     visibility = ["//vendor/google.golang.org/grpc:__subpackages__"],

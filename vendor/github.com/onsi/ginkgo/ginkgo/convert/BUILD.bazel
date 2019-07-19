@@ -10,7 +10,7 @@ go_library(
         "testfile_rewriter.go",
         "testing_t_rewriter.go",
     ],
-    importmap = "github.com/jetstack/cert-manager/vendor/github.com/onsi/ginkgo/ginkgo/convert",
+    importmap = "github.com/adi658/cert-manager/vendor/github.com/onsi/ginkgo/ginkgo/convert",
     importpath = "github.com/onsi/ginkgo/ginkgo/convert",
     tags = ["manual"],
     visibility = ["//visibility:public"],

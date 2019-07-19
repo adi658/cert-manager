@@ -31,7 +31,7 @@ The process for cutting a minor release is as follows:
 
 #. Create a new release branch (e.g. ```release-0.5```)
 
-#. Push it to the ```jetstack/cert-manager`` repository
+#. Push it to the ```adi658/cert-manager`` repository
 
 #. Create a pull-request updating the Helm chart version and merge it:
 
@@ -45,7 +45,7 @@ The process for cutting a minor release is as follows:
    * Run ```./hack/update-deploy-gen.sh``` in the root of the repository
 #. Gather release notes since the previous release:
 
-   * Run ```relnotes -repo cert-manager -owner jetstack release-0.5```
+   * Run ```relnotes -repo cert-manager -owner adi658 release-0.5```
    * Write up appropriate notes, similar to previous releases
 
 #. Submit the Helm chart changes to the upstream ```helm/charts``` repo:
@@ -123,7 +123,7 @@ The process for cutting a patch release is as follows:
 
 #. Gather release notes since the previous release:
 
-   * Run ```relnotes -repo cert-manager -owner jetstack release-0.5```
+   * Run ```relnotes -repo cert-manager -owner adi658 release-0.5```
    * Write up appropriate notes, similar to previous patch releases
 
 #. Create a new tag taken from the release branch, e.g. ```v0.5.1```.

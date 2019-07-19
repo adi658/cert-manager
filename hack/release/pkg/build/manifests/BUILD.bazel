@@ -6,7 +6,7 @@ go_library(
         "github.go",
         "plugin.go",
     ],
-    importpath = "github.com/jetstack/cert-manager/hack/release/pkg/build/manifests",
+    importpath = "github.com/adi658/cert-manager/hack/release/pkg/build/manifests",
     visibility = ["//visibility:public"],
     deps = [
         "//hack/release/pkg/flags:go_default_library",

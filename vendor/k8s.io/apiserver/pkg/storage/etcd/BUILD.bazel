@@ -6,7 +6,7 @@ go_library(
         "api_object_versioner.go",
         "doc.go",
     ],
-    importmap = "github.com/jetstack/cert-manager/vendor/k8s.io/apiserver/pkg/storage/etcd",
+    importmap = "github.com/adi658/cert-manager/vendor/k8s.io/apiserver/pkg/storage/etcd",
     importpath = "k8s.io/apiserver/pkg/storage/etcd",
     tags = ["manual"],
     visibility = ["//visibility:public"],

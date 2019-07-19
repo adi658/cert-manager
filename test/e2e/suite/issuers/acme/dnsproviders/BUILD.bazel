@@ -6,7 +6,7 @@ go_library(
         "cloudflare.go",
         "dnsproviders.go",
     ],
-    importpath = "github.com/jetstack/cert-manager/test/e2e/suite/issuers/acme/dnsproviders",
+    importpath = "github.com/adi658/cert-manager/test/e2e/suite/issuers/acme/dnsproviders",
     tags = ["manual"],
     visibility = ["//visibility:public"],
     deps = [

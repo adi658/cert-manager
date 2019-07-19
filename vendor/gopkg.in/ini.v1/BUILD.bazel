@@ -11,7 +11,7 @@ go_library(
         "section.go",
         "struct.go",
     ],
-    importmap = "github.com/jetstack/cert-manager/vendor/gopkg.in/ini.v1",
+    importmap = "github.com/adi658/cert-manager/vendor/gopkg.in/ini.v1",
     importpath = "gopkg.in/ini.v1",
     tags = ["manual"],
     visibility = ["//visibility:public"],

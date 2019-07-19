@@ -26,7 +26,7 @@ import (
 	"encoding/pem"
 	"fmt"
 
-	"github.com/jetstack/cert-manager/pkg/apis/certmanager/v1alpha1"
+	"github.com/adi658/cert-manager/pkg/apis/certmanager/v1alpha1"
 )
 
 const (

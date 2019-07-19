@@ -12,7 +12,7 @@ go_library(
         "newInterface10.go",
         "newInterface11.go",
     ],
-    importmap = "github.com/jetstack/cert-manager/vendor/golang.org/x/tools/go/internal/gcimporter",
+    importmap = "github.com/adi658/cert-manager/vendor/golang.org/x/tools/go/internal/gcimporter",
     importpath = "golang.org/x/tools/go/internal/gcimporter",
     tags = ["manual"],
     visibility = ["//vendor/golang.org/x/tools/go:__subpackages__"],

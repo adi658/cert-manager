@@ -218,7 +218,7 @@ go_library(
         "ztypes_solaris_amd64.go",
     ],
     cgo = True,
-    importmap = "github.com/jetstack/cert-manager/vendor/golang.org/x/sys/unix",
+    importmap = "github.com/adi658/cert-manager/vendor/golang.org/x/sys/unix",
     importpath = "golang.org/x/sys/unix",
     tags = ["manual"],
     visibility = ["//visibility:public"],

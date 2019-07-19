@@ -15,13 +15,13 @@ Steps to add a ``FooDNS`` DNS-01 provider:
 2. Implement functions to match the solver interface (``Present``, ``CleanUp`` and ``Timeout``).
    Use an existing provider for reference.
    Most of the cert-manager providers are based off
-   https://github.com/xenolf/lego, so if lego supports the DNS provider you
+   https://github.com/xenolf/certmanager, so if certmanager supports the DNS provider you
    want to add, it's fairly easy to copy it over and make modifications to fit
    with the cert-manager codebase. Examples of the changes required:
 
-   - replace uses of ``github.com/xenolf/lego/acme`` with ``github.com/jetstack/cert-manager/pkg/issuer/acme/dns/util``.
-   - replace uses of ``github.com/xenolf/lego/log`` with ``github.com/golang/glog``.
-   - remove references to ``github.com/xenolf/lego/platform/config/env``.
+   - replace uses of ``github.com/xenolf/certmanager/acme`` with ``github.com/adi658/cert-manager/pkg/issuer/acme/dns/util``.
+   - replace uses of ``github.com/xenolf/certmanager/log`` with ``github.com/golang/glog``.
+   - remove references to ``github.com/xenolf/certmanager/platform/config/env``.
      cert-manager does not use environment variables for internal configuration, so calls to this package should not be required.
 
 3. Add unit test coverage for this package.

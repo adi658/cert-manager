@@ -35,13 +35,13 @@ import (
 	coretesting "k8s.io/client-go/testing"
 	clock "k8s.io/utils/clock/testing"
 
-	cmapi "github.com/jetstack/cert-manager/pkg/apis/certmanager/v1alpha1"
-	testpkg "github.com/jetstack/cert-manager/pkg/controller/test"
-	"github.com/jetstack/cert-manager/pkg/issuer"
-	"github.com/jetstack/cert-manager/pkg/issuer/fake"
-	_ "github.com/jetstack/cert-manager/pkg/issuer/selfsigned"
-	"github.com/jetstack/cert-manager/pkg/util/pki"
-	"github.com/jetstack/cert-manager/test/unit/gen"
+	cmapi "github.com/adi658/cert-manager/pkg/apis/certmanager/v1alpha1"
+	testpkg "github.com/adi658/cert-manager/pkg/controller/test"
+	"github.com/adi658/cert-manager/pkg/issuer"
+	"github.com/adi658/cert-manager/pkg/issuer/fake"
+	_ "github.com/adi658/cert-manager/pkg/issuer/selfsigned"
+	"github.com/adi658/cert-manager/pkg/util/pki"
+	"github.com/adi658/cert-manager/test/unit/gen"
 )
 
 func generatePrivateKey(t *testing.T) *rsa.PrivateKey {

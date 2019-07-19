@@ -19,8 +19,8 @@ package issuer
 import (
 	"fmt"
 
-	cmapi "github.com/jetstack/cert-manager/pkg/apis/certmanager/v1alpha1"
-	cmlisters "github.com/jetstack/cert-manager/pkg/client/listers/certmanager/v1alpha1"
+	cmapi "github.com/adi658/cert-manager/pkg/apis/certmanager/v1alpha1"
+	cmlisters "github.com/adi658/cert-manager/pkg/client/listers/certmanager/v1alpha1"
 )
 
 type Helper interface {

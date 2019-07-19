@@ -25,7 +25,7 @@ go_library(
         "vec.go",
         "wrap.go",
     ],
-    importmap = "github.com/jetstack/cert-manager/vendor/github.com/prometheus/client_golang/prometheus",
+    importmap = "github.com/adi658/cert-manager/vendor/github.com/prometheus/client_golang/prometheus",
     importpath = "github.com/prometheus/client_golang/prometheus",
     tags = ["manual"],
     visibility = ["//visibility:public"],

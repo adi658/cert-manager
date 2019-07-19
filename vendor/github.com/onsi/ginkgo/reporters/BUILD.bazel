@@ -9,7 +9,7 @@ go_library(
         "reporter.go",
         "teamcity_reporter.go",
     ],
-    importmap = "github.com/jetstack/cert-manager/vendor/github.com/onsi/ginkgo/reporters",
+    importmap = "github.com/adi658/cert-manager/vendor/github.com/onsi/ginkgo/reporters",
     importpath = "github.com/onsi/ginkgo/reporters",
     tags = ["manual"],
     visibility = ["//visibility:public"],

@@ -28,8 +28,8 @@ import (
 	utilerrors "k8s.io/apimachinery/pkg/util/errors"
 	"k8s.io/apimachinery/pkg/util/intstr"
 
-	"github.com/jetstack/cert-manager/test/e2e/framework/addon/base"
-	"github.com/jetstack/cert-manager/test/e2e/framework/config"
+	"github.com/adi658/cert-manager/test/e2e/framework/addon/base"
+	"github.com/adi658/cert-manager/test/e2e/framework/config"
 )
 
 var (

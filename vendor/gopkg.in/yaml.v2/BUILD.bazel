@@ -17,7 +17,7 @@ go_library(
         "yamlh.go",
         "yamlprivateh.go",
     ],
-    importmap = "github.com/jetstack/cert-manager/vendor/gopkg.in/yaml.v2",
+    importmap = "github.com/adi658/cert-manager/vendor/gopkg.in/yaml.v2",
     importpath = "gopkg.in/yaml.v2",
     tags = ["manual"],
     visibility = ["//visibility:public"],

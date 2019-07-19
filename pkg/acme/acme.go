@@ -29,13 +29,13 @@ import (
 	corev1 "k8s.io/api/core/v1"
 	corelisters "k8s.io/client-go/listers/core/v1"
 
-	acme "github.com/jetstack/cert-manager/pkg/acme/client"
-	acmemw "github.com/jetstack/cert-manager/pkg/acme/client/middleware"
-	cmapi "github.com/jetstack/cert-manager/pkg/apis/certmanager/v1alpha1"
-	"github.com/jetstack/cert-manager/pkg/util"
-	cmerrors "github.com/jetstack/cert-manager/pkg/util/errors"
-	"github.com/jetstack/cert-manager/pkg/util/pki"
-	acmecl "github.com/jetstack/cert-manager/third_party/crypto/acme"
+	acme "github.com/adi658/cert-manager/pkg/acme/client"
+	acmemw "github.com/adi658/cert-manager/pkg/acme/client/middleware"
+	cmapi "github.com/adi658/cert-manager/pkg/apis/certmanager/v1alpha1"
+	"github.com/adi658/cert-manager/pkg/util"
+	cmerrors "github.com/adi658/cert-manager/pkg/util/errors"
+	"github.com/adi658/cert-manager/pkg/util/pki"
+	acmecl "github.com/adi658/cert-manager/third_party/crypto/acme"
 )
 
 type Helper interface {

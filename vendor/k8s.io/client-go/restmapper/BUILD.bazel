@@ -7,7 +7,7 @@ go_library(
         "discovery.go",
         "shortcut.go",
     ],
-    importmap = "github.com/jetstack/cert-manager/vendor/k8s.io/client-go/restmapper",
+    importmap = "github.com/adi658/cert-manager/vendor/k8s.io/client-go/restmapper",
     importpath = "k8s.io/client-go/restmapper",
     tags = ["manual"],
     visibility = ["//visibility:public"],

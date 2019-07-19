@@ -20,9 +20,9 @@ import (
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 
-	"github.com/jetstack/cert-manager/pkg/apis/certmanager/v1alpha1"
-	"github.com/jetstack/cert-manager/test/e2e/framework"
-	"github.com/jetstack/cert-manager/test/e2e/util"
+	"github.com/adi658/cert-manager/pkg/apis/certmanager/v1alpha1"
+	"github.com/adi658/cert-manager/test/e2e/framework"
+	"github.com/adi658/cert-manager/test/e2e/util"
 )
 
 var _ = framework.CertManagerDescribe("CA Issuer", func() {

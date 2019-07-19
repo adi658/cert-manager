@@ -12,7 +12,7 @@ go_library(
         "typed.go",
         "validate.go",
     ],
-    importmap = "github.com/jetstack/cert-manager/vendor/sigs.k8s.io/structured-merge-diff/typed",
+    importmap = "github.com/adi658/cert-manager/vendor/sigs.k8s.io/structured-merge-diff/typed",
     importpath = "sigs.k8s.io/structured-merge-diff/typed",
     tags = ["manual"],
     visibility = ["//visibility:public"],

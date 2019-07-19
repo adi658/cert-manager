@@ -6,7 +6,7 @@ go_library(
         "doc.go",
         "predicate.go",
     ],
-    importmap = "github.com/jetstack/cert-manager/vendor/sigs.k8s.io/controller-runtime/pkg/predicate",
+    importmap = "github.com/adi658/cert-manager/vendor/sigs.k8s.io/controller-runtime/pkg/predicate",
     importpath = "sigs.k8s.io/controller-runtime/pkg/predicate",
     tags = ["manual"],
     visibility = ["//visibility:public"],

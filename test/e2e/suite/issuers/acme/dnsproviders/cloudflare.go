@@ -20,10 +20,10 @@ import (
 	corev1 "k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 
-	cmapi "github.com/jetstack/cert-manager/pkg/apis/certmanager/v1alpha1"
-	"github.com/jetstack/cert-manager/test/e2e/framework/addon/base"
-	"github.com/jetstack/cert-manager/test/e2e/framework/config"
-	"github.com/jetstack/cert-manager/test/e2e/framework/util/errors"
+	cmapi "github.com/adi658/cert-manager/pkg/apis/certmanager/v1alpha1"
+	"github.com/adi658/cert-manager/test/e2e/framework/addon/base"
+	"github.com/adi658/cert-manager/test/e2e/framework/config"
+	"github.com/adi658/cert-manager/test/e2e/framework/util/errors"
 )
 
 // Cloudflare provisions cloudflare credentials in a namespace for cert-manager

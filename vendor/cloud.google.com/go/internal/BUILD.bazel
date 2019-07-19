@@ -6,7 +6,7 @@ go_library(
         "annotate.go",
         "retry.go",
     ],
-    importmap = "github.com/jetstack/cert-manager/vendor/cloud.google.com/go/internal",
+    importmap = "github.com/adi658/cert-manager/vendor/cloud.google.com/go/internal",
     importpath = "cloud.google.com/go/internal",
     tags = ["manual"],
     visibility = ["//visibility:public"],

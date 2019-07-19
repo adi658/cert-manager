@@ -8,8 +8,8 @@ import (
 	"net/http"
 	"testing"
 
-	"github.com/go-acme/lego/acme"
-	"github.com/go-acme/lego/platform/tester"
+	"github.com/adi658/certmanager/acme"
+	"github.com/adi658/certmanager/platform/tester"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 	jose "gopkg.in/square/go-jose.v2"
@@ -51,7 +51,7 @@ func TestOrderService_New(t *testing.T) {
 		}
 	})
 
-	core, err := New(http.DefaultClient, "lego-test", apiURL+"/dir", "", privateKey)
+	core, err := New(http.DefaultClient, "certmanager-test", apiURL+"/dir", "", privateKey)
 	require.NoError(t, err)
 
 	order, err := core.Orders.New([]string{"example.com"})

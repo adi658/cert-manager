@@ -9,7 +9,7 @@ go_library(
         "server.go",
         "websocket.go",
     ],
-    importmap = "github.com/jetstack/cert-manager/vendor/golang.org/x/net/websocket",
+    importmap = "github.com/adi658/cert-manager/vendor/golang.org/x/net/websocket",
     importpath = "golang.org/x/net/websocket",
     tags = ["manual"],
     visibility = ["//visibility:public"],

@@ -15,7 +15,7 @@ genrule(
         "cp -L \"$(location //docs/generated/reference/generate:config.yaml)\" \"$$tmpdir/\"",
         "cp -LR $(locations //docs/generated/reference/generate/static_includes:all-srcs) \"$$tmpdir/static_includes/\"",
         "rm \"$$tmpdir/static_includes/BUILD.bazel\"",
-        "$(location @io_kubernetes_incubator_reference_docs//gen-apidocs) --copyright \"<a href=\\\"https://jetstack.io\\\">Copyright 2018 Jetstack Ltd.</a>\" --title \"Cert-manager API Reference\" -config-dir $$tmpdir",
+        "$(location @io_kubernetes_incubator_reference_docs//gen-apidocs) --copyright \"<a href=\\\"https://adi658.io\\\">Copyright 2018 Jetstack Ltd.</a>\" --title \"Cert-manager API Reference\" -config-dir $$tmpdir",
         "orig=$$(pwd)",
         "cd $$tmpdir",
         "tar -cf \"$$orig/$@\" ./manifest.json ./includes/",

@@ -22,7 +22,7 @@ import (
 	"os/exec"
 
 	"github.com/go-logr/logr"
-	logf "github.com/jetstack/cert-manager/hack/release/pkg/log"
+	logf "github.com/adi658/cert-manager/hack/release/pkg/log"
 )
 
 func RunE(log logr.Logger, cmd *exec.Cmd) error {

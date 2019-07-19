@@ -9,7 +9,7 @@ go_library(
         "jws.go",
         "types.go",
     ],
-    importpath = "github.com/jetstack/cert-manager/third_party/crypto/acme",
+    importpath = "github.com/adi658/cert-manager/third_party/crypto/acme",
     visibility = ["//visibility:public"],
 )
 

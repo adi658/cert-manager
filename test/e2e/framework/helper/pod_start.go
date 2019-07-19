@@ -25,7 +25,7 @@ import (
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/util/wait"
 
-	"github.com/jetstack/cert-manager/test/e2e/framework/log"
+	"github.com/adi658/cert-manager/test/e2e/framework/log"
 )
 
 const (

@@ -8,7 +8,7 @@ import (
 	"encoding/base64"
 	"fmt"
 
-	"github.com/go-acme/lego/acme/api/internal/nonces"
+	"github.com/adi658/certmanager/acme/api/internal/nonces"
 	jose "gopkg.in/square/go-jose.v2"
 )
 

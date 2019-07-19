@@ -6,7 +6,7 @@ go_library(
         "manager.go",
         "producer.go",
     ],
-    importmap = "github.com/jetstack/cert-manager/vendor/go.opencensus.io/metric/metricproducer",
+    importmap = "github.com/adi658/cert-manager/vendor/go.opencensus.io/metric/metricproducer",
     importpath = "go.opencensus.io/metric/metricproducer",
     tags = ["manual"],
     visibility = ["//visibility:public"],

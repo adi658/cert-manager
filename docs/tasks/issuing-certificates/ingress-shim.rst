@@ -46,7 +46,7 @@ Configuration
 Since cert-manager v0.2.2, ingress-shim is deployed automatically as part of a
 Helm chart installation.
 
-If you would also like to use the old kube-lego_ ``kubernetes.io/tls-acme: "true"``
+If you would also like to use the old kube-certmanager_ ``kubernetes.io/tls-acme: "true"``
 annotation for fully automated TLS, you will need to configure a default Issuer
 when deploying cert-manager. This can be done by adding the following ``--set``
 when deploying using Helm:
@@ -108,4 +108,4 @@ Certificate resources to be automatically created:
   challenge. If present, and set to "true" the existing ingress will be
   modified. Any other value, or the absence of the annotation assumes "false".
 
-.. _kube-lego: https://github.com/jetstack/kube-lego
+.. _kube-certmanager: https://github.com/adi658/kube-certmanager

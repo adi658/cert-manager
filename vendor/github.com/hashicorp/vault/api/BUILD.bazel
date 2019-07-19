@@ -31,7 +31,7 @@ go_library(
         "sys_seal.go",
         "sys_stepdown.go",
     ],
-    importmap = "github.com/jetstack/cert-manager/vendor/github.com/hashicorp/vault/api",
+    importmap = "github.com/adi658/cert-manager/vendor/github.com/hashicorp/vault/api",
     importpath = "github.com/hashicorp/vault/api",
     tags = ["manual"],
     visibility = ["//visibility:public"],

@@ -7,7 +7,7 @@ go_library(
         "histogram.go",
         "trace.go",
     ],
-    importmap = "github.com/jetstack/cert-manager/vendor/golang.org/x/net/trace",
+    importmap = "github.com/adi658/cert-manager/vendor/golang.org/x/net/trace",
     importpath = "golang.org/x/net/trace",
     tags = ["manual"],
     visibility = ["//visibility:public"],

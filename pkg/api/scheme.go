@@ -25,8 +25,8 @@ import (
 	kscheme "k8s.io/client-go/kubernetes/scheme"
 	apireg "k8s.io/kube-aggregator/pkg/apis/apiregistration/v1beta1"
 
-	whapi "github.com/jetstack/cert-manager/pkg/acme/webhook/apis/acme/v1alpha1"
-	certmanagerv1alpha1 "github.com/jetstack/cert-manager/pkg/apis/certmanager/v1alpha1"
+	whapi "github.com/adi658/cert-manager/pkg/acme/webhook/apis/acme/v1alpha1"
+	certmanagerv1alpha1 "github.com/adi658/cert-manager/pkg/apis/certmanager/v1alpha1"
 )
 
 var Scheme = runtime.NewScheme()

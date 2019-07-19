@@ -6,7 +6,7 @@ go_library(
         "conflict.go",
         "update.go",
     ],
-    importmap = "github.com/jetstack/cert-manager/vendor/sigs.k8s.io/structured-merge-diff/merge",
+    importmap = "github.com/adi658/cert-manager/vendor/sigs.k8s.io/structured-merge-diff/merge",
     importpath = "sigs.k8s.io/structured-merge-diff/merge",
     tags = ["manual"],
     visibility = ["//visibility:public"],

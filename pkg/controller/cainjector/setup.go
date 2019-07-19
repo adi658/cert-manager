@@ -27,7 +27,7 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/handler"
 	"sigs.k8s.io/controller-runtime/pkg/source"
 
-	certmanager "github.com/jetstack/cert-manager/pkg/apis/certmanager/v1alpha1"
+	certmanager "github.com/adi658/cert-manager/pkg/apis/certmanager/v1alpha1"
 )
 
 // injectorSet describes a particular setup of the injector controller

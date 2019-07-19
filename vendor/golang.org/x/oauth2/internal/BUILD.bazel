@@ -8,7 +8,7 @@ go_library(
         "token.go",
         "transport.go",
     ],
-    importmap = "github.com/jetstack/cert-manager/vendor/golang.org/x/oauth2/internal",
+    importmap = "github.com/adi658/cert-manager/vendor/golang.org/x/oauth2/internal",
     importpath = "golang.org/x/oauth2/internal",
     tags = ["manual"],
     visibility = ["//visibility:public"],

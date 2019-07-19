@@ -178,7 +178,7 @@ texinfo_documents = [
 ## Custom options
 html_context = {
   'display_github': True,
-  'github_user': 'jetstack',
+  'github_user': 'adi658',
   'github_repo': 'cert-manager',
   'github_version': 'master/docs/'
 }

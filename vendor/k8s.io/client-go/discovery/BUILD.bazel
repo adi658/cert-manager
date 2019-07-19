@@ -7,7 +7,7 @@ go_library(
         "doc.go",
         "helper.go",
     ],
-    importmap = "github.com/jetstack/cert-manager/vendor/k8s.io/client-go/discovery",
+    importmap = "github.com/adi658/cert-manager/vendor/k8s.io/client-go/discovery",
     importpath = "k8s.io/client-go/discovery",
     tags = ["manual"],
     visibility = ["//visibility:public"],

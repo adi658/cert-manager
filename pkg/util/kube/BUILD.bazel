@@ -6,7 +6,7 @@ go_library(
         "config.go",
         "pki.go",
     ],
-    importpath = "github.com/jetstack/cert-manager/pkg/util/kube",
+    importpath = "github.com/adi658/cert-manager/pkg/util/kube",
     visibility = ["//visibility:public"],
     deps = [
         "//pkg/logs:go_default_library",

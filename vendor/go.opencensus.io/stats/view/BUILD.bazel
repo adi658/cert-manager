@@ -13,7 +13,7 @@ go_library(
         "worker.go",
         "worker_commands.go",
     ],
-    importmap = "github.com/jetstack/cert-manager/vendor/go.opencensus.io/stats/view",
+    importmap = "github.com/adi658/cert-manager/vendor/go.opencensus.io/stats/view",
     importpath = "go.opencensus.io/stats/view",
     tags = ["manual"],
     visibility = ["//visibility:public"],

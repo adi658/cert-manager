@@ -22,7 +22,7 @@ import (
 	corev1 "k8s.io/api/core/v1"
 	"k8s.io/apimachinery/pkg/labels"
 
-	"github.com/jetstack/cert-manager/pkg/apis/certmanager/v1alpha1"
+	"github.com/adi658/cert-manager/pkg/apis/certmanager/v1alpha1"
 )
 
 func (c *controller) issuersForSecret(secret *corev1.Secret) ([]*v1alpha1.Issuer, error) {

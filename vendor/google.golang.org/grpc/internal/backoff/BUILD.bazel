@@ -3,7 +3,7 @@ load("@io_bazel_rules_go//go:def.bzl", "go_library")
 go_library(
     name = "go_default_library",
     srcs = ["backoff.go"],
-    importmap = "github.com/jetstack/cert-manager/vendor/google.golang.org/grpc/internal/backoff",
+    importmap = "github.com/adi658/cert-manager/vendor/google.golang.org/grpc/internal/backoff",
     importpath = "google.golang.org/grpc/internal/backoff",
     tags = ["manual"],
     visibility = ["//vendor/google.golang.org/grpc:__subpackages__"],

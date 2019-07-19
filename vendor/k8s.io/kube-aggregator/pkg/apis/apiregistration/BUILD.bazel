@@ -9,7 +9,7 @@ go_library(
         "types.go",
         "zz_generated.deepcopy.go",
     ],
-    importmap = "github.com/jetstack/cert-manager/vendor/k8s.io/kube-aggregator/pkg/apis/apiregistration",
+    importmap = "github.com/adi658/cert-manager/vendor/k8s.io/kube-aggregator/pkg/apis/apiregistration",
     importpath = "k8s.io/kube-aggregator/pkg/apis/apiregistration",
     tags = ["manual"],
     visibility = ["//visibility:public"],

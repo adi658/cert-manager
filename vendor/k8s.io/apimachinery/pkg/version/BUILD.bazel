@@ -7,7 +7,7 @@ go_library(
         "helpers.go",
         "types.go",
     ],
-    importmap = "github.com/jetstack/cert-manager/vendor/k8s.io/apimachinery/pkg/version",
+    importmap = "github.com/adi658/cert-manager/vendor/k8s.io/apimachinery/pkg/version",
     importpath = "k8s.io/apimachinery/pkg/version",
     tags = ["manual"],
     visibility = ["//visibility:public"],

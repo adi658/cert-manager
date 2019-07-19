@@ -7,7 +7,7 @@ go_library(
         "doc.go",
         "requestinfo.go",
     ],
-    importmap = "github.com/jetstack/cert-manager/vendor/k8s.io/apiserver/pkg/endpoints/request",
+    importmap = "github.com/adi658/cert-manager/vendor/k8s.io/apiserver/pkg/endpoints/request",
     importpath = "k8s.io/apiserver/pkg/endpoints/request",
     tags = ["manual"],
     visibility = ["//visibility:public"],

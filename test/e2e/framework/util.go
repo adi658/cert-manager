@@ -30,7 +30,7 @@ import (
 	"k8s.io/client-go/kubernetes"
 	"k8s.io/client-go/rest"
 
-	. "github.com/jetstack/cert-manager/test/e2e/framework/log"
+	. "github.com/adi658/cert-manager/test/e2e/framework/log"
 )
 
 func nowStamp() string {

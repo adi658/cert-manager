@@ -10,7 +10,7 @@ go_library(
         "watch.go",
         "zz_generated.deepcopy.go",
     ],
-    importmap = "github.com/jetstack/cert-manager/vendor/k8s.io/apimachinery/pkg/watch",
+    importmap = "github.com/adi658/cert-manager/vendor/k8s.io/apimachinery/pkg/watch",
     importpath = "k8s.io/apimachinery/pkg/watch",
     tags = ["manual"],
     visibility = ["//visibility:public"],

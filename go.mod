@@ -1,4 +1,4 @@
-module github.com/jetstack/cert-manager
+module github.com/adi658/cert-manager
 
 go 1.12
 
@@ -30,7 +30,7 @@ require (
 	github.com/emicklei/go-restful v2.9.3+incompatible // indirect
 	github.com/fatih/structs v1.1.0 // indirect
 	github.com/ghodss/yaml v1.0.0 // indirect
-	github.com/go-acme/lego v2.6.0+incompatible // indirect
+	github.com/adi658/certmanager v2.6.0+incompatible // indirect
 	github.com/go-ini/ini v1.42.0 // indirect
 	github.com/go-logr/logr v0.1.0
 	github.com/go-logr/zapr v0.1.1 // indirect

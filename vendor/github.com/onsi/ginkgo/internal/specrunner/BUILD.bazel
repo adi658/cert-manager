@@ -6,7 +6,7 @@ go_library(
         "random_id.go",
         "spec_runner.go",
     ],
-    importmap = "github.com/jetstack/cert-manager/vendor/github.com/onsi/ginkgo/internal/specrunner",
+    importmap = "github.com/adi658/cert-manager/vendor/github.com/onsi/ginkgo/internal/specrunner",
     importpath = "github.com/onsi/ginkgo/internal/specrunner",
     tags = ["manual"],
     visibility = ["//vendor/github.com/onsi/ginkgo:__subpackages__"],

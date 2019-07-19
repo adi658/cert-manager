@@ -22,12 +22,12 @@ import (
 
 	"github.com/Venafi/vcert/pkg/endpoint"
 
-	cmapi "github.com/jetstack/cert-manager/pkg/apis/certmanager/v1alpha1"
-	testpkg "github.com/jetstack/cert-manager/pkg/controller/test"
-	"github.com/jetstack/cert-manager/pkg/issuer"
-	"github.com/jetstack/cert-manager/pkg/util"
-	"github.com/jetstack/cert-manager/pkg/util/pki"
-	"github.com/jetstack/cert-manager/test/unit/gen"
+	cmapi "github.com/adi658/cert-manager/pkg/apis/certmanager/v1alpha1"
+	testpkg "github.com/adi658/cert-manager/pkg/controller/test"
+	"github.com/adi658/cert-manager/pkg/issuer"
+	"github.com/adi658/cert-manager/pkg/util"
+	"github.com/adi658/cert-manager/pkg/util/pki"
+	"github.com/adi658/cert-manager/test/unit/gen"
 	"github.com/kr/pretty"
 )
 

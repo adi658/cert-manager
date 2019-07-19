@@ -28,10 +28,10 @@ import (
 	corev1 "k8s.io/api/core/v1"
 	"k8s.io/klog"
 
-	"github.com/jetstack/cert-manager/pkg/apis/certmanager/v1alpha1"
-	"github.com/jetstack/cert-manager/pkg/issuer"
-	logf "github.com/jetstack/cert-manager/pkg/logs"
-	"github.com/jetstack/cert-manager/pkg/util/pki"
+	"github.com/adi658/cert-manager/pkg/apis/certmanager/v1alpha1"
+	"github.com/adi658/cert-manager/pkg/issuer"
+	logf "github.com/adi658/cert-manager/pkg/logs"
+	"github.com/adi658/cert-manager/pkg/util/pki"
 )
 
 const (

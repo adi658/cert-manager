@@ -18,7 +18,7 @@ go_library(
         "signing_method.go",
         "token.go",
     ],
-    importmap = "github.com/jetstack/cert-manager/vendor/github.com/dgrijalva/jwt-go",
+    importmap = "github.com/adi658/cert-manager/vendor/github.com/dgrijalva/jwt-go",
     importpath = "github.com/dgrijalva/jwt-go",
     tags = ["manual"],
     visibility = ["//visibility:public"],

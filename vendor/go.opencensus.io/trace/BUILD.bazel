@@ -17,7 +17,7 @@ go_library(
         "trace_go11.go",
         "trace_nongo11.go",
     ],
-    importmap = "github.com/jetstack/cert-manager/vendor/go.opencensus.io/trace",
+    importmap = "github.com/adi658/cert-manager/vendor/go.opencensus.io/trace",
     importpath = "go.opencensus.io/trace",
     tags = ["manual"],
     visibility = ["//visibility:public"],

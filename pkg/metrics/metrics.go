@@ -35,11 +35,11 @@ import (
 	corelisters "k8s.io/client-go/listers/core/v1"
 	"k8s.io/client-go/tools/cache"
 
-	"github.com/jetstack/cert-manager/pkg/apis/certmanager/v1alpha1"
-	cmlisters "github.com/jetstack/cert-manager/pkg/client/listers/certmanager/v1alpha1"
-	logf "github.com/jetstack/cert-manager/pkg/logs"
-	"github.com/jetstack/cert-manager/pkg/util/errors"
-	"github.com/jetstack/cert-manager/pkg/util/kube"
+	"github.com/adi658/cert-manager/pkg/apis/certmanager/v1alpha1"
+	cmlisters "github.com/adi658/cert-manager/pkg/client/listers/certmanager/v1alpha1"
+	logf "github.com/adi658/cert-manager/pkg/logs"
+	"github.com/adi658/cert-manager/pkg/util/errors"
+	"github.com/adi658/cert-manager/pkg/util/kube"
 )
 
 const (

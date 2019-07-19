@@ -24,7 +24,7 @@ go_library(
         "trace.go",
         "version.go",
     ],
-    importmap = "github.com/jetstack/cert-manager/vendor/google.golang.org/grpc",
+    importmap = "github.com/adi658/cert-manager/vendor/google.golang.org/grpc",
     importpath = "google.golang.org/grpc",
     tags = ["manual"],
     visibility = ["//visibility:public"],

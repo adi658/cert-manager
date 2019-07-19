@@ -11,7 +11,7 @@ go_library(
         "type_string.go",
         "unit.go",
     ],
-    importmap = "github.com/jetstack/cert-manager/vendor/go.opencensus.io/metric/metricdata",
+    importmap = "github.com/adi658/cert-manager/vendor/go.opencensus.io/metric/metricdata",
     importpath = "go.opencensus.io/metric/metricdata",
     tags = ["manual"],
     visibility = ["//visibility:public"],

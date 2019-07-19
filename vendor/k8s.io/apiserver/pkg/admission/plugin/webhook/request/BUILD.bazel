@@ -6,7 +6,7 @@ go_library(
         "admissionreview.go",
         "doc.go",
     ],
-    importmap = "github.com/jetstack/cert-manager/vendor/k8s.io/apiserver/pkg/admission/plugin/webhook/request",
+    importmap = "github.com/adi658/cert-manager/vendor/k8s.io/apiserver/pkg/admission/plugin/webhook/request",
     importpath = "k8s.io/apiserver/pkg/admission/plugin/webhook/request",
     tags = ["manual"],
     visibility = ["//visibility:public"],
