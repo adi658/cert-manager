@@ -9,7 +9,7 @@ import (
 	"github.com/adi658/cert-manager/challenge/dns01"
 	"github.com/adi658/cert-manager/challenge/http01"
 	"github.com/adi658/cert-manager/challenge/tlsalpn01"
-	"github.com/adi658/cert-manager/cert-manager"
+	"github.com/adi658/cert-manager/lego"
 	"github.com/adi658/cert-manager/log"
 	"github.com/adi658/cert-manager/providers/dns"
 	"github.com/adi658/cert-manager/providers/http/memcached"

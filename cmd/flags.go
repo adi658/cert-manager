@@ -1,7 +1,7 @@
 package cmd
 
 import (
-	"github.com/adi658/cert-manager/cert-manager"
+	"github.com/adi658/cert-manager/lego"
 	"github.com/urfave/cli"
 )
 

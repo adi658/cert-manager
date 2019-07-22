@@ -10,7 +10,7 @@ import (
 	"time"
 
 	"github.com/adi658/cert-manager/certcrypto"
-	"github.com/adi658/cert-manager/cert-manager"
+	"github.com/adi658/cert-manager/lego"
 	"github.com/adi658/cert-manager/log"
 	"github.com/adi658/cert-manager/registration"
 	"github.com/urfave/cli"
