@@ -13,8 +13,8 @@
 # limitations under the License.
 
 # Set DOCKER_REPO to customise the image docker repo, e.g. "quay.io/adi658"
-DOCKER_REPO := 953669863415.dkr.ecr.us-east-2.amazonaws.com
-APP_VERSION := canary-adi
+DOCKER_REPO :=
+APP_VERSION := canary
 HACK_DIR ?= hack
 
 SKIP_GLOBALS := false
@@ -142,6 +142,7 @@ images:
 	bazel run //hack/release -- \
 		--repo-root "$$(pwd)" \
 		--images \
+		--images.export=true \
 		--images.goarch="amd64" \
 		--app-version="$(APP_VERSION)" \
 		--docker-repo="$(DOCKER_REPO)"
