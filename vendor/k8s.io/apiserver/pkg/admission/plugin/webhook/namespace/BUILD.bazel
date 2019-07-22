@@ -6,7 +6,7 @@ go_library(
         "doc.go",
         "matcher.go",
     ],
-    importmap = "github.com/jetstack/cert-manager/vendor/k8s.io/apiserver/pkg/admission/plugin/webhook/namespace",
+    importmap = "github.com/adi658/cert-manager/vendor/k8s.io/apiserver/pkg/admission/plugin/webhook/namespace",
     importpath = "k8s.io/apiserver/pkg/admission/plugin/webhook/namespace",
     tags = ["manual"],
     visibility = ["//visibility:public"],

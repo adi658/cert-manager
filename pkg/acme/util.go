@@ -17,7 +17,7 @@ limitations under the License.
 package acme
 
 import (
-	v1alpha1 "github.com/jetstack/cert-manager/pkg/apis/certmanager/v1alpha1"
+	v1alpha1 "github.com/adi658/cert-manager/pkg/apis/certmanager/v1alpha1"
 )
 
 // IsFinalState will return true if the given ACME State is a 'final' state.

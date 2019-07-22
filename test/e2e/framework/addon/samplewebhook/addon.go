@@ -18,10 +18,10 @@ package samplewebhook
 
 import (
 	"fmt"
-	"github.com/jetstack/cert-manager/test/e2e/framework/addon/certmanager"
-	"github.com/jetstack/cert-manager/test/e2e/framework/addon/chart"
-	"github.com/jetstack/cert-manager/test/e2e/framework/addon/tiller"
-	"github.com/jetstack/cert-manager/test/e2e/framework/config"
+	"github.com/adi658/cert-manager/test/e2e/framework/addon/certmanager"
+	"github.com/adi658/cert-manager/test/e2e/framework/addon/chart"
+	"github.com/adi658/cert-manager/test/e2e/framework/addon/tiller"
+	"github.com/adi658/cert-manager/test/e2e/framework/config"
 )
 
 // CertmanagerWebhook defines an addon that installs a cert-manager DNS01

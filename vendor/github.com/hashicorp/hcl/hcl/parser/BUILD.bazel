@@ -6,7 +6,7 @@ go_library(
         "error.go",
         "parser.go",
     ],
-    importmap = "github.com/jetstack/cert-manager/vendor/github.com/hashicorp/hcl/hcl/parser",
+    importmap = "github.com/adi658/cert-manager/vendor/github.com/hashicorp/hcl/hcl/parser",
     importpath = "github.com/hashicorp/hcl/hcl/parser",
     tags = ["manual"],
     visibility = ["//visibility:public"],

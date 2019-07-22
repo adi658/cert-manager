@@ -20,7 +20,7 @@ go_library(
         "text.go",
         "text_parser.go",
     ],
-    importmap = "github.com/jetstack/cert-manager/vendor/github.com/golang/protobuf/proto",
+    importmap = "github.com/adi658/cert-manager/vendor/github.com/golang/protobuf/proto",
     importpath = "github.com/golang/protobuf/proto",
     tags = ["manual"],
     visibility = ["//visibility:public"],

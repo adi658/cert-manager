@@ -11,7 +11,7 @@ image(
 go_library(
     name = "go_default_library",
     srcs = ["main.go"],
-    importpath = "github.com/jetstack/cert-manager/cmd/webhook",
+    importpath = "github.com/adi658/cert-manager/cmd/webhook",
     visibility = ["//visibility:private"],
     deps = [
         "//pkg/apis/certmanager/validation/webhooks:go_default_library",

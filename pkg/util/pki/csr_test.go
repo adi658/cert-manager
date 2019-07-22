@@ -20,8 +20,8 @@ import (
 	"crypto/x509"
 	"testing"
 
-	"github.com/jetstack/cert-manager/pkg/apis/certmanager/v1alpha1"
-	"github.com/jetstack/cert-manager/pkg/util"
+	"github.com/adi658/cert-manager/pkg/apis/certmanager/v1alpha1"
+	"github.com/adi658/cert-manager/pkg/util"
 )
 
 func buildCertificate(cn string, dnsNames ...string) *v1alpha1.Certificate {

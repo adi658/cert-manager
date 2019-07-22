@@ -7,7 +7,7 @@ go_library(
         "cache_striped.go",
         "cached_token_authenticator.go",
     ],
-    importmap = "github.com/jetstack/cert-manager/vendor/k8s.io/apiserver/pkg/authentication/token/cache",
+    importmap = "github.com/adi658/cert-manager/vendor/k8s.io/apiserver/pkg/authentication/token/cache",
     importpath = "k8s.io/apiserver/pkg/authentication/token/cache",
     tags = ["manual"],
     visibility = ["//visibility:public"],

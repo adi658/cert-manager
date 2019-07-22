@@ -19,7 +19,7 @@ package kube
 import (
 	"fmt"
 
-	"github.com/jetstack/cert-manager/pkg/util"
+	"github.com/adi658/cert-manager/pkg/util"
 	"k8s.io/client-go/rest"
 	"k8s.io/client-go/tools/clientcmd"
 )

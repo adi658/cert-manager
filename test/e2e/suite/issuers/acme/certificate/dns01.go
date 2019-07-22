@@ -19,17 +19,17 @@ package certificate
 import (
 	"time"
 
-	"github.com/jetstack/cert-manager/test/util/generate"
+	"github.com/adi658/cert-manager/test/util/generate"
 
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 
-	"github.com/jetstack/cert-manager/pkg/apis/certmanager/v1alpha1"
-	"github.com/jetstack/cert-manager/test/e2e/framework"
-	"github.com/jetstack/cert-manager/test/e2e/framework/addon"
-	"github.com/jetstack/cert-manager/test/e2e/suite/issuers/acme/dnsproviders"
-	"github.com/jetstack/cert-manager/test/e2e/util"
+	"github.com/adi658/cert-manager/pkg/apis/certmanager/v1alpha1"
+	"github.com/adi658/cert-manager/test/e2e/framework"
+	"github.com/adi658/cert-manager/test/e2e/framework/addon"
+	"github.com/adi658/cert-manager/test/e2e/suite/issuers/acme/dnsproviders"
+	"github.com/adi658/cert-manager/test/e2e/util"
 )
 
 type dns01Provider interface {

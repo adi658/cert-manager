@@ -17,7 +17,7 @@ go_library(
         "string_flag.go",
         "tristate.go",
     ],
-    importmap = "github.com/jetstack/cert-manager/vendor/k8s.io/component-base/cli/flag",
+    importmap = "github.com/adi658/cert-manager/vendor/k8s.io/component-base/cli/flag",
     importpath = "k8s.io/component-base/cli/flag",
     tags = ["manual"],
     visibility = ["//visibility:public"],

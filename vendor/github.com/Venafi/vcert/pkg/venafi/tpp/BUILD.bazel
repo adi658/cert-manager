@@ -8,7 +8,7 @@ go_library(
         "search.go",
         "tpp.go",
     ],
-    importmap = "github.com/jetstack/cert-manager/vendor/github.com/Venafi/vcert/pkg/venafi/tpp",
+    importmap = "github.com/adi658/cert-manager/vendor/github.com/Venafi/vcert/pkg/venafi/tpp",
     importpath = "github.com/Venafi/vcert/pkg/venafi/tpp",
     tags = ["manual"],
     visibility = ["//visibility:public"],

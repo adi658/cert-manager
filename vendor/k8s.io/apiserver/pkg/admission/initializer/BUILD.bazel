@@ -6,7 +6,7 @@ go_library(
         "initializer.go",
         "interfaces.go",
     ],
-    importmap = "github.com/jetstack/cert-manager/vendor/k8s.io/apiserver/pkg/admission/initializer",
+    importmap = "github.com/adi658/cert-manager/vendor/k8s.io/apiserver/pkg/admission/initializer",
     importpath = "k8s.io/apiserver/pkg/admission/initializer",
     tags = ["manual"],
     visibility = ["//visibility:public"],

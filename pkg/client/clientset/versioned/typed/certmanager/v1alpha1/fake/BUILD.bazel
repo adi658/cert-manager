@@ -12,7 +12,7 @@ go_library(
         "fake_issuer.go",
         "fake_order.go",
     ],
-    importpath = "github.com/jetstack/cert-manager/pkg/client/clientset/versioned/typed/certmanager/v1alpha1/fake",
+    importpath = "github.com/adi658/cert-manager/pkg/client/clientset/versioned/typed/certmanager/v1alpha1/fake",
     visibility = ["//visibility:public"],
     deps = [
         "//pkg/apis/certmanager/v1alpha1:go_default_library",

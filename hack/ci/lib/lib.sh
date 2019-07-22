@@ -32,7 +32,7 @@ export KIND_CONTAINER_NAME="kind-${KIND_CLUSTER_NAME}-control-plane"
 
 # DOCKER_REPO is the docker repo to use for cert-manager images, either when
 # building or deploying cert-manager using these scripts.
-export DOCKER_REPO="quay.io/jetstack"
+export DOCKER_REPO="quay.io/adi658"
 
 # DOCKER_TAG is the docker tag to use for the cert-manager images.
 # This defaults to 'build' so it doesn't conflict with images built for any

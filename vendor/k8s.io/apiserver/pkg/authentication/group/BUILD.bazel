@@ -7,7 +7,7 @@ go_library(
         "group_adder.go",
         "token_group_adder.go",
     ],
-    importmap = "github.com/jetstack/cert-manager/vendor/k8s.io/apiserver/pkg/authentication/group",
+    importmap = "github.com/adi658/cert-manager/vendor/k8s.io/apiserver/pkg/authentication/group",
     importpath = "k8s.io/apiserver/pkg/authentication/group",
     tags = ["manual"],
     visibility = ["//visibility:public"],

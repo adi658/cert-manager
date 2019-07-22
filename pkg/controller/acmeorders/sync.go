@@ -30,13 +30,13 @@ import (
 	utilerrors "k8s.io/apimachinery/pkg/util/errors"
 	"k8s.io/apimachinery/pkg/util/sets"
 
-	"github.com/jetstack/cert-manager/pkg/acme"
-	acmecl "github.com/jetstack/cert-manager/pkg/acme/client"
-	cmapi "github.com/jetstack/cert-manager/pkg/apis/certmanager/v1alpha1"
-	"github.com/jetstack/cert-manager/pkg/controller/acmeorders/selectors"
-	logf "github.com/jetstack/cert-manager/pkg/logs"
-	"github.com/jetstack/cert-manager/pkg/metrics"
-	acmeapi "github.com/jetstack/cert-manager/third_party/crypto/acme"
+	"github.com/adi658/cert-manager/pkg/acme"
+	acmecl "github.com/adi658/cert-manager/pkg/acme/client"
+	cmapi "github.com/adi658/cert-manager/pkg/apis/certmanager/v1alpha1"
+	"github.com/adi658/cert-manager/pkg/controller/acmeorders/selectors"
+	logf "github.com/adi658/cert-manager/pkg/logs"
+	"github.com/adi658/cert-manager/pkg/metrics"
+	acmeapi "github.com/adi658/cert-manager/third_party/crypto/acme"
 )
 
 var (

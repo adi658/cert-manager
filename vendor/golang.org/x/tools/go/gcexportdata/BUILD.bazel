@@ -6,7 +6,7 @@ go_library(
         "gcexportdata.go",
         "importer.go",
     ],
-    importmap = "github.com/jetstack/cert-manager/vendor/golang.org/x/tools/go/gcexportdata",
+    importmap = "github.com/adi658/cert-manager/vendor/golang.org/x/tools/go/gcexportdata",
     importpath = "golang.org/x/tools/go/gcexportdata",
     tags = ["manual"],
     visibility = ["//visibility:public"],

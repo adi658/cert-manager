@@ -7,7 +7,7 @@ go_library(
         "chown_linux.go",
         "lumberjack.go",
     ],
-    importmap = "github.com/jetstack/cert-manager/vendor/gopkg.in/natefinch/lumberjack.v2",
+    importmap = "github.com/adi658/cert-manager/vendor/gopkg.in/natefinch/lumberjack.v2",
     importpath = "gopkg.in/natefinch/lumberjack.v2",
     tags = ["manual"],
     visibility = ["//visibility:public"],

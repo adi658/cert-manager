@@ -10,7 +10,7 @@ go_library(
         "packages.go",
         "visit.go",
     ],
-    importmap = "github.com/jetstack/cert-manager/vendor/golang.org/x/tools/go/packages",
+    importmap = "github.com/adi658/cert-manager/vendor/golang.org/x/tools/go/packages",
     importpath = "golang.org/x/tools/go/packages",
     tags = ["manual"],
     visibility = ["//visibility:public"],

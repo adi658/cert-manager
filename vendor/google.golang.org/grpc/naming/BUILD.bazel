@@ -6,7 +6,7 @@ go_library(
         "dns_resolver.go",
         "naming.go",
     ],
-    importmap = "github.com/jetstack/cert-manager/vendor/google.golang.org/grpc/naming",
+    importmap = "github.com/adi658/cert-manager/vendor/google.golang.org/grpc/naming",
     importpath = "google.golang.org/grpc/naming",
     tags = ["manual"],
     visibility = ["//visibility:public"],

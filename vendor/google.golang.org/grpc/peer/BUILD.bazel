@@ -3,7 +3,7 @@ load("@io_bazel_rules_go//go:def.bzl", "go_library")
 go_library(
     name = "go_default_library",
     srcs = ["peer.go"],
-    importmap = "github.com/jetstack/cert-manager/vendor/google.golang.org/grpc/peer",
+    importmap = "github.com/adi658/cert-manager/vendor/google.golang.org/grpc/peer",
     importpath = "google.golang.org/grpc/peer",
     tags = ["manual"],
     visibility = ["//visibility:public"],

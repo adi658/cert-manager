@@ -30,11 +30,11 @@ import (
 	coretesting "k8s.io/client-go/testing"
 	fakeclock "k8s.io/utils/clock/testing"
 
-	apiutil "github.com/jetstack/cert-manager/pkg/api/util"
-	cmapi "github.com/jetstack/cert-manager/pkg/apis/certmanager/v1alpha1"
-	testpkg "github.com/jetstack/cert-manager/pkg/controller/test"
-	"github.com/jetstack/cert-manager/pkg/util/pki"
-	"github.com/jetstack/cert-manager/test/unit/gen"
+	apiutil "github.com/adi658/cert-manager/pkg/api/util"
+	cmapi "github.com/adi658/cert-manager/pkg/apis/certmanager/v1alpha1"
+	testpkg "github.com/adi658/cert-manager/pkg/controller/test"
+	"github.com/adi658/cert-manager/pkg/util/pki"
+	"github.com/adi658/cert-manager/test/unit/gen"
 )
 
 var (

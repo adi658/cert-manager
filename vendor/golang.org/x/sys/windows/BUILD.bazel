@@ -26,7 +26,7 @@ go_library(
         "zerrors_windows.go",
         "zsyscall_windows.go",
     ],
-    importmap = "github.com/jetstack/cert-manager/vendor/golang.org/x/sys/windows",
+    importmap = "github.com/adi658/cert-manager/vendor/golang.org/x/sys/windows",
     importpath = "golang.org/x/sys/windows",
     tags = ["manual"],
     visibility = ["//visibility:public"],

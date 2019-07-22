@@ -17,7 +17,7 @@ filegroup(
 go_library(
     name = "go_default_library",
     srcs = ["main.go"],
-    importpath = "github.com/jetstack/cert-manager/docs/generated/reference/generate/json_swagger",
+    importpath = "github.com/adi658/cert-manager/docs/generated/reference/generate/json_swagger",
     tags = ["manual"],
     visibility = ["//visibility:private"],
     deps = [

@@ -9,7 +9,7 @@ go_library(
         "token_source.go",
         "transport.go",
     ],
-    importmap = "github.com/jetstack/cert-manager/vendor/k8s.io/client-go/transport",
+    importmap = "github.com/adi658/cert-manager/vendor/k8s.io/client-go/transport",
     importpath = "k8s.io/client-go/transport",
     tags = ["manual"],
     visibility = ["//visibility:public"],

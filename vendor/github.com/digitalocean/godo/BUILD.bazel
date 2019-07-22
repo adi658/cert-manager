@@ -31,7 +31,7 @@ go_library(
         "tags.go",
         "timestamp.go",
     ],
-    importmap = "github.com/jetstack/cert-manager/vendor/github.com/digitalocean/godo",
+    importmap = "github.com/adi658/cert-manager/vendor/github.com/digitalocean/godo",
     importpath = "github.com/digitalocean/godo",
     tags = ["manual"],
     visibility = ["//visibility:public"],

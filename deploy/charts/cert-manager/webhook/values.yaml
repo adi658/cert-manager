@@ -31,7 +31,7 @@ resources: {}
 nodeSelector: {}
 
 image:
-  repository: quay.io/jetstack/cert-manager-webhook
+  repository: quay.io/adi658/cert-manager-webhook
   # Override the image tag to deploy by setting this variable.
   # If no value is set, the chart's appVersion will be used.
   # tag: canary

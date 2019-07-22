@@ -3,7 +3,7 @@ load("@io_bazel_rules_go//go:def.bzl", "go_library")
 go_library(
     name = "go_default_library",
     srcs = ["plugin.go"],
-    importpath = "github.com/jetstack/cert-manager/hack/release/pkg/build/images",
+    importpath = "github.com/adi658/cert-manager/hack/release/pkg/build/images",
     visibility = ["//visibility:public"],
     deps = [
         "//hack/release/pkg/bazel:go_default_library",

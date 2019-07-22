@@ -3,7 +3,7 @@ The Helm chart rbac.create option has moved to be global.rbac.create.
 Users of the Helm chart will need to update their install overrides to use
 the new format.
 
-The Helm chart has now moved to be hosted on charts.jetstack.io, and
+The Helm chart has now moved to be hosted on charts.adi658.io, and
 exposed via the Helm Hub. This allows us to make
 and test changes to the Helm chart more easily, and better manage versioning.
 
@@ -38,7 +38,7 @@ have automated testing using ARM platforms, so this feature is still marked
 experimental.
 
 To utilise the new ARM support, you'll need to update your manifests and append
-the architecture to the image name (i.e. quay.io/jetstack/cert-manager-controller-arm64:v0.7.0).
+the architecture to the image name (i.e. quay.io/adi658/cert-manager-controller-arm64:v0.7.0).
 
 ### Easier debugging of failing ACME challenges
 The introduction of the Challenge resource in the last release has allowed us
@@ -56,7 +56,7 @@ kubectl describe.
 - Use new cainjector controller for webhook APIService resource (#1415, @munnerz)
 - Adds a controller for injecting CA data into webhooks and APIServices (#1398, @DirectXMan12)
 - Bump Kubernetes dependencies to v1.13 (#1268, @munnerz)
-- Use charts.jetstack.io instead of the helm/charts repository to publish Helm chart (#1377, @munnerz)
+- Use charts.adi658.io instead of the helm/charts repository to publish Helm chart (#1377, @munnerz)
 - Recreate dead solver pods during self-check (#1388, @DanielMorsing)
 - Improve RFC2136 DNS01 provider documentation (#944, @briantopping)
 - Add more information to Google CloudDNS guide (#1295, @wwwil)

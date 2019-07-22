@@ -21,9 +21,9 @@ package base
 import (
 	"k8s.io/client-go/kubernetes"
 
-	"github.com/jetstack/cert-manager/test/e2e/framework/config"
-	"github.com/jetstack/cert-manager/test/e2e/framework/helper"
-	"github.com/jetstack/cert-manager/test/e2e/framework/util"
+	"github.com/adi658/cert-manager/test/e2e/framework/config"
+	"github.com/adi658/cert-manager/test/e2e/framework/helper"
+	"github.com/adi658/cert-manager/test/e2e/framework/util"
 )
 
 type Base struct {

@@ -21,10 +21,10 @@ import (
 
 	"k8s.io/api/core/v1"
 
-	apiutil "github.com/jetstack/cert-manager/pkg/api/util"
-	"github.com/jetstack/cert-manager/pkg/apis/certmanager/v1alpha1"
-	logf "github.com/jetstack/cert-manager/pkg/logs"
-	"github.com/jetstack/cert-manager/pkg/util/kube"
+	apiutil "github.com/adi658/cert-manager/pkg/api/util"
+	"github.com/adi658/cert-manager/pkg/apis/certmanager/v1alpha1"
+	logf "github.com/adi658/cert-manager/pkg/logs"
+	"github.com/adi658/cert-manager/pkg/util/kube"
 )
 
 const (

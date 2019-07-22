@@ -8,7 +8,7 @@ go_library(
         "controller.go",
         "sync.go",
     ],
-    importpath = "github.com/jetstack/cert-manager/pkg/controller/certificates",
+    importpath = "github.com/adi658/cert-manager/pkg/controller/certificates",
     visibility = ["//visibility:public"],
     deps = [
         "//pkg/api/util:go_default_library",

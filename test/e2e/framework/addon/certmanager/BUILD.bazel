@@ -3,7 +3,7 @@ load("@io_bazel_rules_go//go:def.bzl", "go_library")
 go_library(
     name = "go_default_library",
     srcs = ["addon.go"],
-    importpath = "github.com/jetstack/cert-manager/test/e2e/framework/addon/certmanager",
+    importpath = "github.com/adi658/cert-manager/test/e2e/framework/addon/certmanager",
     tags = ["manual"],
     visibility = ["//visibility:public"],
     deps = [

@@ -25,12 +25,12 @@ import (
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/runtime"
 
-	"github.com/jetstack/cert-manager/pkg/apis/certmanager/v1alpha1"
-	"github.com/jetstack/cert-manager/pkg/controller"
-	"github.com/jetstack/cert-manager/pkg/controller/test"
-	"github.com/jetstack/cert-manager/pkg/issuer/acme/dns/acmedns"
-	"github.com/jetstack/cert-manager/pkg/issuer/acme/dns/cloudflare"
-	"github.com/jetstack/cert-manager/pkg/issuer/acme/dns/util"
+	"github.com/adi658/cert-manager/pkg/apis/certmanager/v1alpha1"
+	"github.com/adi658/cert-manager/pkg/controller"
+	"github.com/adi658/cert-manager/pkg/controller/test"
+	"github.com/adi658/cert-manager/pkg/issuer/acme/dns/acmedns"
+	"github.com/adi658/cert-manager/pkg/issuer/acme/dns/cloudflare"
+	"github.com/adi658/cert-manager/pkg/issuer/acme/dns/util"
 )
 
 func newIssuer(name, namespace string, configs ...v1alpha1.ACMEIssuerDNS01Provider) *v1alpha1.Issuer {

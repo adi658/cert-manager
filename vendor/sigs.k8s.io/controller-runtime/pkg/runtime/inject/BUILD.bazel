@@ -6,7 +6,7 @@ go_library(
         "doc.go",
         "inject.go",
     ],
-    importmap = "github.com/jetstack/cert-manager/vendor/sigs.k8s.io/controller-runtime/pkg/runtime/inject",
+    importmap = "github.com/adi658/cert-manager/vendor/sigs.k8s.io/controller-runtime/pkg/runtime/inject",
     importpath = "sigs.k8s.io/controller-runtime/pkg/runtime/inject",
     tags = ["manual"],
     visibility = ["//visibility:public"],

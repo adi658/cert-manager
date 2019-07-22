@@ -6,7 +6,7 @@ go_library(
         "acme.go",
         "util.go",
     ],
-    importpath = "github.com/jetstack/cert-manager/pkg/acme",
+    importpath = "github.com/adi658/cert-manager/pkg/acme",
     visibility = ["//visibility:public"],
     deps = [
         "//pkg/acme/client:go_default_library",

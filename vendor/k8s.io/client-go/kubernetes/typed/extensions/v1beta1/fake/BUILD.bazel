@@ -13,7 +13,7 @@ go_library(
         "fake_podsecuritypolicy.go",
         "fake_replicaset.go",
     ],
-    importmap = "github.com/jetstack/cert-manager/vendor/k8s.io/client-go/kubernetes/typed/extensions/v1beta1/fake",
+    importmap = "github.com/adi658/cert-manager/vendor/k8s.io/client-go/kubernetes/typed/extensions/v1beta1/fake",
     importpath = "k8s.io/client-go/kubernetes/typed/extensions/v1beta1/fake",
     tags = ["manual"],
     visibility = ["//visibility:public"],

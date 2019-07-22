@@ -23,8 +23,8 @@ package dnsproviders
 import (
 	"fmt"
 
-	cmapi "github.com/jetstack/cert-manager/pkg/apis/certmanager/v1alpha1"
-	cmutil "github.com/jetstack/cert-manager/pkg/util"
+	cmapi "github.com/adi658/cert-manager/pkg/apis/certmanager/v1alpha1"
+	cmutil "github.com/adi658/cert-manager/pkg/util"
 )
 
 var (

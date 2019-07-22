@@ -17,5 +17,5 @@ limitations under the License.
 package venafi
 
 import (
-	_ "github.com/jetstack/cert-manager/test/e2e/suite/issuers/venafi/tpp"
+	_ "github.com/adi658/cert-manager/test/e2e/suite/issuers/venafi/tpp"
 )

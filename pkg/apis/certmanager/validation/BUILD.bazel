@@ -9,7 +9,7 @@ go_library(
         "clusterissuer.go",
         "issuer.go",
     ],
-    importpath = "github.com/jetstack/cert-manager/pkg/apis/certmanager/validation",
+    importpath = "github.com/adi658/cert-manager/pkg/apis/certmanager/validation",
     visibility = ["//visibility:public"],
     deps = [
         "//pkg/api/util:go_default_library",

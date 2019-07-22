@@ -19,8 +19,8 @@ package helper
 import (
 	"k8s.io/client-go/kubernetes"
 
-	cmclient "github.com/jetstack/cert-manager/pkg/client/clientset/versioned"
-	"github.com/jetstack/cert-manager/test/e2e/framework/config"
+	cmclient "github.com/adi658/cert-manager/pkg/client/clientset/versioned"
+	"github.com/adi658/cert-manager/test/e2e/framework/config"
 )
 
 // Helper provides methods for common operations needed during tests.

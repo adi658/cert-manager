@@ -7,7 +7,7 @@ go_library(
         "fake_auditregistration_client.go",
         "fake_auditsink.go",
     ],
-    importmap = "github.com/jetstack/cert-manager/vendor/k8s.io/client-go/kubernetes/typed/auditregistration/v1alpha1/fake",
+    importmap = "github.com/adi658/cert-manager/vendor/k8s.io/client-go/kubernetes/typed/auditregistration/v1alpha1/fake",
     importpath = "k8s.io/client-go/kubernetes/typed/auditregistration/v1alpha1/fake",
     tags = ["manual"],
     visibility = ["//visibility:public"],

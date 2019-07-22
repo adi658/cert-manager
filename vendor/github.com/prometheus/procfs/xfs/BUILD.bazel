@@ -6,7 +6,7 @@ go_library(
         "parse.go",
         "xfs.go",
     ],
-    importmap = "github.com/jetstack/cert-manager/vendor/github.com/prometheus/procfs/xfs",
+    importmap = "github.com/adi658/cert-manager/vendor/github.com/prometheus/procfs/xfs",
     importpath = "github.com/prometheus/procfs/xfs",
     tags = ["manual"],
     visibility = ["//visibility:public"],

@@ -11,4 +11,4 @@ This sections contains tutorials relating to the ACME issuer.
    quick-start/index
    dns-validation
    http-validation
-   migrating-from-kube-lego
+   migrating-from-kube-cert-manager

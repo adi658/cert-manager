@@ -7,7 +7,7 @@ go_library(
         "groupversion.go",
         "installer.go",
     ],
-    importmap = "github.com/jetstack/cert-manager/vendor/k8s.io/apiserver/pkg/endpoints",
+    importmap = "github.com/adi658/cert-manager/vendor/k8s.io/apiserver/pkg/endpoints",
     importpath = "k8s.io/apiserver/pkg/endpoints",
     tags = ["manual"],
     visibility = ["//visibility:public"],

@@ -29,17 +29,17 @@ import (
 	"k8s.io/apimachinery/pkg/util/intstr"
 	"k8s.io/apimachinery/pkg/util/wait"
 
-	"github.com/jetstack/cert-manager/pkg/apis/certmanager/v1alpha1"
-	cmutil "github.com/jetstack/cert-manager/pkg/util"
-	"github.com/jetstack/cert-manager/test/e2e/framework"
-	"github.com/jetstack/cert-manager/test/e2e/framework/addon"
-	"github.com/jetstack/cert-manager/test/e2e/framework/addon/pebble"
-	"github.com/jetstack/cert-manager/test/e2e/framework/addon/tiller"
-	"github.com/jetstack/cert-manager/test/e2e/framework/log"
-	. "github.com/jetstack/cert-manager/test/e2e/framework/matcher"
-	"github.com/jetstack/cert-manager/test/e2e/util"
-	"github.com/jetstack/cert-manager/test/unit/gen"
-	"github.com/jetstack/cert-manager/test/util/generate"
+	"github.com/adi658/cert-manager/pkg/apis/certmanager/v1alpha1"
+	cmutil "github.com/adi658/cert-manager/pkg/util"
+	"github.com/adi658/cert-manager/test/e2e/framework"
+	"github.com/adi658/cert-manager/test/e2e/framework/addon"
+	"github.com/adi658/cert-manager/test/e2e/framework/addon/pebble"
+	"github.com/adi658/cert-manager/test/e2e/framework/addon/tiller"
+	"github.com/adi658/cert-manager/test/e2e/framework/log"
+	. "github.com/adi658/cert-manager/test/e2e/framework/matcher"
+	"github.com/adi658/cert-manager/test/e2e/util"
+	"github.com/adi658/cert-manager/test/unit/gen"
+	"github.com/adi658/cert-manager/test/util/generate"
 )
 
 var _ = framework.CertManagerDescribe("ACME Certificate (HTTP01)", func() {

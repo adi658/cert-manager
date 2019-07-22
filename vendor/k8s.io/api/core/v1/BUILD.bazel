@@ -16,7 +16,7 @@ go_library(
         "well_known_labels.go",
         "zz_generated.deepcopy.go",
     ],
-    importmap = "github.com/jetstack/cert-manager/vendor/k8s.io/api/core/v1",
+    importmap = "github.com/adi658/cert-manager/vendor/k8s.io/api/core/v1",
     importpath = "k8s.io/api/core/v1",
     tags = ["manual"],
     visibility = ["//visibility:public"],

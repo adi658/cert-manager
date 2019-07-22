@@ -11,7 +11,7 @@ go_library(
         "fastwalk_portable.go",
         "fastwalk_unix.go",
     ],
-    importmap = "github.com/jetstack/cert-manager/vendor/golang.org/x/tools/internal/fastwalk",
+    importmap = "github.com/adi658/cert-manager/vendor/golang.org/x/tools/internal/fastwalk",
     importpath = "golang.org/x/tools/internal/fastwalk",
     tags = ["manual"],
     visibility = ["//vendor/golang.org/x/tools:__subpackages__"],

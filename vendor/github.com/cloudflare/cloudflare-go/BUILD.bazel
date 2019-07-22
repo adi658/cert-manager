@@ -26,7 +26,7 @@ go_library(
         "waf.go",
         "zone.go",
     ],
-    importmap = "github.com/jetstack/cert-manager/vendor/github.com/cloudflare/cloudflare-go",
+    importmap = "github.com/adi658/cert-manager/vendor/github.com/cloudflare/cloudflare-go",
     importpath = "github.com/cloudflare/cloudflare-go",
     tags = ["manual"],
     visibility = ["//visibility:public"],

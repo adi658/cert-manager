@@ -7,7 +7,7 @@ go_library(
         "gogo.pb.go",
         "helper.go",
     ],
-    importmap = "github.com/jetstack/cert-manager/vendor/github.com/gogo/protobuf/gogoproto",
+    importmap = "github.com/adi658/cert-manager/vendor/github.com/gogo/protobuf/gogoproto",
     importpath = "github.com/gogo/protobuf/gogoproto",
     tags = ["manual"],
     visibility = ["//visibility:public"],

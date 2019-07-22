@@ -9,7 +9,7 @@ go_library(
         "version.go",
         "zones.go",
     ],
-    importmap = "github.com/jetstack/cert-manager/vendor/github.com/Azure/azure-sdk-for-go/services/dns/mgmt/2017-10-01/dns",
+    importmap = "github.com/adi658/cert-manager/vendor/github.com/Azure/azure-sdk-for-go/services/dns/mgmt/2017-10-01/dns",
     importpath = "github.com/Azure/azure-sdk-for-go/services/dns/mgmt/2017-10-01/dns",
     tags = ["manual"],
     visibility = ["//visibility:public"],

@@ -24,8 +24,8 @@ import (
 	flag "github.com/spf13/pflag"
 	"os/exec"
 
-	logf "github.com/jetstack/cert-manager/hack/release/pkg/log"
-	"github.com/jetstack/cert-manager/hack/release/pkg/util"
+	logf "github.com/adi658/cert-manager/hack/release/pkg/log"
+	"github.com/adi658/cert-manager/hack/release/pkg/util"
 )
 
 var (
@@ -61,13 +61,13 @@ type Global struct {
 	ChartPath string
 }
 
-const defaultDockerRepo = "quay.io/jetstack"
+const defaultDockerRepo = "quay.io/adi658"
 
 func (g *Global) AddFlags(fs *flag.FlagSet) {
 	fs.StringVar(&g.RepoRoot, "repo-root", "", "path to the root of the cert-manager repository")
 	fs.StringVar(&g.DockerRepo, "docker-repo", defaultDockerRepo, "the docker repository that images will be tagged with")
 	fs.StringVar(&g.AppVersion, "app-version", "", "app version to use when building and generating manifests. Defaults to 'git describe --tags --abbrev=0 --exact-match'")
-	fs.StringVar(&g.UpstreamRepoURL, "git.upstream-repo-url", "https://github.com/jetstack/cert-manager.git", "the URL of the git repo used to check for tags when generating --app-version")
+	fs.StringVar(&g.UpstreamRepoURL, "git.upstream-repo-url", "https://github.com/adi658/cert-manager.git", "the URL of the git repo used to check for tags when generating --app-version")
 	fs.StringVar(&g.GitState, "git.state", "", "the state of the git working tree. if set and not 'clean', this will be appended to the app-version during builds")
 	fs.StringVar(&g.GitCommitRef, "git.commit-ref", "", "the git commit ref of this build. Defaults to 'git rev-parse --short HEAD'")
 	fs.StringVar(&g.GitPath, "git.path", "git", "path to the git binary to use")

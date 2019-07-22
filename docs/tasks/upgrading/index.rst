@@ -33,7 +33,7 @@ version number you want to install:
    # Install the cert-manager CustomResourceDefinition resources before
    # upgrading the Helm chart
    kubectl apply \
-        -f https://raw.githubusercontent.com/jetstack/cert-manager/<version>/deploy/manifests/00-crds.yaml
+        -f https://raw.githubusercontent.com/adi658/cert-manager/<version>/deploy/manifests/00-crds.yaml
 
    # Ensure the local Helm chart repository cache is up to date
    helm repo update
@@ -43,7 +43,7 @@ version number you want to install:
    # can provision correctly.
    kubectl label namespace cert-manager certmanager.k8s.io/disable-validation=true
 
-   helm upgrade --version <version> <release_name> jetstack/cert-manager
+   helm upgrade --version <version> <release_name> adi658/cert-manager
 
 This will upgrade you to the latest version of cert-manager, as listed in the
 `Jetstack Helm chart repository`_.
@@ -74,7 +74,7 @@ version number you want to install:
    kubectl label namespace cert-manager certmanager.k8s.io/disable-validation=true
 
    kubectl apply \
-        -f https://github.com/jetstack/cert-manager/releases/download/<version>/cert-manager.yaml
+        -f https://github.com/adi658/cert-manager/releases/download/<version>/cert-manager.yaml
 
 .. note::
    If you are running kubectl v1.12 or below, you will need to add the
@@ -95,6 +95,6 @@ version number you want to install:
    upgrading-0.7-0.8
    upgrading-0.8-0.9
 
-.. _`official Helm charts repository`: https://hub.helm.sh/charts/jetstack
-.. _`static deployment manifests`: https://github.com/jetstack/cert-manager/blob/release-0.9/deploy/manifests
+.. _`official Helm charts repository`: https://hub.helm.sh/charts/adi658
+.. _`static deployment manifests`: https://github.com/adi658/cert-manager/blob/release-0.9/deploy/manifests
 .. _`kubernetes/kubernetes#69590`: https://github.com/kubernetes/kubernetes/issues/69590

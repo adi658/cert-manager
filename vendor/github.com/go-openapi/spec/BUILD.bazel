@@ -26,7 +26,7 @@ go_library(
         "tag.go",
         "xml_object.go",
     ],
-    importmap = "github.com/jetstack/cert-manager/vendor/github.com/go-openapi/spec",
+    importmap = "github.com/adi658/cert-manager/vendor/github.com/go-openapi/spec",
     importpath = "github.com/go-openapi/spec",
     tags = ["manual"],
     visibility = ["//visibility:public"],

@@ -3,7 +3,7 @@ load("@io_bazel_rules_go//go:def.bzl", "go_library")
 go_library(
     name = "go_default_library",
     srcs = ["fieldmanager.go"],
-    importmap = "github.com/jetstack/cert-manager/vendor/k8s.io/apiserver/pkg/endpoints/handlers/fieldmanager",
+    importmap = "github.com/adi658/cert-manager/vendor/k8s.io/apiserver/pkg/endpoints/handlers/fieldmanager",
     importpath = "k8s.io/apiserver/pkg/endpoints/handlers/fieldmanager",
     tags = ["manual"],
     visibility = ["//visibility:public"],

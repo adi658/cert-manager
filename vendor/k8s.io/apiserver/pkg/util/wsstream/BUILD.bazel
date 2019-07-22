@@ -7,7 +7,7 @@ go_library(
         "doc.go",
         "stream.go",
     ],
-    importmap = "github.com/jetstack/cert-manager/vendor/k8s.io/apiserver/pkg/util/wsstream",
+    importmap = "github.com/adi658/cert-manager/vendor/k8s.io/apiserver/pkg/util/wsstream",
     importpath = "k8s.io/apiserver/pkg/util/wsstream",
     tags = ["manual"],
     visibility = ["//visibility:public"],

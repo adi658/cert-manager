@@ -12,7 +12,7 @@ go_library(
         "suffix.go",
         "zz_generated.deepcopy.go",
     ],
-    importmap = "github.com/jetstack/cert-manager/vendor/k8s.io/apimachinery/pkg/api/resource",
+    importmap = "github.com/adi658/cert-manager/vendor/k8s.io/apimachinery/pkg/api/resource",
     importpath = "k8s.io/apimachinery/pkg/api/resource",
     tags = ["manual"],
     visibility = ["//visibility:public"],

@@ -29,10 +29,10 @@ import (
 	coretesting "k8s.io/client-go/testing"
 	fakeclock "k8s.io/utils/clock/testing"
 
-	acmecl "github.com/jetstack/cert-manager/pkg/acme/client"
-	"github.com/jetstack/cert-manager/pkg/apis/certmanager/v1alpha1"
-	testpkg "github.com/jetstack/cert-manager/pkg/controller/test"
-	acmeapi "github.com/jetstack/cert-manager/third_party/crypto/acme"
+	acmecl "github.com/adi658/cert-manager/pkg/acme/client"
+	"github.com/adi658/cert-manager/pkg/apis/certmanager/v1alpha1"
+	testpkg "github.com/adi658/cert-manager/pkg/controller/test"
+	acmeapi "github.com/adi658/cert-manager/third_party/crypto/acme"
 )
 
 func TestSyncHappyPath(t *testing.T) {

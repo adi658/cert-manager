@@ -6,7 +6,7 @@ go_library(
         "doc.go",
         "truncate.go",
     ],
-    importmap = "github.com/jetstack/cert-manager/vendor/k8s.io/apiserver/plugin/pkg/audit/truncate",
+    importmap = "github.com/adi658/cert-manager/vendor/k8s.io/apiserver/plugin/pkg/audit/truncate",
     importpath = "k8s.io/apiserver/plugin/pkg/audit/truncate",
     tags = ["manual"],
     visibility = ["//visibility:public"],

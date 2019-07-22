@@ -28,9 +28,9 @@ import (
 	"k8s.io/client-go/rest"
 	"k8s.io/klog"
 
-	"github.com/jetstack/cert-manager/pkg/acme/webhook/apis/acme/v1alpha1"
-	cmapi "github.com/jetstack/cert-manager/pkg/apis/certmanager/v1alpha1"
-	"github.com/jetstack/cert-manager/pkg/client/clientset/versioned/scheme"
+	"github.com/adi658/cert-manager/pkg/acme/webhook/apis/acme/v1alpha1"
+	cmapi "github.com/adi658/cert-manager/pkg/apis/certmanager/v1alpha1"
+	"github.com/adi658/cert-manager/pkg/client/clientset/versioned/scheme"
 )
 
 type Webhook struct {

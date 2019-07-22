@@ -10,7 +10,7 @@ go_library(
         "path.go",
         "set.go",
     ],
-    importmap = "github.com/jetstack/cert-manager/vendor/sigs.k8s.io/structured-merge-diff/fieldpath",
+    importmap = "github.com/adi658/cert-manager/vendor/sigs.k8s.io/structured-merge-diff/fieldpath",
     importpath = "sigs.k8s.io/structured-merge-diff/fieldpath",
     tags = ["manual"],
     visibility = ["//visibility:public"],

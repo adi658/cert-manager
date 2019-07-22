@@ -24,11 +24,11 @@ import (
 	"k8s.io/apimachinery/pkg/runtime"
 	coretesting "k8s.io/client-go/testing"
 
-	acmecl "github.com/jetstack/cert-manager/pkg/acme/client"
-	"github.com/jetstack/cert-manager/pkg/apis/certmanager/v1alpha1"
-	testpkg "github.com/jetstack/cert-manager/pkg/controller/test"
-	"github.com/jetstack/cert-manager/test/unit/gen"
-	acmeapi "github.com/jetstack/cert-manager/third_party/crypto/acme"
+	acmecl "github.com/adi658/cert-manager/pkg/acme/client"
+	"github.com/adi658/cert-manager/pkg/apis/certmanager/v1alpha1"
+	testpkg "github.com/adi658/cert-manager/pkg/controller/test"
+	"github.com/adi658/cert-manager/test/unit/gen"
+	acmeapi "github.com/adi658/cert-manager/third_party/crypto/acme"
 )
 
 // Present the challenge value with the given solver.

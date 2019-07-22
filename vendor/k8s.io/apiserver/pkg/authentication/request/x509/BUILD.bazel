@@ -6,7 +6,7 @@ go_library(
         "doc.go",
         "x509.go",
     ],
-    importmap = "github.com/jetstack/cert-manager/vendor/k8s.io/apiserver/pkg/authentication/request/x509",
+    importmap = "github.com/adi658/cert-manager/vendor/k8s.io/apiserver/pkg/authentication/request/x509",
     importpath = "k8s.io/apiserver/pkg/authentication/request/x509",
     tags = ["manual"],
     visibility = ["//visibility:public"],

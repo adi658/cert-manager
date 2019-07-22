@@ -28,9 +28,9 @@ import (
 	"github.com/google/go-github/github"
 	flag "github.com/spf13/pflag"
 
-	"github.com/jetstack/cert-manager/hack/release/pkg/flags"
-	"github.com/jetstack/cert-manager/hack/release/pkg/helm"
-	logf "github.com/jetstack/cert-manager/hack/release/pkg/log"
+	"github.com/adi658/cert-manager/hack/release/pkg/flags"
+	"github.com/adi658/cert-manager/hack/release/pkg/helm"
+	logf "github.com/adi658/cert-manager/hack/release/pkg/log"
 )
 
 var (
@@ -69,7 +69,7 @@ func (p *Plugin) AddFlags(fs *flag.FlagSet) {
 	p.variants = make(map[string]string)
 	p.github.AddFlags(fs)
 
-	fs.StringVar(&p.Org, "manifests.org", "jetstack", "GitHub organisation name to publish manifests release to")
+	fs.StringVar(&p.Org, "manifests.org", "adi658", "GitHub organisation name to publish manifests release to")
 	fs.StringVar(&p.Repo, "manifests.repo", "cert-manager", "GitHub repository name to publish manifests release to")
 }
 

@@ -6,7 +6,7 @@ go_library(
         "doc.go",
         "source.go",
     ],
-    importmap = "github.com/jetstack/cert-manager/vendor/sigs.k8s.io/controller-runtime/pkg/source",
+    importmap = "github.com/adi658/cert-manager/vendor/sigs.k8s.io/controller-runtime/pkg/source",
     importpath = "sigs.k8s.io/controller-runtime/pkg/source",
     tags = ["manual"],
     visibility = ["//visibility:public"],

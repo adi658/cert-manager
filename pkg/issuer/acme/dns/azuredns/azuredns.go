@@ -1,7 +1,7 @@
 // +skip_license_check
 
 /*
-This file contains portions of code directly taken from the 'xenolf/lego' project.
+This file contains portions of code directly taken from the 'xenolf/cert-manager' project.
 A copy of the license for this code can be found in the file named LICENSE in
 this directory.
 */
@@ -23,7 +23,7 @@ import (
 	"github.com/Azure/go-autorest/autorest/adal"
 	"github.com/Azure/go-autorest/autorest/azure"
 	"github.com/Azure/go-autorest/autorest/to"
-	"github.com/jetstack/cert-manager/pkg/issuer/acme/dns/util"
+	"github.com/adi658/cert-manager/pkg/issuer/acme/dns/util"
 )
 
 // DNSProvider implements the util.ChallengeProvider interface

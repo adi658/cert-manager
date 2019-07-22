@@ -9,7 +9,7 @@ go_library(
         "endpoints.go",
         "v3model.go",
     ],
-    importmap = "github.com/jetstack/cert-manager/vendor/github.com/aws/aws-sdk-go/aws/endpoints",
+    importmap = "github.com/adi658/cert-manager/vendor/github.com/aws/aws-sdk-go/aws/endpoints",
     importpath = "github.com/aws/aws-sdk-go/aws/endpoints",
     tags = ["manual"],
     visibility = ["//visibility:public"],

@@ -8,7 +8,7 @@ go_library(
         "setup.go",
         "sign.go",
     ],
-    importpath = "github.com/jetstack/cert-manager/pkg/issuer/ca",
+    importpath = "github.com/adi658/cert-manager/pkg/issuer/ca",
     visibility = ["//visibility:public"],
     deps = [
         "//pkg/api/util:go_default_library",

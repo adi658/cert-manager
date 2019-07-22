@@ -23,7 +23,7 @@ import (
 	"k8s.io/klog"
 	ctrl "sigs.k8s.io/controller-runtime"
 
-	"github.com/jetstack/cert-manager/pkg/logs"
+	"github.com/adi658/cert-manager/pkg/logs"
 )
 
 func main() {

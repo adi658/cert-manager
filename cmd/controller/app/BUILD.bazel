@@ -3,7 +3,7 @@ load("@io_bazel_rules_go//go:def.bzl", "go_library")
 go_library(
     name = "go_default_library",
     srcs = ["controller.go"],
-    importpath = "github.com/jetstack/cert-manager/cmd/controller/app",
+    importpath = "github.com/adi658/cert-manager/cmd/controller/app",
     visibility = ["//visibility:public"],
     deps = [
         "//cmd/controller/app/options:go_default_library",

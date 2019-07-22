@@ -9,7 +9,7 @@ go_library(
         "reader.go",
         "util.go",
     ],
-    importmap = "github.com/jetstack/cert-manager/vendor/k8s.io/apiserver/pkg/audit/policy",
+    importmap = "github.com/adi658/cert-manager/vendor/k8s.io/apiserver/pkg/audit/policy",
     importpath = "k8s.io/apiserver/pkg/audit/policy",
     tags = ["manual"],
     visibility = ["//visibility:public"],

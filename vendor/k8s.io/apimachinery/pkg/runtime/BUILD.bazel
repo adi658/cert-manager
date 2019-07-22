@@ -22,7 +22,7 @@ go_library(
         "types_proto.go",
         "zz_generated.deepcopy.go",
     ],
-    importmap = "github.com/jetstack/cert-manager/vendor/k8s.io/apimachinery/pkg/runtime",
+    importmap = "github.com/adi658/cert-manager/vendor/k8s.io/apimachinery/pkg/runtime",
     importpath = "k8s.io/apimachinery/pkg/runtime",
     tags = ["manual"],
     visibility = ["//visibility:public"],

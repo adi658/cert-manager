@@ -6,7 +6,7 @@ go_library(
         "clientset.go",
         "doc.go",
     ],
-    importpath = "github.com/jetstack/cert-manager/pkg/client/clientset/versioned",
+    importpath = "github.com/adi658/cert-manager/pkg/client/clientset/versioned",
     visibility = ["//visibility:public"],
     deps = [
         "//pkg/client/clientset/versioned/typed/certmanager/v1alpha1:go_default_library",

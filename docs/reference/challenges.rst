@@ -116,4 +116,4 @@ Troubleshooting failing challenges
    add section describing common issues and resolutions when challenges are
    failing
 
-.. _ddff78: https://github.com/jetstack/cert-manager/blob/ddff78f011558e64186d61f7c693edced1496afa/pkg/controller/acmechallenges/scheduler/scheduler.go#L31-L33
+.. _ddff78: https://github.com/adi658/cert-manager/blob/ddff78f011558e64186d61f7c693edced1496afa/pkg/controller/acmechallenges/scheduler/scheduler.go#L31-L33

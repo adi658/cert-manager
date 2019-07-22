@@ -6,7 +6,7 @@ go_library(
         "decoder.go",
         "encoder.go",
     ],
-    importmap = "github.com/jetstack/cert-manager/vendor/k8s.io/client-go/rest/watch",
+    importmap = "github.com/adi658/cert-manager/vendor/k8s.io/client-go/rest/watch",
     importpath = "k8s.io/client-go/rest/watch",
     tags = ["manual"],
     visibility = ["//visibility:public"],

@@ -7,7 +7,7 @@ go_library(
         "unstructured.go",
         "value.go",
     ],
-    importmap = "github.com/jetstack/cert-manager/vendor/sigs.k8s.io/structured-merge-diff/value",
+    importmap = "github.com/adi658/cert-manager/vendor/sigs.k8s.io/structured-merge-diff/value",
     importpath = "sigs.k8s.io/structured-merge-diff/value",
     tags = ["manual"],
     visibility = ["//visibility:public"],

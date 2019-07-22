@@ -14,7 +14,7 @@ go_library(
         "priority.go",
         "restmapper.go",
     ],
-    importmap = "github.com/jetstack/cert-manager/vendor/k8s.io/apimachinery/pkg/api/meta",
+    importmap = "github.com/adi658/cert-manager/vendor/k8s.io/apimachinery/pkg/api/meta",
     importpath = "k8s.io/apimachinery/pkg/api/meta",
     tags = ["manual"],
     visibility = ["//visibility:public"],

@@ -14,7 +14,7 @@ go_library(
         "main.go",
         "start.go",
     ],
-    importpath = "github.com/jetstack/cert-manager/cmd/cainjector",
+    importpath = "github.com/adi658/cert-manager/cmd/cainjector",
     visibility = ["//visibility:private"],
     deps = [
         "//pkg/api:go_default_library",

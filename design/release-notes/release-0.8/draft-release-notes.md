@@ -93,5 +93,5 @@ have any issues!
 - Improve logging in ACME HTTP01 solver (#1474, @munnerz)
 - Run metrics server on cert-manager instances that have not been elected as leader (#1482, @kragniz)
 - Switch to structured logging using logr (#1409, @munnerz)
-- fixing the quickstart documentation to use the new helm chart repo charts.jetstack.io (#1468, @BradErz)
+- fixing the quickstart documentation to use the new helm chart repo charts.adi658.io (#1468, @BradErz)
 - Removes need for hostedZoneName to be specified. Uses discovered DNS zone name instead. (#1466, @logicfox)

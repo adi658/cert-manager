@@ -28,7 +28,7 @@ import (
 	"net/url"
 	"time"
 
-	intscheme "github.com/jetstack/cert-manager/pkg/client/clientset/versioned/scheme"
+	intscheme "github.com/adi658/cert-manager/pkg/client/clientset/versioned/scheme"
 	"k8s.io/api/core/v1"
 	extv1beta1 "k8s.io/api/extensions/v1beta1"
 	apiextcs "k8s.io/apiextensions-apiserver/pkg/client/clientset/clientset/typed/apiextensions/v1beta1"
@@ -38,12 +38,12 @@ import (
 	"k8s.io/apimachinery/pkg/util/wait"
 	"k8s.io/client-go/kubernetes"
 
-	apiutil "github.com/jetstack/cert-manager/pkg/api/util"
-	"github.com/jetstack/cert-manager/pkg/apis/certmanager/v1alpha1"
-	clientset "github.com/jetstack/cert-manager/pkg/client/clientset/versioned/typed/certmanager/v1alpha1"
-	"github.com/jetstack/cert-manager/pkg/util"
-	"github.com/jetstack/cert-manager/pkg/util/pki"
-	"github.com/jetstack/cert-manager/test/e2e/framework/log"
+	apiutil "github.com/adi658/cert-manager/pkg/api/util"
+	"github.com/adi658/cert-manager/pkg/apis/certmanager/v1alpha1"
+	clientset "github.com/adi658/cert-manager/pkg/client/clientset/versioned/typed/certmanager/v1alpha1"
+	"github.com/adi658/cert-manager/pkg/util"
+	"github.com/adi658/cert-manager/pkg/util/pki"
+	"github.com/adi658/cert-manager/test/e2e/framework/log"
 )
 
 func CertificateOnlyValidForDomains(cert *x509.Certificate, commonName string, dnsNames ...string) bool {

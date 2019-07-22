@@ -18,7 +18,7 @@ go_library(
         "version_command.go",
         "watch_command.go",
     ],
-    importmap = "github.com/jetstack/cert-manager/vendor/github.com/onsi/ginkgo/ginkgo",
+    importmap = "github.com/adi658/cert-manager/vendor/github.com/onsi/ginkgo/ginkgo",
     importpath = "github.com/onsi/ginkgo/ginkgo",
     tags = ["manual"],
     visibility = ["//visibility:private"],

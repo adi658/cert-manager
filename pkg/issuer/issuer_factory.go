@@ -20,9 +20,9 @@ import (
 	"fmt"
 	"sync"
 
-	apiutil "github.com/jetstack/cert-manager/pkg/api/util"
-	"github.com/jetstack/cert-manager/pkg/apis/certmanager/v1alpha1"
-	"github.com/jetstack/cert-manager/pkg/controller"
+	apiutil "github.com/adi658/cert-manager/pkg/api/util"
+	"github.com/adi658/cert-manager/pkg/apis/certmanager/v1alpha1"
+	"github.com/adi658/cert-manager/pkg/controller"
 )
 
 // issuerConstructor constructs an issuer given an Issuer resource and a Context.

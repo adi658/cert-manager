@@ -10,7 +10,7 @@ go_library(
         "urls.go",
         "urlsmap.go",
     ],
-    importmap = "github.com/jetstack/cert-manager/vendor/github.com/coreos/etcd/pkg/types",
+    importmap = "github.com/adi658/cert-manager/vendor/github.com/coreos/etcd/pkg/types",
     importpath = "github.com/coreos/etcd/pkg/types",
     tags = ["manual"],
     visibility = ["//visibility:public"],

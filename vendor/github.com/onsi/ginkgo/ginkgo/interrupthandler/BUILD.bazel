@@ -7,7 +7,7 @@ go_library(
         "sigquit_swallower_unix.go",
         "sigquit_swallower_windows.go",
     ],
-    importmap = "github.com/jetstack/cert-manager/vendor/github.com/onsi/ginkgo/ginkgo/interrupthandler",
+    importmap = "github.com/adi658/cert-manager/vendor/github.com/onsi/ginkgo/ginkgo/interrupthandler",
     importpath = "github.com/onsi/ginkgo/ginkgo/interrupthandler",
     tags = ["manual"],
     visibility = ["//visibility:public"],

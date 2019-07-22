@@ -14,7 +14,7 @@ It can help with issuing certificates from a variety of sources, such as
 It will ensure certificates are valid and up to date, and attempt to renew
 certificates at a configured time before expiry.
 
-It is loosely based upon the work of kube-lego_ and has borrowed some wisdom
+It is loosely based upon the work of kube-cert-manager_ and has borrowed some wisdom
 from other similar projects e.g. kube-cert-manager_.
 
 .. image:: images/high-level-overview.png
@@ -36,7 +36,7 @@ a source of references when seeking help with the project.
    devel/index
 
 .. _Kubernetes: https://kubernetes.io
-.. _kube-lego: https://github.com/jetstack/kube-lego
+.. _kube-cert-manager: https://github.com/adi658/kube-cert-manager
 .. _kube-cert-manager: https://github.com/PalmStoneGames/kube-cert-manager
 .. _`Let's Encrypt`: https://letsencrypt.org
 .. _`HashiCorp Vault`: https://www.vaultproject.io

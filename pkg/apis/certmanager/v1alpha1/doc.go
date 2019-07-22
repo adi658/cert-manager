@@ -15,7 +15,7 @@ limitations under the License.
 */
 
 // +k8s:deepcopy-gen=package,register
-// +k8s:conversion-gen=github.com/jetstack/cert-manager/pkg/apis/certmanager
+// +k8s:conversion-gen=github.com/adi658/cert-manager/pkg/apis/certmanager
 // +k8s:openapi-gen=true
 // +k8s:defaulter-gen=TypeMeta
 

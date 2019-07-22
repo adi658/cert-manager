@@ -7,7 +7,7 @@ go_library(
         "interfaces.go",
         "webhook.go",
     ],
-    importmap = "github.com/jetstack/cert-manager/vendor/k8s.io/apiserver/pkg/admission/plugin/webhook/generic",
+    importmap = "github.com/adi658/cert-manager/vendor/k8s.io/apiserver/pkg/admission/plugin/webhook/generic",
     importpath = "k8s.io/apiserver/pkg/admission/plugin/webhook/generic",
     tags = ["manual"],
     visibility = ["//visibility:public"],

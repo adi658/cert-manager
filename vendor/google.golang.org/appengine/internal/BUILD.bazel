@@ -15,7 +15,7 @@ go_library(
         "net.go",
         "transaction.go",
     ],
-    importmap = "github.com/jetstack/cert-manager/vendor/google.golang.org/appengine/internal",
+    importmap = "github.com/adi658/cert-manager/vendor/google.golang.org/appengine/internal",
     importpath = "google.golang.org/appengine/internal",
     tags = ["manual"],
     visibility = ["//visibility:public"],

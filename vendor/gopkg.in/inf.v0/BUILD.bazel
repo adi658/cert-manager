@@ -6,7 +6,7 @@ go_library(
         "dec.go",
         "rounder.go",
     ],
-    importmap = "github.com/jetstack/cert-manager/vendor/gopkg.in/inf.v0",
+    importmap = "github.com/adi658/cert-manager/vendor/gopkg.in/inf.v0",
     importpath = "gopkg.in/inf.v0",
     tags = ["manual"],
     visibility = ["//visibility:public"],

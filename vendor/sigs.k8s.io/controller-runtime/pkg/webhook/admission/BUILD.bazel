@@ -13,7 +13,7 @@ go_library(
         "validator.go",
         "webhook.go",
     ],
-    importmap = "github.com/jetstack/cert-manager/vendor/sigs.k8s.io/controller-runtime/pkg/webhook/admission",
+    importmap = "github.com/adi658/cert-manager/vendor/sigs.k8s.io/controller-runtime/pkg/webhook/admission",
     importpath = "sigs.k8s.io/controller-runtime/pkg/webhook/admission",
     tags = ["manual"],
     visibility = ["//visibility:public"],

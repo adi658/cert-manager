@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Set DOCKER_REPO to customise the image docker repo, e.g. "quay.io/jetstack"
+# Set DOCKER_REPO to customise the image docker repo, e.g. "quay.io/adi658"
 DOCKER_REPO :=
 APP_VERSION := canary
 HACK_DIR ?= hack

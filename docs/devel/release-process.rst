@@ -38,7 +38,7 @@ The process for cutting a minor release is as follows:
    * docs/tutorials/acme/quick-start/index.rst
 #. Create a new release branch (e.g. ```release-0.5```)
 
-#. Push it to the ```jetstack/cert-manager`` repository
+#. Push it to the ```adi658/cert-manager`` repository
 
 #. Gather release notes since the previous release:
 
@@ -49,7 +49,7 @@ The process for cutting a minor release is as follows:
      * $ go get k8s.io/release; go install $GOPATH/src/k8s.io/release/cmd/release-notes/.
      * $ mkdir -p design/release-notes/release-*X.Y*
      * $ export GITHUB_TOKEN=*your-token*
-     * $ $GOPATH/bin/release-notes -release-version v*X.Y* -github-repo cert-manager -github-org jetstack -requiredAuthor "" -start-sha=$(git rev-parse *X.Y-1.0*) -end-sha=$(git rev-parse HEAD) -output design/release-notes/release-*X.Y*/draft-release-notes.md
+     * $ $GOPATH/bin/release-notes -release-version v*X.Y* -github-repo cert-manager -github-org adi658 -requiredAuthor "" -start-sha=$(git rev-parse *X.Y-1.0*) -end-sha=$(git rev-parse HEAD) -output design/release-notes/release-*X.Y*/draft-release-notes.md
      * # Add additional blurb, notable items and characterise Changelog.
 
 Finally, create a new tag taken from the release branch, e.g. ```v0.5.0```.
@@ -101,7 +101,7 @@ The process for cutting a patch release is as follows:
      * $ go get k8s.io/release; go install $GOPATH/src/k8s.io/release/cmd/release-notes/.
      * $ mkdir -p design/release-notes/release-*X.Y*
      * $ export GITHUB_TOKEN=*your-token*
-     * $ $GOPATH/bin/release-notes -release-version v*X.Y* -github-repo cert-manager -github-org jetstack -requiredAuthor "" -start-sha=$(git rev-parse *X.Y.Z-1*) -end-sha=$(git rev-parse release-*X.Y*) -output design/release-notes/release-*X.Y*/draft-release-notes-*Z*.md
+     * $ $GOPATH/bin/release-notes -release-version v*X.Y* -github-repo cert-manager -github-org adi658 -requiredAuthor "" -start-sha=$(git rev-parse *X.Y.Z-1*) -end-sha=$(git rev-parse release-*X.Y*) -output design/release-notes/release-*X.Y*/draft-release-notes-*Z*.md
      * # Add additional blurb, notable items and characterise Changelog.
 
 Finally, create a new tag taken from the release branch, e.g. ```v0.5.1```.

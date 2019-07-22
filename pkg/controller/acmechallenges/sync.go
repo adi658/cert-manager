@@ -26,15 +26,15 @@ import (
 	utilerrors "k8s.io/apimachinery/pkg/util/errors"
 	utilfeature "k8s.io/apiserver/pkg/util/feature"
 
-	"github.com/jetstack/cert-manager/pkg/acme"
-	acmecl "github.com/jetstack/cert-manager/pkg/acme/client"
-	cmapi "github.com/jetstack/cert-manager/pkg/apis/certmanager/v1alpha1"
-	controllerpkg "github.com/jetstack/cert-manager/pkg/controller"
-	"github.com/jetstack/cert-manager/pkg/feature"
-	dnsutil "github.com/jetstack/cert-manager/pkg/issuer/acme/dns/util"
-	logf "github.com/jetstack/cert-manager/pkg/logs"
-	"github.com/jetstack/cert-manager/pkg/metrics"
-	acmeapi "github.com/jetstack/cert-manager/third_party/crypto/acme"
+	"github.com/adi658/cert-manager/pkg/acme"
+	acmecl "github.com/adi658/cert-manager/pkg/acme/client"
+	cmapi "github.com/adi658/cert-manager/pkg/apis/certmanager/v1alpha1"
+	controllerpkg "github.com/adi658/cert-manager/pkg/controller"
+	"github.com/adi658/cert-manager/pkg/feature"
+	dnsutil "github.com/adi658/cert-manager/pkg/issuer/acme/dns/util"
+	logf "github.com/adi658/cert-manager/pkg/logs"
+	"github.com/adi658/cert-manager/pkg/metrics"
+	acmeapi "github.com/adi658/cert-manager/third_party/crypto/acme"
 )
 
 const (

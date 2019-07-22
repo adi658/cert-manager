@@ -26,8 +26,8 @@ import (
 	"k8s.io/client-go/rest"
 	"k8s.io/client-go/tools/record"
 
-	clientset "github.com/jetstack/cert-manager/pkg/client/clientset/versioned"
-	informers "github.com/jetstack/cert-manager/pkg/client/informers/externalversions"
+	clientset "github.com/adi658/cert-manager/pkg/client/clientset/versioned"
+	informers "github.com/adi658/cert-manager/pkg/client/informers/externalversions"
 )
 
 // Context contains various types that are used by controller implementations.

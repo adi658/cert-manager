@@ -32,9 +32,9 @@ import (
 
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 
-	"github.com/jetstack/cert-manager/test/e2e/framework/addon/chart"
-	"github.com/jetstack/cert-manager/test/e2e/framework/addon/tiller"
-	"github.com/jetstack/cert-manager/test/e2e/framework/config"
+	"github.com/adi658/cert-manager/test/e2e/framework/addon/chart"
+	"github.com/adi658/cert-manager/test/e2e/framework/addon/tiller"
+	"github.com/adi658/cert-manager/test/e2e/framework/config"
 )
 
 // Vault describes the configuration details for an instance of Vault

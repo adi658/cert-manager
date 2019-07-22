@@ -1,7 +1,7 @@
 // +skip_license_check
 
 /*
-This file contains portions of code directly taken from the 'xenolf/lego' project.
+This file contains portions of code directly taken from the 'xenolf/cert-manager' project.
 A copy of the license for this code can be found in the file named LICENSE in
 this directory.
 */
@@ -17,7 +17,7 @@ import (
 	"golang.org/x/oauth2/google"
 	"google.golang.org/api/dns/v1"
 
-	"github.com/jetstack/cert-manager/pkg/issuer/acme/dns/util"
+	"github.com/adi658/cert-manager/pkg/issuer/acme/dns/util"
 	"github.com/stretchr/testify/assert"
 )
 

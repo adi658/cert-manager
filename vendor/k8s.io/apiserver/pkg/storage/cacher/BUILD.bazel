@@ -8,7 +8,7 @@ go_library(
         "util.go",
         "watch_cache.go",
     ],
-    importmap = "github.com/jetstack/cert-manager/vendor/k8s.io/apiserver/pkg/storage/cacher",
+    importmap = "github.com/adi658/cert-manager/vendor/k8s.io/apiserver/pkg/storage/cacher",
     importpath = "k8s.io/apiserver/pkg/storage/cacher",
     tags = ["manual"],
     visibility = ["//visibility:public"],

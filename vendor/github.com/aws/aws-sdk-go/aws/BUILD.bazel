@@ -17,7 +17,7 @@ go_library(
         "url_1_7.go",
         "version.go",
     ],
-    importmap = "github.com/jetstack/cert-manager/vendor/github.com/aws/aws-sdk-go/aws",
+    importmap = "github.com/adi658/cert-manager/vendor/github.com/aws/aws-sdk-go/aws",
     importpath = "github.com/aws/aws-sdk-go/aws",
     tags = ["manual"],
     visibility = ["//visibility:public"],

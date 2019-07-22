@@ -33,7 +33,7 @@ Environments:
     ALLOW_OVERWRITE             by default, if an existing image exists with the same tag then pushing will be aborted, set this to skip this check
     SKIP_REF_TAG                skip creating a commit ref docker tag
     CHART_PATH                  custom path to the Helm chart within the cert-manager repository (debug only) (default: deploy/charts/cert-manager)
-    CHART_BUCKET                GCS bucket where the Helm chart should be published (default: jetstack-chart-museum)
+    CHART_BUCKET                GCS bucket where the Helm chart should be published (default: adi658-chart-museum)
     CHART_SERVICE_ACCOUNT       optional path to a JSON formatted Google Cloud service account used by gsutil to publish the chart
     SKIP_CHART                  skip publishing the Helm chart
 Examples:
@@ -56,7 +56,7 @@ done
 
 export CONFIRM=${CONFIRM:-}
 export VERSION=${VERSION:-}
-DOCKER_REPO=${REGISTRY:-quay.io/jetstack}
+DOCKER_REPO=${REGISTRY:-quay.io/adi658}
 # remove trailing `/` if present
 export DOCKER_REPO=${DOCKER_REPO%/}
 
@@ -65,7 +65,7 @@ export ALLOW_OVERWRITE=${ALLOW_OVERWRITE:-}
 
 # Helm chart packaging vars
 export CHART_PATH=${CHART_PATH:-deploy/charts/cert-manager}
-export CHART_BUCKET=${CHART_BUCKET:-jetstack-chart-museum}
+export CHART_BUCKET=${CHART_BUCKET:-adi658-chart-museum}
 export CHART_SERVICE_ACCOUNT=${CHART_SERVICE_ACCOUNT:-}
 export SKIP_CHART="${SKIP_CHART:-}"
 export SKIP_MANIFESTS="${SKIP_MANIFESTS:-}"

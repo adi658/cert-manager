@@ -17,9 +17,9 @@ limitations under the License.
 package ca
 
 import (
-	apiutil "github.com/jetstack/cert-manager/pkg/api/util"
-	controllerpkg "github.com/jetstack/cert-manager/pkg/controller"
-	"github.com/jetstack/cert-manager/pkg/controller/certificaterequests"
+	apiutil "github.com/adi658/cert-manager/pkg/api/util"
+	controllerpkg "github.com/adi658/cert-manager/pkg/controller"
+	"github.com/adi658/cert-manager/pkg/controller/certificaterequests"
 )
 
 const (

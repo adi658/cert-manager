@@ -16,8 +16,8 @@ limitations under the License.
 
 // Package rfc2136 implements a DNS provider for solving the DNS-01 challenge
 // using the rfc2136 dynamic update.
-// This code was adapted from lego:
-// 	  https://github.com/xenolf/lego
+// This code was adapted from cert-manager:
+// 	  https://github.com/xenolf/cert-manager
 
 package rfc2136
 

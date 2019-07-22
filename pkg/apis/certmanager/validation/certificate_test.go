@@ -22,7 +22,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/jetstack/cert-manager/pkg/apis/certmanager/v1alpha1"
+	"github.com/adi658/cert-manager/pkg/apis/certmanager/v1alpha1"
 	"k8s.io/apimachinery/pkg/util/validation/field"
 
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"

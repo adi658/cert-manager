@@ -8,7 +8,7 @@ go_library(
         "interface.go",
         "leaselock.go",
     ],
-    importmap = "github.com/jetstack/cert-manager/vendor/k8s.io/client-go/tools/leaderelection/resourcelock",
+    importmap = "github.com/adi658/cert-manager/vendor/k8s.io/client-go/tools/leaderelection/resourcelock",
     importpath = "k8s.io/client-go/tools/leaderelection/resourcelock",
     tags = ["manual"],
     visibility = ["//visibility:public"],

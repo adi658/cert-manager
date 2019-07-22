@@ -29,9 +29,9 @@ import (
 	"github.com/onsi/gomega"
 	"k8s.io/apimachinery/pkg/util/wait"
 
-	"github.com/jetstack/cert-manager/pkg/logs"
-	"github.com/jetstack/cert-manager/test/e2e/framework"
-	_ "github.com/jetstack/cert-manager/test/e2e/suite"
+	"github.com/adi658/cert-manager/pkg/logs"
+	"github.com/adi658/cert-manager/test/e2e/framework"
+	_ "github.com/adi658/cert-manager/test/e2e/suite"
 )
 
 func init() {

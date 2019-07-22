@@ -14,7 +14,7 @@ go_library(
         "update.go",
         "watch.go",
     ],
-    importmap = "github.com/jetstack/cert-manager/vendor/k8s.io/apiserver/pkg/endpoints/handlers",
+    importmap = "github.com/adi658/cert-manager/vendor/k8s.io/apiserver/pkg/endpoints/handlers",
     importpath = "k8s.io/apiserver/pkg/endpoints/handlers",
     tags = ["manual"],
     visibility = ["//visibility:public"],

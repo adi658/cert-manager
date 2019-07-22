@@ -16,8 +16,8 @@ limitations under the License.
 
 // Package rfc2136 implements a DNS provider for solving the DNS-01 challenge
 // using the rfc2136 dynamic update.
-// This code was adapted from lego:
-// 	  https://github.com/xenolf/lego
+// This code was adapted from cert-manager:
+// 	  https://github.com/xenolf/cert-manager
 
 package rfc2136
 
@@ -30,8 +30,8 @@ import (
 	"github.com/miekg/dns"
 	"github.com/stretchr/testify/assert"
 
-	logf "github.com/jetstack/cert-manager/pkg/logs"
-	testserver "github.com/jetstack/cert-manager/test/acme/dns/server"
+	logf "github.com/adi658/cert-manager/pkg/logs"
+	testserver "github.com/adi658/cert-manager/test/acme/dns/server"
 )
 
 var (

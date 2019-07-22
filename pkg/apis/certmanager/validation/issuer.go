@@ -22,13 +22,13 @@ import (
 	"reflect"
 	"strings"
 
-	"github.com/jetstack/cert-manager/pkg/issuer/acme/dns/rfc2136"
+	"github.com/adi658/cert-manager/pkg/issuer/acme/dns/rfc2136"
 
 	corev1 "k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/util/validation/field"
 
-	"github.com/jetstack/cert-manager/pkg/apis/certmanager/v1alpha1"
+	"github.com/adi658/cert-manager/pkg/apis/certmanager/v1alpha1"
 )
 
 // Validation functions for cert-manager v1alpha1 Issuer types

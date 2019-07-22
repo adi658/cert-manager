@@ -7,7 +7,7 @@ go_library(
         "doc.go",
         "plugin.go",
     ],
-    importmap = "github.com/jetstack/cert-manager/vendor/k8s.io/apiserver/pkg/admission/plugin/webhook/validating",
+    importmap = "github.com/adi658/cert-manager/vendor/k8s.io/apiserver/pkg/admission/plugin/webhook/validating",
     importpath = "k8s.io/apiserver/pkg/admission/plugin/webhook/validating",
     tags = ["manual"],
     visibility = ["//visibility:public"],
