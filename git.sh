@@ -1,5 +1,5 @@
 git add --all
 git commit -m "testing"
-git push origin master
+git push origin lego
 
 make images_push
