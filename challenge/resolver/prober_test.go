@@ -4,8 +4,8 @@ import (
 	"errors"
 	"testing"
 
-	"github.com/go-acme/lego/acme"
-	"github.com/go-acme/lego/challenge"
+	"github.com/adi658/cert-manager/acme"
+	"github.com/adi658/cert-manager/challenge"
 	"github.com/stretchr/testify/require"
 )
 
@@ -27,7 +27,7 @@ func TestProber_Solve(t *testing.T) {
 			},
 			authz: []acme.Authorization{
 				createStubAuthorizationHTTP01("acme.wtf", acme.StatusProcessing),
-				createStubAuthorizationHTTP01("lego.wtf", acme.StatusProcessing),
+				createStubAuthorizationHTTP01("cert-manager.wtf", acme.StatusProcessing),
 				createStubAuthorizationHTTP01("mydomain.wtf", acme.StatusProcessing),
 			},
 		},
@@ -42,7 +42,7 @@ func TestProber_Solve(t *testing.T) {
 			},
 			authz: []acme.Authorization{
 				createStubAuthorizationHTTP01("acme.wtf", acme.StatusValid),
-				createStubAuthorizationHTTP01("lego.wtf", acme.StatusValid),
+				createStubAuthorizationHTTP01("cert-manager.wtf", acme.StatusValid),
 				createStubAuthorizationHTTP01("mydomain.wtf", acme.StatusValid),
 			},
 		},
@@ -63,7 +63,7 @@ func TestProber_Solve(t *testing.T) {
 			},
 			authz: []acme.Authorization{
 				createStubAuthorizationHTTP01("acme.wtf", acme.StatusProcessing),
-				createStubAuthorizationHTTP01("lego.wtf", acme.StatusProcessing),
+				createStubAuthorizationHTTP01("cert-manager.wtf", acme.StatusProcessing),
 				createStubAuthorizationHTTP01("mydomain.wtf", acme.StatusProcessing),
 			},
 			expectedError: `acme: Error -> One or more domains had a problem:
@@ -79,7 +79,7 @@ func TestProber_Solve(t *testing.T) {
 					},
 					solve: map[string]error{
 						"acme.wtf": errors.New("solve error acme.wtf"),
-						"lego.wtf": errors.New("solve error lego.wtf"),
+						"cert-manager.wtf": errors.New("solve error cert-manager.wtf"),
 					},
 					cleanUp: map[string]error{
 						"mydomain.wtf": errors.New("clean error mydomain.wtf"),
@@ -88,12 +88,12 @@ func TestProber_Solve(t *testing.T) {
 			},
 			authz: []acme.Authorization{
 				createStubAuthorizationHTTP01("acme.wtf", acme.StatusProcessing),
-				createStubAuthorizationHTTP01("lego.wtf", acme.StatusProcessing),
+				createStubAuthorizationHTTP01("cert-manager.wtf", acme.StatusProcessing),
 				createStubAuthorizationHTTP01("mydomain.wtf", acme.StatusProcessing),
 			},
 			expectedError: `acme: Error -> One or more domains had a problem:
 [acme.wtf] preSolve error acme.wtf
-[lego.wtf] solve error lego.wtf
+[cert-manager.wtf] solve error cert-manager.wtf
 `,
 		},
 	}

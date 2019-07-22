@@ -28,9 +28,9 @@ func (*DNSProviderManual) Present(domain, token, keyAuth string) error {
 		return err
 	}
 
-	fmt.Printf("lego: Please create the following TXT record in your %s zone:\n", authZone)
+	fmt.Printf("cert-manager: Please create the following TXT record in your %s zone:\n", authZone)
 	fmt.Printf(dnsTemplate+"\n", fqdn, DefaultTTL, value)
-	fmt.Printf("lego: Press 'Enter' when you are done\n")
+	fmt.Printf("cert-manager: Press 'Enter' when you are done\n")
 
 	_, err = bufio.NewReader(os.Stdin).ReadBytes('\n')
 
@@ -46,7 +46,7 @@ func (*DNSProviderManual) CleanUp(domain, token, keyAuth string) error {
 		return err
 	}
 
-	fmt.Printf("lego: You can now remove this TXT record from your %s zone:\n", authZone)
+	fmt.Printf("cert-manager: You can now remove this TXT record from your %s zone:\n", authZone)
 	fmt.Printf(dnsTemplate+"\n", fqdn, DefaultTTL, "...")
 
 	return nil

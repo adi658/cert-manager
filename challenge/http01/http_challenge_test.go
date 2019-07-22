@@ -7,10 +7,10 @@ import (
 	"net/http"
 	"testing"
 
-	"github.com/go-acme/lego/acme"
-	"github.com/go-acme/lego/acme/api"
-	"github.com/go-acme/lego/challenge"
-	"github.com/go-acme/lego/platform/tester"
+	"github.com/adi658/cert-manager/acme"
+	"github.com/adi658/cert-manager/acme/api"
+	"github.com/adi658/cert-manager/challenge"
+	"github.com/adi658/cert-manager/platform/tester"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )
@@ -50,7 +50,7 @@ func TestChallenge(t *testing.T) {
 	privateKey, err := rsa.GenerateKey(rand.Reader, 512)
 	require.NoError(t, err, "Could not generate test key")
 
-	core, err := api.New(http.DefaultClient, "lego-test", apiURL+"/dir", "", privateKey)
+	core, err := api.New(http.DefaultClient, "cert-manager-test", apiURL+"/dir", "", privateKey)
 	require.NoError(t, err)
 
 	solver := NewChallenge(core, validate, providerServer)
@@ -75,7 +75,7 @@ func TestChallengeInvalidPort(t *testing.T) {
 	privateKey, err := rsa.GenerateKey(rand.Reader, 128)
 	require.NoError(t, err, "Could not generate test key")
 
-	core, err := api.New(http.DefaultClient, "lego-test", apiURL+"/dir", "", privateKey)
+	core, err := api.New(http.DefaultClient, "cert-manager-test", apiURL+"/dir", "", privateKey)
 	require.NoError(t, err)
 
 	validate := func(_ *api.Core, _ string, _ acme.Challenge) error { return nil }

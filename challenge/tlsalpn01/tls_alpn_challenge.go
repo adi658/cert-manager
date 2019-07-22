@@ -8,11 +8,11 @@ import (
 	"encoding/asn1"
 	"fmt"
 
-	"github.com/go-acme/lego/acme"
-	"github.com/go-acme/lego/acme/api"
-	"github.com/go-acme/lego/certcrypto"
-	"github.com/go-acme/lego/challenge"
-	"github.com/go-acme/lego/log"
+	"github.com/adi658/cert-manager/acme"
+	"github.com/adi658/cert-manager/acme/api"
+	"github.com/adi658/cert-manager/certcrypto"
+	"github.com/adi658/cert-manager/challenge"
+	"github.com/adi658/cert-manager/log"
 )
 
 // idPeAcmeIdentifierV1 is the SMI Security for PKIX Certification Extension OID referencing the ACME extension.

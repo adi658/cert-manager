@@ -32,7 +32,7 @@ func TestDNSProviderManual(t *testing.T) {
 
 	for _, test := range testCases {
 		t.Run(test.desc, func(t *testing.T) {
-			file, err := ioutil.TempFile("", "lego_test")
+			file, err := ioutil.TempFile("", "cert-manager_test")
 			assert.NoError(t, err)
 			defer func() { _ = os.Remove(file.Name()) }()
 

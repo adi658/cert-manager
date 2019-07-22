@@ -9,9 +9,9 @@ import (
 	"sort"
 	"testing"
 
-	"github.com/go-acme/lego/acme"
-	"github.com/go-acme/lego/acme/api"
-	"github.com/go-acme/lego/platform/tester"
+	"github.com/adi658/cert-manager/acme"
+	"github.com/adi658/cert-manager/acme/api"
+	"github.com/adi658/cert-manager/platform/tester"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 	jose "gopkg.in/square/go-jose.v2"
@@ -96,7 +96,7 @@ func TestValidate(t *testing.T) {
 		}
 	})
 
-	core, err := api.New(http.DefaultClient, "lego-test", apiURL+"/dir", "", privateKey)
+	core, err := api.New(http.DefaultClient, "cert-manager-test", apiURL+"/dir", "", privateKey)
 	require.NoError(t, err)
 
 	testCases := []struct {
